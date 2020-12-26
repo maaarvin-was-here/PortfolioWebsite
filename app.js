@@ -207,7 +207,7 @@ function getDate() {
     
     todaysDate = mm + '/' + dd + '/' + yyyy;
     
-    date.innerHTML = today;
+    date.innerHTML = todaysDate;
 }
 
 function shuffle() {
