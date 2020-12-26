@@ -1,4 +1,7 @@
-
+[context.production]
+  command = "make marvin-lin"
+  [context.production.environment]
+    ACCESS_TOKEN = "super secret"
 
 [context.branch-deploy]
   command = "make spellingbee"
