@@ -17,9 +17,12 @@ Genius (194) `;
 //          GENERAL VARIABLES          //
 
 // Elements
+var date = document.getElementById("todaysDate");
 var wordDisplay = document.getElementById("wordDisplay");
 var wordSubmission = document.getElementById("wordBank");
 var notification = document.getElementById("notification");
+
+var boxArray = [];
 
 var firstBox = document.getElementById("firstBox");
 var secondBox = document.getElementById("secondBox");
@@ -28,6 +31,15 @@ var fourthBox = document.getElementById("fourthBox");
 var fifthBox = document.getElementById("fifthBox");
 var sixthBox = document.getElementById("sixthBox");
 var seventhBox = document.getElementById("seventhBox");
+
+boxArray.push(firstBox);
+boxArray.push(secondBox);
+boxArray.push(thirdBox);
+boxArray.push(fourthBox);
+boxArray.push(fifthBox);
+boxArray.push(sixthBox);
+boxArray.push(seventhBox);
+
 
 
 //Letters
@@ -173,152 +185,45 @@ function showScoringGuidelines() {
 
 
 function init(){
-      var arrayNumber = 0;
-      var letters = letterArray;
-
-      firstBox.innerHTML = letters[arrayNumber];
-
-      firstBox.style.backgroundColor = 'white';
-      if (letters[arrayNumber] == requiredLetter) {
-          firstBox.style.backgroundColor = "gold";
-      }
-
-
-      arrayNumber++;
-      secondBox.innerHTML = letters[arrayNumber];
-
-      secondBox.style.backgroundColor = 'white';
-      if (letters[arrayNumber] == requiredLetter) {
-          secondBox.style.backgroundColor = "gold";
-      }
-
-
-
-      arrayNumber++;
-      thirdBox.innerHTML = letters[arrayNumber];
-
-      thirdBox.style.backgroundColor = 'white';
-      if (letters[arrayNumber] == requiredLetter) {
-          thirdBox.style.backgroundColor = "gold";
-      }
-
-
-
-      arrayNumber++;
-      fourthBox.innerHTML = letters[arrayNumber];
-
-      fourthBox.style.backgroundColor = 'white';
-      if (letters[arrayNumber] == requiredLetter) {
-          fourthBox.style.backgroundColor = "gold";
-      }
-
-
-
-      arrayNumber++;
-      fifthBox.innerHTML = letters[arrayNumber];
-
-      fifthBox.style.backgroundColor = 'white';
-      if (letters[arrayNumber] == requiredLetter) {
-          fifthBox.style.backgroundColor = "gold";
-      }
-
-
-
-      arrayNumber++;
-      sixthBox.innerHTML = letters[arrayNumber];
-
-      sixthBox.style.backgroundColor = 'white';
-      if (letters[arrayNumber] == requiredLetter) {
-          sixthBox.style.backgroundColor = "gold";
-      }
-
-
-
-      arrayNumber++;
-      seventhBox.innerHTML = letters[arrayNumber];
-
-      seventhBox.style.backgroundColor = 'white';
-      if (letters[arrayNumber] == requiredLetter) {
-          seventhBox.style.backgroundColor = "gold";
-      }
-
+    var arrayNumber = 0;
+    var letters = letterArray;
+    console.log(boxArray);
+    
+    for (var i = 0; i < boxArray.length; i++) {
+        boxArray[i].innerHTML = letters[i];
+        boxArray[i].style.backgroundColor = 'white';
+        if (letters[i] == requiredLetter) {
+            boxArray[i].style.backgroundColor = "gold";
+        }
+    }   
+    getDate();
 }
 
+function getDate() {
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    
+    todaysDate = mm + '/' + dd + '/' + yyyy;
+    
+    date.innerHTML = today;
+}
 
 function shuffle() {
     var arrayNumber = 0;
     var letters = letterArray.slice();
-
-    arrayNumber = Math.floor(Math.random() * (letters.length));
-    firstBox.innerHTML = letters[arrayNumber];
-
-    firstBox.style.backgroundColor = 'white';
-    if (letters[arrayNumber] == requiredLetter) {
-        firstBox.style.backgroundColor = "gold";
+    
+    for (var i = 0; i < boxArray.length; i++) {
+        arrayNumber = Math.floor(Math.random() * (letters.length));
+        boxArray[i].innerHTML = letters[arrayNumber];
+        
+        boxArray[i].style.backgroundColor = 'white';
+        if (letters[arrayNumber] == requiredLetter) {
+            boxArray[i].style.backgroundColor = "gold";
+        }
+        letters.splice(arrayNumber, 1);
     }
-    letters.splice(arrayNumber, 1);
-
-
-    arrayNumber = Math.floor(Math.random() * (letters.length));
-    secondBox.innerHTML = letters[arrayNumber];
-
-    secondBox.style.backgroundColor = 'white';
-    if (letters[arrayNumber] == requiredLetter) {
-        secondBox.style.backgroundColor = "gold";
-    }
-
-    letters.splice(arrayNumber, 1);
-
-
-    arrayNumber = Math.floor(Math.random() * (letters.length));
-    thirdBox.innerHTML = letters[arrayNumber];
-
-    thirdBox.style.backgroundColor = 'white';
-    if (letters[arrayNumber] == requiredLetter) {
-        thirdBox.style.backgroundColor = "gold";
-    }
-    letters.splice(arrayNumber, 1);
-
-
-    arrayNumber = Math.floor(Math.random() * (letters.length));
-    fourthBox.innerHTML = letters[arrayNumber];
-
-    fourthBox.style.backgroundColor = 'white';
-    if (letters[arrayNumber] == requiredLetter) {
-        fourthBox.style.backgroundColor = "gold";
-    }
-    letters.splice(arrayNumber, 1);
-
-
-    arrayNumber = Math.floor(Math.random() * (letters.length));
-    fifthBox.innerHTML = letters[arrayNumber];
-
-    fifthBox.style.backgroundColor = 'white';
-    if (letters[arrayNumber] == requiredLetter) {
-        fifthBox.style.backgroundColor = "gold";
-    }
-    letters.splice(arrayNumber, 1);
-
-
-    arrayNumber = Math.floor(Math.random() * (letters.length));
-    sixthBox.innerHTML = letters[arrayNumber];
-
-    sixthBox.style.backgroundColor = 'white';
-    if (letters[arrayNumber] == requiredLetter) {
-        sixthBox.style.backgroundColor = "gold";
-    }
-    letters.splice(arrayNumber, 1);
-
-
-    arrayNumber = Math.floor(Math.random() * (letters.length));
-    seventhBox.innerHTML = letters[arrayNumber];
-
-    seventhBox.style.backgroundColor = 'white';
-    if (letters[arrayNumber] == requiredLetter) {
-        seventhBox.style.backgroundColor = "gold";
-    }
-
-    letters.splice(arrayNumber, 1);
 }
 
 //Takes dictionary file and prunes it to smaller dictionary with only
