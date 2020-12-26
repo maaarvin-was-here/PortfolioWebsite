@@ -1,4 +1,0 @@
-
-
-[context.branch-deploy]
-  command = "make spellingbee"
