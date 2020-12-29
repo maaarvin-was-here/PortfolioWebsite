@@ -1,23 +1,29 @@
 //          VALUES TO INITIALIZE        //
 
-var stringOfLetters = "POTHAGR";
+var stringOfLetters = "PHANTOM";
 
 var scoringGuidelines = 
 `Beginner (0)
-Good Start (6)
-Moving Up (14)
-Good (22)
-Solid (42)
-Nice (69)
-Great (111)
-Amazing (139)
-Genius (194) `;
+Good Start (5)
+Moving Up (12)
+Good (19)
+Solid (36)
+Nice (60)
+Great (95)
+Amazing (119)
+Genius (167) `;
 
+var editor = "Sam Ezersky";
 
 //          GENERAL VARIABLES          //
 
 // Elements
+
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+var credits = document.getElementById("credits");
 var date = document.getElementById("todaysDate");
+var title = document.getElementById("spellingBeeTitle");
 var wordDisplay = document.getElementById("wordDisplay");
 var wordSubmission = document.getElementById("wordBank");
 var notification = document.getElementById("notification");
@@ -197,15 +203,16 @@ function init(){
         }
     }   
     getDate();
+    credits.innerHTML = "Edited by " + editor;
 }
 
 function getDate() {
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var mm = String(monthNames[today.getMonth()]);
     var yyyy = today.getFullYear();
     
-    todaysDate = mm + '/' + dd + '/' + yyyy;
+    todaysDate = mm + ' ' + dd + ', ' + yyyy;
     
     date.innerHTML = todaysDate;
 }
@@ -226,15 +233,16 @@ function shuffle() {
     }
 }
 
-//Takes dictionary file and prunes it to smaller dictionary with only
-//words possible with the letter combination
-document.getElementById("file").onchange = function(){
-    var file = this.files[0];
+//Takes dictionary file and prunes it to smaller dictionary with 
+//onlywords possible with the letter combination
+var req = new XMLHttpRequest();
+req.onload = function(){
     var letters = letterArray;
-    
-    var reader = new FileReader();
-    reader.onload = function(progressEvent){
-        var lines = this.result.split('\n');
+    console.log("I've loaded!");
+    console.log(this.responseText);
+    console.log(typeof this.responseText);
+    var lines = this.responseText.split('\n');
+    console.log(lines);
         for(var line = 0; line < lines.length; line++){
             var temp = lines[line].toUpperCase();
             for(var letterCount = 0; letterCount < temp.length; letterCount++) {
@@ -252,6 +260,7 @@ document.getElementById("file").onchange = function(){
                 }
             }
         }
-    };
-    reader.readAsText(file);
+    console.log(possibleWords);
 };
+req.open('GET', './newdict.txt');
+req.send();
