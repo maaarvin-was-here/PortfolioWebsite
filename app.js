@@ -1,6 +1,6 @@
 //          VALUES TO INITIALIZE        //
 
-var stringOfLetters = "ACGHLNE";
+var stringOfLetters = "ACGEHLN";
 
 var scoringGuidelines = 
 `Beginner (0)
@@ -29,6 +29,7 @@ var wordSubmission = document.getElementById("wordBank");
 var notification = document.getElementById("notification");
 
 var boxArray = [];
+var shuffleBoxArray = [];
 
 var firstBox = document.getElementById("firstBox");
 var secondBox = document.getElementById("secondBox");
@@ -45,18 +46,30 @@ boxArray.push(fourthBox);
 boxArray.push(fifthBox);
 boxArray.push(sixthBox);
 boxArray.push(seventhBox);
+shuffleBoxArray.push(firstBox);
+shuffleBoxArray.push(secondBox);
+shuffleBoxArray.push(thirdBox);
+shuffleBoxArray.push(fifthBox);
+shuffleBoxArray.push(sixthBox);
+shuffleBoxArray.push(seventhBox);
 
 
 
 //Letters
 var letterArray = stringOfLetters.split("");
+/*var shuffleLetters = [];
+for (var i = 0; i < letterArray.length; i++) {
+    if (i != 3) {
+        shuffleLetters.push(letterArray[i]);
+    }
+}*/
 
 //Word
 var string = '';
 var firstWord = 0;
 
 // Checks
-var requiredLetter = letterArray[6];
+var requiredLetter = letterArray[3];
 var possibleWords = [];
 var checkPangram = false;
 
@@ -219,15 +232,17 @@ function getDate() {
 
 function shuffle() {
     var arrayNumber = 0;
+    //var letters = shuffleLetters.slice();
+    var boxValues = boxArray.slice();
     var letters = letterArray.slice();
     
-    for (var i = 0; i < boxArray.length; i++) {
+    for (var i = 0; i < boxValues.length; i++) {
         arrayNumber = Math.floor(Math.random() * (letters.length));
-        boxArray[i].innerHTML = letters[arrayNumber];
+        boxValues[i].innerHTML = letters[arrayNumber];
         
-        boxArray[i].style.backgroundColor = 'white';
+        boxValues[i].style.backgroundColor = 'white';
         if (letters[arrayNumber] == requiredLetter) {
-            boxArray[i].style.backgroundColor = "gold";
+            boxValues[i].style.backgroundColor = "gold";
         }
         letters.splice(arrayNumber, 1);
     }
