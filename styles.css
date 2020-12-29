@@ -14,7 +14,7 @@ button {
     //display: inline;
     border-radius: 20px;
     line-height: 80px;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .specialSquare {
@@ -28,7 +28,7 @@ button {
     //display: inline;
     border-radius: 20px;
     line-height: 80px;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .hiddenSquare {
@@ -68,16 +68,38 @@ button {
 
 }
 
-#spellingBeeTitle {
+@font-face {
+    font-family: karnak;
+    src: url(karnakpro-black.otf);
+}
+
+#titleSpacer {
+    display: inline-block;
+    width: 5px;
+}
+
+#titleBlock {
+    padding-top: 1.5%;
     text-align: center;
-    font-family: impact;
+}
+
+
+#spellingBeeTitle {
+    display: inline-block;
+    text-align: center;
+    font-family: karnak;
+    font-weight: bold;
     font-size: 30px;
-    margin: 0px;
+    margin: 0;
 }
 
 #todaysDate {
+    display: inline-block;
     text-align: center;
-    margin: 0px;
+    margin: 0;
+    font-family: arial;
+    font-size: 20px;
+    margin: 0;
 }
 
 
@@ -102,6 +124,14 @@ button {
     font-family: arial;
     margin-bottom: 40px;
     
+}
+
+#credits {
+    text-align: center;
+    margin: 0;
+    margin-top: 8px;
+    font-family: arial;
+    font-size: 14px;    
 }
 
 
