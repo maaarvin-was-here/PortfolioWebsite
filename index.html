@@ -3,15 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>NYC Crossword</title>
+    <title>Spelling Bee</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://www.nytimes.com/games-assets/v2/metadata/sb-favicon.ico?v=v7.8.0"  type="image/x-icon">
+    <link rel="search" href="newdict.txt" id="file" />
 </head>
 
 <body>
     <article id="siteInformation">
-        <input type="file" name="newdict.txt" id="file" />
-        <p id="spellingBeeTitle">Spelling Bee (from the New York Times)</p>
-        <p id="todaysDate"></p>
+        <div id="titleBlock">
+            <p id="spellingBeeTitle">Spelling Bee</p>
+            <p id="titleSpacer"></p>
+            <p id="todaysDate"></p>
+        </div>
+        <div>
+            <p id="credits"></p>
+        </div>
     </article>
     <article>
         <p id="notification"></p>
@@ -133,6 +140,8 @@
     
     
     <p id="wordBank"></p>
+
+    
 
 </body>
 <script type="text/javascript" src="app.js"></script>
