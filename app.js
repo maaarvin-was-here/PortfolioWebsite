@@ -1,6 +1,6 @@
 //          VALUES TO INITIALIZE        //
 
-var stringOfLetters = "PHANTOM";
+var stringOfLetters = "ACGHLNE";
 
 var scoringGuidelines = 
 `Beginner (0)
