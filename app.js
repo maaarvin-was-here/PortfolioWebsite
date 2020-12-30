@@ -1,6 +1,6 @@
 //          VALUES TO INITIALIZE        //
 
-var stringOfLetters = "EAUXCNT";
+var stringOfLetters = "ECAUTNX";
 
 var scoringGuidelines = 
 `Beginner (0)
@@ -68,7 +68,7 @@ var string = '';
 var firstWord = 0;
 
 // Checks
-var requiredLetter = letterArray[3];
+var requiredLetter = letterArray[0];
 var possibleWords = [];
 var checkPangram = false;
 
