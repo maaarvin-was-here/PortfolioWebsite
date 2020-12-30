@@ -203,8 +203,6 @@ function showScoringGuidelines() {
 
 
 function init() {
-    getLetters('https://www.nytimes.com/puzzles/spelling-bee');
-
     var letters = letterArray;
     console.log(boxArray);
     
