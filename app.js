@@ -1,24 +1,23 @@
 //          VALUES TO INITIALIZE        //
 
-var stringOfLetters = "ACGEHLN";
+var stringOfLetters = "EAUXCNT";
 
 var scoringGuidelines = 
 `Beginner (0)
 Good Start (5)
-Moving Up (12)
-Good (19)
-Solid (36)
-Nice (60)
-Great (95)
-Amazing (119)
-Genius (167) `;
+Moving Up (11)
+Good (18)
+Solid (34)
+Nice (57)
+Great (92)
+Amazing (115)
+Genius (160) `;
 
 var editor = "Sam Ezersky";
 
 //          GENERAL VARIABLES          //
 
 // Elements
-
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 var credits = document.getElementById("credits");
@@ -203,8 +202,9 @@ function showScoringGuidelines() {
 
 
 
-function init(){
-    var arrayNumber = 0;
+function init() {
+    getLetters('https://www.nytimes.com/puzzles/spelling-bee');
+
     var letters = letterArray;
     console.log(boxArray);
     
@@ -279,3 +279,35 @@ req.onload = function(){
 };
 req.open('GET', './newdict.txt');
 req.send();
+
+
+/*async function getLetters(url) {
+        try {
+            const browser = await puppeteer.launch();
+
+            const page = await browser.newPage();
+            await page.setExtraHTTPHeaders({
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36'
+            });
+            await page.goto(url);
+
+            await page.waitForSelector('#pz-game-root > div > div.sb-controls-box > div > div.sb-hive > div > svg.hive-cell.center > text');
+
+            const body = await page.evaluate(() => {
+                var letterCollection = 'Letters: ';
+                var letters = document.querySelectorAll('text.cell-letter');
+                letters.forEach((letter) => {
+                    var character = letter.textContent;
+                    letterCollection += character;
+                })
+                return letterCollection;
+            });
+
+            console.log(body);
+
+            await browser.close();
+        } catch (err) {
+            console.log(err);
+        }
+    
+} */
