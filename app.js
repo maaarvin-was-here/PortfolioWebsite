@@ -4,14 +4,14 @@ var stringOfLetters = "WLEGTHI";
 
 var scoringGuidelines = 
 `Beginner (0)
-Good Start (5)
-Moving Up (11)
-Good (18)
-Solid (34)
-Nice (57)
-Great (92)
-Amazing (115)
-Genius (160) `;
+Good Start (2)
+Moving Up (5)
+Good (8)
+Solid (16)
+Nice (27)
+Great (42)
+Amazing (53)
+Genius (74) `;
 
 var editor = "Sam Ezersky";
 
