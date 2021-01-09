@@ -1,19 +1,20 @@
 //          VALUES TO INITIALIZE        //
 
-var stringOfLetters = "WLEGTHI";
-
-var scoringGuidelines = 
+var stringOfLetters = "";
+var letterArray = [];
+var scoringGuidelines = "";
+var nytScoringGuidelines = 
 `Beginner (0)
-Good Start (2)
-Moving Up (5)
-Good (8)
-Solid (16)
-Nice (27)
-Great (42)
-Amazing (53)
-Genius (74) `;
+Good Start (5)
+Moving Up (11)
+Good (18)
+Solid (34)
+Nice (57)
+Great (92)
+Amazing (115)
+Genius (160) `;
 
-var editor = "Sam Ezersky";
+var editor = "";
 
 //          GENERAL VARIABLES          //
 
@@ -55,7 +56,6 @@ shuffleBoxArray.push(seventhBox);
 
 
 //Letters
-var letterArray = stringOfLetters.split("");
 /*var shuffleLetters = [];
 for (var i = 0; i < letterArray.length; i++) {
     if (i != 3) {
@@ -68,16 +68,19 @@ var string = '';
 var firstWord = 0;
 
 // Checks
-var requiredLetter = letterArray[0];
+var requiredLetter;
 var possibleWords = [];
 var checkPangram = false;
+var nyt;
 
 // Display
 var foundWordsString = '';
 var foundWords = [];
+var nytwords = [];
 
 // Points
 var points = 0;
+var nytpoints = 0;
 var pointCounter = document.getElementById("pointCounter");
   
 
@@ -86,8 +89,7 @@ var pointCounter = document.getElementById("pointCounter");
 //              JAVASCRIPT                //
 
 
-
-init();
+randomLetters();
 
 //Adds a new letter to the current guess
 function input(letter) {
@@ -154,6 +156,11 @@ function submitWord() {
     checkPangram = false;
     foundWords.push(string);
     foundWordsString += string;
+    console.log(nytwords);
+    if(nyt){
+        nytwords.push(string);
+    }
+    console.log(nytwords);
     wordBank.innerHTML = foundWordsString;
     string = '';
     wordDisplay.innerHTML = string;
@@ -176,6 +183,9 @@ function calculateScore() {
     } else if (string.length > 4) {
         alert(`+${string.length}`);
         points += string.length; 
+    }
+    if(nyt){
+        nytpoints = points;
     }
     pointCounter.innerHTML = points.toString();
 }
@@ -214,7 +224,50 @@ function init() {
         }
     }   
     getDate();
-    credits.innerHTML = "Edited by " + editor;
+    credits.innerHTML = editor;
+}
+
+function randomLetters() {
+    nyt = false;
+    firstWord = 0;
+    foundWordsString = "";
+    wordBank.innerHTML = foundWordsString;
+    
+    points = 0;
+    pointCounter.innerHTML = points;
+    
+    var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    letterArray = [];
+    
+    for(var i = 0; i < 7; i++){
+        letterArray.push(alphabet[Math.floor(Math.random() * alphabet.length)]);
+        alphabet = alphabet.replace(letterArray[i], '');
+        if(letterArray[i] == 'Q'){
+            if(!letterArray.includes('U')){
+                if(i == 6) {
+                    letterArray[5] = 'U';
+                } else {
+                    letterArray[i + 1] = 'U';
+                    i++;
+                }
+            }
+            
+        }
+        console.log("done getting letters");
+    }
+    console.log("checking for vowel");
+    if(!letterArray.includes('A') &&
+           !letterArray.includes('E') && 
+           !letterArray.includes('I') && 
+           !letterArray.includes('O') && 
+           !letterArray.includes('U')) {
+            
+            const vowels = 'AEIOU';
+            letterArray[0] = vowels[Math.floor(Math.random() * vowels.length)];
+           }
+    requiredLetter = letterArray[0];
+    editor = "Randomly Generated Puzzle";
+    findPossibleWords();
 }
 
 function getDate() {
@@ -246,37 +299,157 @@ function shuffle() {
     }
 }
 
+
+
 //Takes dictionary file and prunes it to smaller dictionary with 
 //onlywords possible with the letter combination
-var req = new XMLHttpRequest();
-req.onload = function(){
+
+function findPossibleWords() {
+    var req = new XMLHttpRequest();
+    req.onload = function(){
     var letters = letterArray;
-    console.log("I've loaded!");
-    console.log(this.responseText);
-    console.log(typeof this.responseText);
-    var lines = this.responseText.split('\n');
-    console.log(lines);
-        for(var line = 0; line < lines.length; line++){
-            var temp = lines[line].toUpperCase();
-            for(var letterCount = 0; letterCount < temp.length; letterCount++) {
-                if(temp.charAt(letterCount) != letters[0] &&
-                   temp.charAt(letterCount) != letters[1] &&
-                   temp.charAt(letterCount) != letters[2] &&
-                   temp.charAt(letterCount) != letters[3] &&
-                   temp.charAt(letterCount) != letters[4] &&
-                   temp.charAt(letterCount) != letters[5] &&
-                   temp.charAt(letterCount) != letters[6]
-                  ) {
-                    letterCount = 99;
-                } else if (letterCount == temp.length - 2) {
-                    possibleWords.push(temp.slice(0, temp.length - 1));
+    possibleWords = [];
+    var tempPoints = 0;
+        
+        var lines = this.responseText.split('\n');
+            for(var line = 0; line < lines.length; line++){
+                var temp = lines[line].toUpperCase();
+                for(var letterCount = 0; letterCount < temp.length; letterCount++) {
+                    if(temp.charAt(letterCount) != letters[0] &&
+                    temp.charAt(letterCount) != letters[1] &&
+                    temp.charAt(letterCount) != letters[2] &&
+                    temp.charAt(letterCount) != letters[3] &&
+                    temp.charAt(letterCount) != letters[4] &&
+                    temp.charAt(letterCount) != letters[5] &&
+                    temp.charAt(letterCount) != letters[6]
+                    ) {
+                        letterCount = 99;
+                    } else if (letterCount == temp.length - 2 && temp.includes(requiredLetter)) {
+                        possibleWords.push(temp.slice(0, temp.length - 1));
+    
+                        if (temp.length == 4) {
+                            tempPoints += 1;
+                        } else if (letterArray.every(letter => temp.includes(letter))){
+                            tempPoints += temp.length + 7;
+                        } else if (temp.length > 4) {
+                            tempPoints += temp.length; 
+                        }
+                    }
+                
                 }
             }
+        console.log(possibleWords);
+        console.log("required letterrrrr" + requiredLetter);    
+        scoringGuidelines = `Possible points: ${tempPoints}`;
+        
+        if(possibleWords.length > 50) {
+            init();
+        } else {
+            randomLetters();
+            console.log("notenoughwords")
         }
-    console.log(possibleWords);
+
 };
 req.open('GET', './newdict.txt');
 req.send();
+
+
+}
+
+
+function scrape() {
+    nyt = true;
+    console.log(nytwords);
+    foundWords = nytwords.slice();
+    foundWordsString = "";
+    points = nytpoints;
+    pointCounter.innerHTML = points;
+    
+    for(var i = 0; i < foundWords.length; i++){
+        if(i == 0) {
+            foundWordsString += foundWords[i];
+        } else {
+            foundWordsString += ", " + foundWords[i];
+        }
+        
+    }
+    
+    
+    wordBank.innerHTML = foundWordsString;
+    
+    var getLetters = new XMLHttpRequest();
+    getLetters.onreadystatechange = function() {
+    if(getLetters.readyState == 4) {
+        if(getLetters.status == 200){
+            console.log("loaded");
+            
+            
+            var result = getLetters.responseText;
+            console.log(result);
+
+            
+            result = result.split("gameData")[1];
+            result = result.split("today\":")[1];
+            result = result.split("yesterday")[0];
+            result = result.slice(0, -2);
+            var newResult = JSON.parse(result);
+            console.log(newResult);
+            
+        
+            
+            stringOfLetters = "";
+            letterArray = [];
+
+            stringOfLetters += newResult.centerLetter.toUpperCase();
+            for(var i = 0; i < newResult.outerLetters.length; i++){
+                stringOfLetters += newResult.outerLetters[i].toUpperCase();
+            }
+            //console.log(stringOfLetters);
+            letterArray = stringOfLetters.split("");
+            //console.log(letterArray);
+            requiredLetter = letterArray[0]
+            editor = "Edited by " + newResult.editor;
+            possibleWords = "";
+            possibleWords = newResult.answers;
+            for(var i = 0; i < possibleWords.length; i++){
+                possibleWords[i] = possibleWords[i].toUpperCase();
+            }
+            console.log(possibleWords);
+            
+            var tempPoints = 0;
+            possibleWords.forEach(word => {
+                if (word.length == 4) {
+                    tempPoints += 1;
+                } else if (letterArray.every(letter => word.includes(letter))){
+                    tempPoints += word.length + 7;
+                } else if (word.length > 4) {
+                    tempPoints += word.length; 
+                }
+            });
+            
+
+            scoringGuidelines = `Possible points : ${tempPoints}`;
+            
+            init();
+            
+        } else {
+            alert(`Your browser needs an extension that allows CORS to access NYT letters
+For CHROME and FIREFOX, install the "Allow CORS: Access-Cross-Allow-Origin" extension from Muyor for free 
+
+The reason this extension is required is to bypass the New York Times website's security which doesn't allow data transfer (in this case the letters) to an unrecognized domain. However, extensions are not subject to the same restrictions, so this extension is required to bypass the security of the website and access the letters
+`);
+        }
+        
+    } 
+};
+
+getLetters.open('GET', 'https://www.nytimes.com/puzzles/spelling-bee', 'false');
+getLetters.send();
+    
+}
+
+
+
 
 
 /*async function getLetters(url) {
