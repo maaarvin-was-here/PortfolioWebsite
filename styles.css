@@ -3,6 +3,36 @@ button {
     outline: none;
 }
 
+#nytbutton {
+    margin-right: 10px;
+    right: 0;
+    top: 1vh;
+    margin-top: 0;
+    position: fixed;
+    width: 15vw;
+    height: 5vh;
+    font-family: trebuchet ms;
+    border-radius: 20px;
+}
+
+#nytbutton:hover {
+    transform: scale(1.05);
+}
+#randombutton:hover {
+    transform: scale(1.05);
+}
+
+#randombutton {
+    margin-right: 10px;
+    right: 0;
+    top: 5vh;
+    margin-top: 2vh;
+    position: fixed;
+    width: 15vw;
+    height: 5vh;
+    font-family: trebuchet ms;
+    border-radius: 20px;
+}
 .square {
     border: 1px solid black;
     height: 80px;
