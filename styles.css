@@ -83,6 +83,9 @@ body {
     font-size: 32px;
     margin: 0;
     display: block;
+    overflow: hidden;
+    width: 100vw;
+    height: 40px;
 }
 
 #titleGradient {
@@ -142,7 +145,7 @@ body {
 }
 
 #aboutMeTitle {
-
+    margin-bottom: 5vh;
 }
 
 
@@ -170,6 +173,7 @@ body {
     width: 40vw;
     display: flex;
     align-items: center;
+    font-family: "trebuchet ms";
 }
 
 #pictureBox {
@@ -195,8 +199,10 @@ body {
     color: white;
     
     text-decoration: none;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
+    
+    font-family: "verdana"
     
 }
 
@@ -237,11 +243,109 @@ body {
 }
 
 #projectTitle {
-    height: 20%;
+    margin-bottom: 7vh;
 }
 
 
-#projectContent {
-    margin: 10%;
-    background-color: #191819;
+#projectsTable {
+    width: 60vw;
+    margin: auto;
+}
+
+.projectTextDiv {
+    width: 60%;
+}
+
+.projectsCell {
+    height: 20vh;
+    width: 100%;
+    vertical-align: top;
+    color: white;
+    font-family: verdana;
+    user-select: none;
+}
+
+.projectName {
+    font-size: 25px;
+    margin-left: 7%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.projectDescription {
+    margin-left: 7%;
+}
+
+.projectLanguage {
+    margin-left: 7%;
+    color: deeppink;
+    font-weight: bold;
+}
+
+.projectTextDiv {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    top: 0;
+}
+
+
+.projectLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.projectImage {
+    width: 33%;
+    height: 102%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: -1px;
+    margin-top: -1px;
+    top: 0;
+    background-image: url("beelogo9.jpg");
+    background-color: white;
+    background-position: left center;
+    float: right;
+    display: inline-block;
+}
+
+
+
+.trapezoidBlob {
+    width: 0;
+    height: 0;
+    border-right: 20vh solid transparent;
+    border-top: 21vh solid #191819;
+}
+
+
+#cellOne {
+    border: 4px solid #552A80;
+}
+
+#cellOne:hover #nytdescription{
+    opacity: 1;
+    transition: 1s linear;
+}
+#cellOne:hover #nytlanguage{
+    opacity: 1;
+    transition: 1s linear;
+    transition-delay: 0.25s;
+
+}
+
+
+#nyttitle {
+
+}
+
+#nytdescription {
+    opacity: 0;
+}
+#nytlanguage {
+    opacity: 0;
+
 }
