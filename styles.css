@@ -266,20 +266,22 @@ body {
 }
 
 .projectName {
-    font-size: 25px;
-    margin-left: 7%;
-    margin-top: 4%;
-    margin-bottom: 2%;
+    font-size: 2.7vh;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
 }
 
 .projectDescription {
-    margin-left: 7%;
+    margin-left: 3vw;
+    font-size: 1.9vh;
 }
 
 .projectLanguage {
-    margin-left: 7%;
+    margin-left: 3vw;
     color: deeppink;
     font-weight: bold;
+    font-size: 1.9vh;
 }
 
 .projectTextDiv {
@@ -299,11 +301,11 @@ body {
 
 .projectImage {
     width: 33%;
-    height: 102%;
+    height: 103.2%;
     margin: 0;
     margin-left: auto;
     margin-right: -1px;
-    margin-top: -1px;
+    margin-top: -2px;
     top: 0;
     background-image: url("beelogo9.jpg");
     background-color: white;
@@ -318,7 +320,7 @@ body {
     width: 0;
     height: 0;
     border-right: 20vh solid transparent;
-    border-top: 21vh solid #191819;
+    border-top: 20vh solid #191819;
 }
 
 
