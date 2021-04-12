@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,11 +17,15 @@ body {
 #landingPage {
     width: 100vw;
     height: 95vh;   
-    
-    display: inline-block;
-    position: fixed;
-    
     background-color: #181818;
+}
+
+#hamburger {
+    height: 100px;
+    width: 100px;
+    top: 0;
+    right: 0;
+    position: fixed;
 }
 
 #mainTitle {
@@ -38,37 +43,52 @@ body {
     text-align: left;
     padding-left: 20%;
     padding-top: 8%;
+    user-select: none;
+
 }
 
 #titleLineOne {
-    color: #552A80;
+    color: #bcaade;
     
-    font-size: 64px;
+    font-size: 4.166666666666667vw;
     margin-bottom: 20px;
     word-spacing: 0.1em;
+    
+    font-family: trebuchet ms;
 }
 
 #titleLineTwo {
-    height: 140px;
+    height: 9.114583333333334vw;
     letter-spacing: 0.2em;
     word-spacing: -0.5em;
+    font-family: trebuchet ms;
 }
 
 #titleName {
     display: inline-block;
-    font-size: 90px;
+    font-size: 5.859375vw;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#titleChangingPrefix {
+    align-items: left;
+    text-align: left;
+    display: inline-block;
+    font-size: 5.859375vw;
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 #titleChangingDescriptor {
-    color: #552A80;
+    color: #bcaade;
     
     align-items: left;
     text-align: left;
     display: inline-block;
-    font-size: 120px;
+    font-size: 7.8125vw;
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -80,12 +100,14 @@ body {
     
     padding-left: 20%;
     word-spacing: 0.2em;
-    font-size: 32px;
+    font-size:  2.083vw;
     margin: 0;
     display: block;
     overflow: hidden;
     width: 100vw;
     height: 40px;
+    user-select: none;
+    font-family: trebuchet ms;
 }
 
 #titleGradient {
@@ -99,127 +121,51 @@ body {
     color: white;
     
     margin: 0;
-    position: absolute;
     right: 10vw;
     bottom: 2vh;
     
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    user-select: none;
+
 }
-
-#invisibleDivision {
-    height: 5vh;
-    position: relative;
-}
-
-
 
 
 #actualContent {
     position: relative;
     display: inline-block;
-    top: 90vh;
+
 }
 
+
 .titlePhrase {
-    padding-left: 20%;
     padding-top: 7%;
     margin: 0;
     color: white;
-    
-    font-size: 64px;
-}
-
-#aboutMe {
-    position: relative;
-    height: 95vh;
-    width: 100vw;
-    background-color: #552A80;
-}
-
-#aboutmeNavLink {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-#aboutMeTitle {
-    margin-bottom: 5vh;
-}
-
-
-
-
-#aboutmeContent {
-    height: 50vh;
-    position: relative;
-}
-
-
-#aboutmeParagraphs {
-    width: 40vw;
-    height: 45vh;
-    margin-left: 20%;
-    display: inline-block;
-    position: relative;
-}
-
-.aboutmeText {
-    color: white;
-    font-size: 24px;
-    height: 11.25vh;
-    margin: 0;
-    width: 40vw;
-    display: flex;
-    align-items: center;
-    font-family: "trebuchet ms";
-}
-
-#pictureBox {
-    display: inline-block;
-    background-color: yellow;
-    width: 15vw;
-    height: 40vh;
-    vertical-align: top;
-    margin-top: 1vh;
-    margin-left: 4vh;
-}
-
-#picture {
-
-}
-
-#resumeLinkDiv {
     text-align: center;
-    margin: 0;
+    font-size: 64px;
+    user-select: none;
+    color: #bcaade
+
 }
 
-#resumeLink {
-    color: white;
-    
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    
-    font-family: "verdana"
-    
+#invisibleDivision{
+    background-color: #181818;
+    height: 50px;
 }
 
-#resumeLink:hover {
-    color: deeppink;
+#blacktitle {
+    color: #181818;
 }
-
-
-
 
 
 
 #projects {
     width: 100vw;
-    height: 100vh;
     position: relative;
-    background-color: #191819;
+    background-color: #181818;
+    display: inline-block;
 }
 
 #projectsNavLink {
@@ -243,13 +189,16 @@ body {
 }
 
 #projectTitle {
-    margin-bottom: 7vh;
+    margin-bottom: 1vh;
+    font-family: trebuchet ms;
 }
 
 
 #projectsTable {
     width: 60vw;
     margin: auto;
+    border-collapse: separate;
+    border-spacing:0 10vh;
 }
 
 .projectTextDiv {
@@ -264,6 +213,7 @@ body {
     font-family: verdana;
     user-select: none;
 }
+
 
 .projectName {
     font-size: 2.7vh;
@@ -299,7 +249,7 @@ body {
     color: white;
 }
 
-.projectImage {
+#beeimage {
     width: 33%;
     height: 103.5%;
     margin: 0;
@@ -329,6 +279,10 @@ body {
     border: 4px solid #552A80;
 }
 
+#cellTwo {
+    border: 4px solid #bcaade;
+}
+
 #cellOne:hover #nytdescription{
     opacity: 1;
     transition: 1s linear;
@@ -347,8 +301,51 @@ body {
 
 #nytdescription {
     opacity: 0;
+    transition: 0.5s linear;
+    
 }
+
 #nytlanguage {
     opacity: 0;
+    transition: 0.5s linear;
+}
+
+#photoinfo{
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+#photodescription {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+#cellTwo:hover #photodescription{
+    opacity: 1;
+    transition: 1s linear;
+}
+
+#cellTwo:hover #photoinfo{
+    opacity: 1;
+    transition: 1s linear;
+    transition-delay: 0.25s;
 
 }
+
+#photocoverimage{
+    width: 33%;
+    height: 101%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: -1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    top: 0;
+    background-image: url("sakuracover6.jpg");
+    background-color: white;
+    background-position: left center;
+    float: right;
+    display: inline-block;
+}
+
+
