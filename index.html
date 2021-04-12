@@ -10,14 +10,19 @@
 <body>
     
     <section id="landingPage">
+        
         <div id="mainTitle">
+            <div id="hamburger">
+                <img href="hamburger.png">
+            </div>
             <div id ="titlePhrase">
                 <div>
                     <h1 id="titleLineOne">Hi, I'm Marvin Lin</h1>
                 </div>
                 <div id="titleLineTwo">
                     <h1 id="titleName">I&nbsp; am&nbsp;&nbsp;</h1>
-                    <h1 id ="titleChangingDescriptor">Cool</h1>
+                    <h1 id="titleChangingPrefix">an&nbsp;&nbsp;</h1>
+                    <h1 id ="titleChangingDescriptor">Engineer</h1>
                 </div>
             </div>        
         </div>
@@ -25,56 +30,26 @@
             <h1 id="titleExtra">I also enjoy graphic design and writing</h1>
         </section>
     </section>
-    
+        
     <section id="actualContent">
         <div id="invisibleDivision">
-            <a class="arrowNextSection" href="#aboutMe">About Me</a>
-        </div>
-        
-        <div id="aboutMe">
-            <div id="aboutMeTitle">
-                <h1 class="titlePhrase">About Me</h1>
-            </div>
-            <div class="sectionBody">
-                <div id="aboutmeContent">
-                    <div id="aboutmeParagraphs">
-                        <div>
-                            <p class="aboutmeText">Engineering and computer science/informatics student at the University of Washington in Seattle</p>
-                            <p class="aboutmeText">Experienced with CAD design, programming, and modelling software</p>
-                            <p class="aboutmeText">Enthusiast of full-stack web development, digital art, creative writing</p>
-                            <p class="aboutmeText">Enjoys chess, reading, and food during free time</p>
-                        </div>
-                    </div>
-                    <div id="pictureBox">
-                        <div id="picture">
-                            photo here
-                        </div>
-                    </div>
-                </div>
-                <div id="resumeLinkDiv">
-                    <a id="resumeLink" href="resume.html" target="_self">See my full resume</a>
-                </div>
-            </div>
-            <div id="aboutmeNavLink">
-                <a class="arrowNextSection" href="#projects">Projects</a>
-            </div>
         </div>
         
         <div id="projects">
             <div id="projectTitle">
-                <h1 class="titlePhrase">Projects</h1>
+                <h1 class="titlePhrase">What I've Done</h1>
             </div>
             <div class="sectionBody">
                 <table id="projectsTable">
-                    <tr>
+                    <tr class="projectRow">
                         <td class="projectsCell" id="cellOne">
                             <a class="projectLink" href="https://spellingbee.marvin-lin.ml" target="_blank">
                                 <div class="projectTextDiv">
-                                    <p class="projectName" id="nyttitle">Spelling Bee Word Game</p>
+                                    <p class="projectName" id="nyttitle">New York Times Spelling Bee</p>
                                     <p class="projectDescription" id="nytdescription">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription. </p>
                                     <p class="projectLanguage" id="nytlanguage">HTML, CSS, Javascript</p>
                                 </div>
-                                <div class="projectImage">
+                                <div class="projectImage" id="beeimage">
                                     <div class="trapezoidBlob">
                                     </div>
                                 </div>
@@ -82,6 +57,21 @@
                         </td>
                     </tr>
                 
+                    <tr>
+                        <td class="projectsCell" id="cellTwo">
+                            <a class="projectLink" href="photography.html" target="_blank">
+                                <div class="projectTextDiv">
+                                    <p class="projectName" id="phototitle">Photography</p>
+                                    <p class="projectDescription" id="photodescription">I like taking photos</p>
+                                    <p class="projectLanguage" id="photoinfo">Adobe Illustrator and/or Adobe Lightroom</p>
+                                </div>
+                                <div class="projectImage" id="photocoverimage">
+                                    <div class="trapezoidBlob">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
                 
                 </table>
             </div>
@@ -90,7 +80,8 @@
     </section>
     
     <section>
-        Footer
+        <div id="invisibleDivision">
+        </div>
     </section>
     <script rel="type/javascript" src="app.js"></script>
 </body>
