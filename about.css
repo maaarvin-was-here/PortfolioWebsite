@@ -37,7 +37,7 @@ body {
 #intro-content{
     color: white;
     padding-left: 20%;
-    padding-top: 5vh;
+    padding-top: 1vh;
     font-size: 3vh;
     width: 40vw;
     font-family: trebuchet ms;
@@ -62,7 +62,9 @@ body {
     padding-bottom: 5vh
 }
 
-
+#introparagraph{
+    line-height: 150%
+}
 
 
 
