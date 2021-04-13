@@ -20,6 +20,9 @@ body {
 #page{
     width: 100vw;
     height: 200vh;
+
+    z-index: 5;
+
 }
 
 #pagetitle{
@@ -44,6 +47,7 @@ body {
     text-align: justify;
     
     user-select: text;
+    z-index: 4;
 }
 
 
@@ -63,7 +67,8 @@ body {
 }
 
 #introparagraph{
-    line-height: 150%
+    line-height: 150%;
+    user-select: text;
 }
 
 
