@@ -3,6 +3,57 @@ html {
     scroll-behavior: smooth;
 }
 
+#menu {
+    width: 100vw;
+    height: 200vh;
+    position: fixed;
+    background-color: #181818;
+    opacity: 0;
+    z-index = -1;
+}
+
+#menuportfolio{
+    /*text-decoration: underline;*/
+    border-bottom: 0.5263157894736842vh solid white;
+}
+
+#menuportfolio:hover{
+    color: deeppink;
+    border-bottom: 0.5263157894736842vh solid deeppink;
+}
+
+#menuabout{
+    color: white;
+    text-decoration: none;
+}
+
+#menuabout:hover{
+    color: deeppink;
+    
+}
+
+#menuoptions {
+    color: white;
+    top: 0;
+    right: 0;
+    padding-top: 6.4473684210526314vh;
+    padding-right: 1.3vw;
+    text-align: right;
+    font-family: trebuchet ms;
+    font-weight: bold;
+    font-size: 2.5vh;
+    
+    position: fixed;
+
+    
+    user-select: none;
+ 
+}
+
+#dim-target {
+    background-color: #181818;
+}
+
 #top {
     position: relative;
     top: 0vh;
@@ -21,12 +72,34 @@ body {
 }
 
 #hamburger {
-    height: 100px;
-    width: 100px;
+    height: 3.9473684210526314vh;
+    width: 2.2786458333333335vw;
     top: 0;
     right: 0;
-    position: fixed;
+    padding-top: 2vh;
+    padding-right: 1.3vw;
+    position: absolute;
+    filter: invert(0.8);
+    display: inline;
+  
 }
+
+#hamburger:hover {
+    transform: scale(1.15);
+}
+
+#hamburgerwrapper{
+    height: 3.9473684210526314vh;
+    width: 2.2786458333333335vw;
+    position: fixed;
+    top:0;
+    right:0;
+    padding-top:2vh;
+    padding-right:1.3vw;
+    z-index: 10;
+    background-color: #181818;
+}
+
 
 #mainTitle {
     color: white;
