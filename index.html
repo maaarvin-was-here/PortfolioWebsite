@@ -8,80 +8,88 @@
 </head>
 
 <body>
-    
-    <section id="landingPage">
-        
-        <div id="mainTitle">
-            <div id="hamburger">
-                <img href="hamburger.png">
-            </div>
-            <div id ="titlePhrase">
-                <div>
-                    <h1 id="titleLineOne">Hi, I'm Marvin Lin</h1>
-                </div>
-                <div id="titleLineTwo">
-                    <h1 id="titleName">I&nbsp; am&nbsp;&nbsp;</h1>
-                    <h1 id="titleChangingPrefix">an&nbsp;&nbsp;</h1>
-                    <h1 id ="titleChangingDescriptor">Engineer</h1>
-                </div>
-            </div>        
-        </div>
-        <section id="titleGradient">
-            <h1 id="titleExtra">I also enjoy graphic design and writing</h1>
+    <section id="menu">
+        <section id="menuoptions">
+            <p id="menuportfolio">Portfolio</p>
+            <a  id="menuabout" href="about.html">About</a>
         </section>
     </section>
-        
-    <section id="actualContent">
-        <div id="invisibleDivision">
-        </div>
-        
-        <div id="projects">
-            <div id="projectTitle">
-                <h1 class="titlePhrase">What I've Done</h1>
-            </div>
-            <div class="sectionBody">
-                <table id="projectsTable">
-                    <tr class="projectRow">
-                        <td class="projectsCell" id="cellOne">
-                            <a class="projectLink" href="https://spellingbee.marvin-lin.ml" target="_blank">
-                                <div class="projectTextDiv">
-                                    <p class="projectName" id="nyttitle">New York Times Spelling Bee</p>
-                                    <p class="projectDescription" id="nytdescription">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription. </p>
-                                    <p class="projectLanguage" id="nytlanguage">HTML, CSS, Javascript</p>
-                                </div>
-                                <div class="projectImage" id="beeimage">
-                                    <div class="trapezoidBlob">
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                    </tr>
-                
-                    <tr>
-                        <td class="projectsCell" id="cellTwo">
-                            <a class="projectLink" href="photography.html" target="_blank">
-                                <div class="projectTextDiv">
-                                    <p class="projectName" id="phototitle">Photography</p>
-                                    <p class="projectDescription" id="photodescription">I like taking photos</p>
-                                    <p class="projectLanguage" id="photoinfo">Adobe Illustrator and/or Adobe Lightroom</p>
-                                </div>
-                                <div class="projectImage" id="photocoverimage">
-                                    <div class="trapezoidBlob">
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                    </tr>
-                
-                </table>
-            </div>
-            
-        </div>
-    </section>
     
-    <section>
-        <div id="invisibleDivision">
-        </div>
+    <section id="dim-target">
+        <section id="landingPage">
+            <a id="hamburgerwrapper" onclick="showMenu()">
+                <img id="hamburger" src="hamburger.png"/>
+            </a>
+            <div id="mainTitle">
+
+                <div id ="titlePhrase">
+                    <div>
+                        <h1 id="titleLineOne">Hi, I'm Marvin Lin</h1>
+                    </div>
+                    <div id="titleLineTwo">
+                        <h1 id="titleName">I&nbsp; am&nbsp;&nbsp;</h1>
+                        <h1 id="titleChangingPrefix">an&nbsp;&nbsp;</h1>
+                        <h1 id ="titleChangingDescriptor">Engineer</h1>
+                    </div>
+                </div>        
+            </div>
+            <section id="titleGradient">
+                <h1 id="titleExtra">I also enjoy graphic design and writing</h1>
+            </section>
+        </section>
+
+        <section id="actualContent">
+            <div id="invisibleDivision">
+            </div>
+
+            <div id="projects">
+                <div id="projectTitle">
+                    <h1 class="titlePhrase">What I've Done</h1>
+                </div>
+                <div class="sectionBody">
+                    <table id="projectsTable">
+                        <tr class="projectRow">
+                            <td class="projectsCell" id="cellOne">
+                                <a class="projectLink" href="https://spellingbee.marvin-lin.ml" target="_blank">
+                                    <div class="projectTextDiv">
+                                        <p class="projectName" id="nyttitle">New York Times Spelling Bee</p>
+                                        <p class="projectDescription" id="nytdescription">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription. </p>
+                                        <p class="projectLanguage" id="nytlanguage">HTML, CSS, Javascript</p>
+                                    </div>
+                                    <div class="projectImage" id="beeimage">
+                                        <div class="trapezoidBlob">
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="projectsCell" id="cellTwo">
+                                <a class="projectLink" href="photography.html" target="_blank">
+                                    <div class="projectTextDiv">
+                                        <p class="projectName" id="phototitle">Photography</p>
+                                        <p class="projectDescription" id="photodescription">I like taking photos</p>
+                                        <p class="projectLanguage" id="photoinfo">Adobe Illustrator and/or Adobe Lightroom</p>
+                                    </div>
+                                    <div class="projectImage" id="photocoverimage">
+                                        <div class="trapezoidBlob">
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div id="invisibleDivision">
+            </div>
+        </section>
     </section>
     <script rel="type/javascript" src="app.js"></script>
 </body>
