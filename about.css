@@ -4,7 +4,7 @@
 }
 
 ::selection{
-    color: skyblue;
+    color: #b666d2;
 }
 
 body {
@@ -58,6 +58,7 @@ body {
 #myname{
     font-size: 5vh;
     margin-top: 0;
+    font-weight: bold;
 }
 
 
@@ -72,14 +73,103 @@ body {
 }
 
 
+#experiencecontent{
+    color: white;
+    padding-left: 15%;
+    padding-top: 12%;
+    font-size: 3vh;
+    font-family: trebuchet ms;
+    
+    user-select: text;
+}
 
+#experiencetitle{
+    font-size: 4vh;
+    text-decoration: underline;
+    font-weight: bold;
+}
 
+#experiencenontitle{
+    padding-top: 3%;
+}
 
+.experienceline{
+    margin-bottom: 4vh;
+}
 
+#contactshell{
+    height: auto;
+}
 
+#contacttitle{
+    color: white;
+    padding-left: 15%;
+    padding-top: 11%;
+    font-family: trebuchet ms;
+    font-size: 4vh;
+    font-weight: bold;
+    display: block;
+    width: 10vw;
+    float: left;
+    margin-top: 0;
+}
 
+#contacttable{
+    float:left;
+    padding-top: 10%;
+    width: 70vw;
+    
+    
 
+    color: white;
+}
 
+.contactcell{
+    text-align: center;
+    width: 33.33333vw;
+}
+
+#emaillogo{
+    width: 70px;
+    filter: grayscale() invert(100);
+}
+
+#emaillogo:hover{
+    transform:scale(1.1);
+}
+
+#linkedinlogo{
+    width: 85px;
+}
+
+#linkedinlogo:hover{
+    transform:scale(1.1);
+}
+
+#githublogo{
+    width: 60px;
+    filter:invert(70)
+}
+
+#githublogo:hover{
+    transform:scale(1.1);
+}
+
+#copyright{
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: trebuchet ms;
+    position: absolute;
+    width: 100vw;
+    bottom: 1vh;
+}
+
+#invisibleDivision{
+    background-color: #181818;
+    height: 50px;
+    position: relative;
+}
 
 #menu {
     width: 100vw;
@@ -156,6 +246,4 @@ body {
     z-index: 10;
     background-color: #181818;
 }
-
-
 
