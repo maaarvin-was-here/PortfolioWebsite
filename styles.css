@@ -3,6 +3,16 @@ html {
     scroll-behavior: smooth;
 }
 
+#copyright{
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: trebuchet ms;
+    position: absolute;
+    width: 100vw;
+    bottom: 1vh;
+}
+
 #menu {
     width: 100vw;
     height: 200vh;
@@ -63,6 +73,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
+
 }
 
 #landingPage {
@@ -226,6 +237,7 @@ body {
 #invisibleDivision{
     background-color: #181818;
     height: 50px;
+    position: relative;
 }
 
 #blacktitle {
@@ -421,4 +433,17 @@ body {
     display: inline-block;
 }
 
-
+#dim-target{
+        
+    animation: fadeInAnimation ease 3s
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
