@@ -13,7 +13,7 @@ body {
 
 #pageTitle{
     font-family: verdana;
-    font-size: 3.125vw; /*convert*/
+    font-size: 3.125vw;
     
     text-align: left;
     margin-top: 10vh;
@@ -32,9 +32,10 @@ body {
 #duckHeader{
     width: 60vw;
     margin-left: 20vw;
-    height: 9.895833333333334vw;
+    height: 5vw;
+    font-size: 40px;
     
-    background-color: lightyellow;
+    color: goldenrod;
 
     user-select: none;
 }
@@ -54,9 +55,11 @@ body {
 #notDuckHeader{
     width: 60vw;
     margin-left: 20vw;
-    height: 9.895833333333334vw;
+    height: 5vw;
+    font-size: 40px;
     
-    background-color: lightblue;
+    color: deepskyblue;
+    
     user-select: none;
 }
 
