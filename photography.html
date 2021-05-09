@@ -1,90 +1,57 @@
-#top {
-    position: relative;
-    top: 0vh;
-}
+<!doctype html>
 
-body {
-    margin: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 100vh;
-    background-color: whitesmoke;
-}
+<html lang="en">
 
-#pageTitle{
-    font-family: verdana;
-    font-size: 3.125vw; /*convert*/
+<head>
+   <meta charset="UTF-8">
+    <title>Photography</title>
+    <link rel="stylesheet" href="photography.css">  
+</head>
+
+<body>
+    <section>
+        <h1 id="pageTitle">
+            Photography
+        </h1>
+    </section>
+    <section>
+        <section id="duckSection">
+            <section id="duckHeader">
+                <h1>Ducks</h1>
+            </section> 
+
+            <section id="duckPhotoWrapper">
+                <img class="mediumphotoleft" src="duck1 (4.15.21).jpg"/>
+
+                <img class="mediumphotoright" src="duck2 (4.15.21%209810).jpg"/>
+            </section>
+        </section>
+        
+        <section id="notDuckSection">
+            <section id="notDuckHeader">
+                <h1>Not Ducks</h1>
+            </section>
+            <section id="notduckPhotoWrapper">
+
+                <img class="mediumphotoleft" src="4.8.21 (9605).jpg">
+
+                <img class="mediumphotoright" src="4.15.21 (9710).jpg">
+
+                <img class="mediumphotoleft" src="4.8.21 (9658).jpg">
+
+                <img class="mediumphotoright" src="4.15.21 (9759).jpg">
+
+                <img class="mediumphotoleft" src="4.26.21 (9920).jpg">
+            </section>
+        </section>
+    </section>
+    <section id="bottomPadding">
     
-    text-align: left;
-    margin-top: 10vh;
-    margin-left: 25vw;
-    margin-bottom: 8vh;
+    </section>
     
-    user-select: none;
-}
+    <script rel="type/javascript" src="photography.js"></script>
+</body>
 
 
-#duckSection{
-    min-height: 100vh;
-    display: block;
-}
 
-#duckHeader{
-    width: 60vw;
-    margin-left: 20vw;
-    height: 9.895833333333334vw;
-    
-    background-color: lightyellow;
-
-    user-select: none;
-}
-
-#duckPhotoWrapper{
-    margin-top: 1vh;
-    width: 60vw;
-    margin-left: 20vw;
-    min-height: 49.479166666666664vw;
-    margin-bottom: 5vw;
-}
-
-#notDuckSection{
-    display: block;
-}
-
-#notDuckHeader{
-    width: 60vw;
-    margin-left: 20vw;
-    height: 9.895833333333334vw;
-    
-    background-color: lightblue;
-    user-select: none;
-}
-
-#notduckPhotoWrapper{
-    width: 60vw;
-    margin-top: 3vh;
-    margin-left: 20vw;
-}
-
-
-.mediumphotoleft{
-    display: block;
-    width: 36.458333333333336vw;
-    height: width * (2/3);
-    margin-bottom: 3vh;
-}
-
-.mediumphotoright{
-    float: right;
-    display: block;
-    width: 36.458333333333336vw;
-    height: 24.305338541666668vw;
-    margin-bottom: 3vh;
-}
-
-#bottomPadding{
-    width: 100vw;
-    height: 10vh;
-}
-
-
+</html>
