@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+#body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#bluebackground {
+    width: 99.99vw;
+    height: 944.4px;
+    background-color: #26466d;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#greybox {
+    background-color: #e1e1e1;
+    width: 909.696px;
+    height: 702px;
+    
+    margin-right: auto;
+    margin-left: 26.13vw;
+    
+    
+    border-bottom: 5px solid #5faffe;
+    border-right: 5px solid #5faffe;
+    border-left: 5px solid #5faffe;
+    
+    display: inline-block
+}
+
+#titlebox {
+    height: 21.1%;
+    
+    border-bottom: 1px solid black;
+    
+    display: flex;
+}
+
+#lefttitle{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+#deltalogo{
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    
+    margin-left: 11px;
+    
+    margin-top: 42px;
+}
+
+#rightlinks{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+#linktable{
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 110px
+}
+
+.cell{
+    width: 95px;
+    height: 10px;
+    color: #666666;
+    text-align: center;
+    
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 13px;
+    font-weight: 600;
+    word-spacing: 0.5px;
+    
+    font-stretch: extra-condensed;
+}
+
+.filler{
+    width: 20px
+}
+
+#current {
+    color: #2a496f;
+    border-bottom: 3px solid #333333;
+}
+
+#phrasebox {
+    background-color: #cccccc;
+    height: 18.8%;
+        
+    border-bottom: 1px solid black;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+#expertanalysis{
+    margin: 0;
+    margin-top: 1px;
+    line-height: 100%;
+    
+    font-size: 32px;
+    font-family: trebuchet ms;
+}
+
+#paragraph {
+    background-color: #ffffff;
+    width: 680px;
+    height: 200px;
+    
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 125px;
+    
+    font-family: trebuchet ms;
+    font-size: 15px;
+    
+    line-height: 20px;
+}
+
+#paragraphtext {
+    padding-top: 11px;
+    margin-left: 9px;
+    word-spacing: 0.3px;
+    
+    color: #1b1b1b;
+}
+
+#contactlink {
+    text-decoration: none;
+    color: #26466d;
+}
+
+#contactlink:hover {
+    text-decoration: underline;
+}
+
+#copyrightclause{
+    color: #e1e1e1;
+    text-align: center;
+    
+    margin-top: 6.5px;
+    
+    font-family: trebuchet ms;
+    font-size: 15px
+}
