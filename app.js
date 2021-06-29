@@ -57,7 +57,7 @@ function greenUp(){
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
             greenUp();
-        }, 100);
+        }, 50);
     } else {
         redDown();
     }
@@ -72,7 +72,7 @@ function redDown(){
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
             redDown();
-        }, 100);
+        }, 50);
     } else {
         blueUp();
     }
@@ -87,7 +87,7 @@ function blueUp(){
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
             blueUp();
-        }, 100);
+        }, 50);
     } else {
         greenDown();
     }
@@ -102,7 +102,7 @@ function greenDown(){
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
             greenDown();
-        }, 100);
+        }, 50);
     } else {
         redUp();
     }
@@ -117,7 +117,7 @@ function redUp(){
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
             redUp();
-        }, 100);
+        }, 50);
     } else {
         blueDown();
     }
@@ -132,7 +132,7 @@ function blueDown(){
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
             blueDown();
-        }, 100);
+        }, 50);
     } else {
         greenUp();
     }
