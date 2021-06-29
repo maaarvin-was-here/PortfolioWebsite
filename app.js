@@ -1,8 +1,12 @@
 var titleAdjective = document.getElementById("titleChangingDescriptor");
 var titlePrefix = document.getElementById("titleChangingPrefix");
+var titleLineOne = document.getElementById("titleLineOne");
+var titlePhrase = document.getElementById("titlePhrasee");
+
 var dimTarget = document.getElementById("dim-target");
 var hamburger = document.getElementById("hamburger");
 var menu = document.getElementById("menu");
+
 
 var adjectives = [
     "Engineer",
@@ -36,9 +40,109 @@ function changeWord(x) {
     }
 }
 
+var red = 222;
+var green = 170;
+var blue = 170;
+
+var selectedColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+
+greenUp();
+
+function greenUp(){
+    if (green < 222){
+        setTimeout(() => {
+            green += 2;
+            selectedColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            titleAdjective.style.color = selectedColor;
+            titleLineOne.style.color = selectedColor;
+            titlePhrase.style.color = selectedColor;
+            greenUp();
+        }, 100);
+    } else {
+        redDown();
+    }
+}
+
+function redDown(){
+    if (red >170){
+        setTimeout(() => {
+            red -= 2;
+            selectedColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            titleAdjective.style.color = selectedColor;
+            titleLineOne.style.color = selectedColor;
+            titlePhrase.style.color = selectedColor;
+            redDown();
+        }, 100);
+    } else {
+        blueUp();
+    }
+}
+
+function blueUp(){
+    if (blue < 222){
+        setTimeout(() => {
+            blue += 2;
+            selectedColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            titleAdjective.style.color = selectedColor;
+            titleLineOne.style.color = selectedColor;
+            titlePhrase.style.color = selectedColor;
+            blueUp();
+        }, 100);
+    } else {
+        greenDown();
+    }
+}
+
+function greenDown(){
+    if (green >170){
+        setTimeout(() => {
+            green -= 2;
+            selectedColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            titleAdjective.style.color = selectedColor;
+            titleLineOne.style.color = selectedColor;
+            titlePhrase.style.color = selectedColor;
+            greenDown();
+        }, 100);
+    } else {
+        redUp();
+    }
+}
+
+function redUp(){
+    if (red < 222){
+        setTimeout(() => {
+            red += 2;
+            selectedColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            titleAdjective.style.color = selectedColor;
+            titleLineOne.style.color = selectedColor;
+            titlePhrase.style.color = selectedColor;
+            redUp();
+        }, 100);
+    } else {
+        blueDown();
+    }
+}
+
+function blueDown(){
+    if (blue >170){
+        setTimeout(() => {
+            blue -= 2;
+            selectedColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            titleAdjective.style.color = selectedColor;
+            titleLineOne.style.color = selectedColor;
+            titlePhrase.style.color = selectedColor;
+            blueDown();
+        }, 100);
+    } else {
+        greenUp();
+    }
+}
+
+
+
+
 
 /*var textBar = document.getElementById("titleExtra");
-
 window.onmousewheel = function () {
     if (textBar.style.width < 100) {
         textBar.style.width += 2;
