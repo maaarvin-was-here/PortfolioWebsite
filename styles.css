@@ -51,8 +51,8 @@ html {
 }
 
 #menuportfolio:hover{
-    color: deeppink;
-    border-bottom: 0.5263157894736842vh solid deeppink;
+    color: #c94dd8;
+    border-bottom: 0.5263157894736842vh solid #c94dd8;
 }
 
 #menuabout{
@@ -61,7 +61,7 @@ html {
 }
 
 #menuabout:hover{
-    color: deeppink;
+    color: #c94dd8;
     
 }
 
@@ -155,8 +155,8 @@ body {
 }
 
 #titleLineOne {
-    color: #bcaade;
-    
+    color: rgb(188, 170, 222);
+
     font-size: 4.166666666666667vw;
     margin-bottom: 20px;
     word-spacing: 0.1em;
@@ -190,7 +190,7 @@ body {
 }
 
 #titleChangingDescriptor {
-    color: #bcaade;
+    color: rgb(188, 170, 222);
     
     align-items: left;
     text-align: left;
