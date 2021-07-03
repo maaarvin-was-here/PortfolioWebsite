@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #181818;
+    width: 100vw;
+    height: 200vh;
+    
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#particles-js {
+    width: 100vw;
+    height: 100vh;
+    background-color: #181818;
+    /*#FBF8F3*/
+    user-select: none;
+    position: relative;
+}
+
+#entrytitle {
+    font-family: trebuchet ms;
+    margin-top: 40vh;
+    margin-bottom: auto;
+    color: #F8F8F3;
+    
+    width: 35vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    
+    position: absolute;
+}
+
+#dictionarytitle {
+    margin: 0;
+    font-family: trebuchet ms;
+    font-size: 32px;
+    
+}
+
+
+#dictionarydefinition {
+    font-size: 20px;
+    font-family: trebuchet ms;
+}
+
+#pagecontent{
+    margin-top: 10vh;
+}
+
+#status {
+    color: white;
+    text-align: center;
+    margin-top: 40vh
+}
