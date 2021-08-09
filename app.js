@@ -3,6 +3,10 @@ var titlePrefix = document.getElementById("titleChangingPrefix");
 var titleLineOne = document.getElementById("titleLineOne");
 var titlePhrase = document.getElementById("titlePhrasee");
 
+var cellOne = document.getElementById("cellOne");
+var cellTwo = document.getElementById("cellTwo");
+var cellThree = document.getElementById("cellThree");
+
 var dimTarget = document.getElementById("dim-target");
 var hamburger = document.getElementById("hamburger");
 var menu = document.getElementById("menu");
@@ -56,6 +60,9 @@ function greenUp(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
+            cellOne.style.borderColor = selectedColor;
+            cellTwo.style.borderColor = selectedColor;
+            cellThree.style.borderColor = selectedColor;
             greenUp();
         }, 50);
     } else {
@@ -71,6 +78,9 @@ function redDown(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
+            cellOne.style.borderColor = selectedColor;
+            cellTwo.style.borderColor = selectedColor;
+            cellThree.style.borderColor = selectedColor;
             redDown();
         }, 50);
     } else {
@@ -86,6 +96,9 @@ function blueUp(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
+            cellOne.style.borderColor = selectedColor;
+            cellTwo.style.borderColor = selectedColor;
+            cellThree.style.borderColor = selectedColor;
             blueUp();
         }, 50);
     } else {
@@ -101,6 +114,9 @@ function greenDown(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
+            cellOne.style.borderColor = selectedColor;
+            cellTwo.style.borderColor = selectedColor;
+            cellThree.style.borderColor = selectedColor;
             greenDown();
         }, 50);
     } else {
@@ -116,6 +132,9 @@ function redUp(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
+            cellOne.style.borderColor = selectedColor;
+            cellTwo.style.borderColor = selectedColor;
+            cellThree.style.borderColor = selectedColor;
             redUp();
         }, 50);
     } else {
@@ -131,6 +150,9 @@ function blueDown(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
+            cellOne.style.borderColor = selectedColor;
+            cellTwo.style.borderColor = selectedColor;
+            cellThree.style.borderColor = selectedColor;
             blueDown();
         }, 50);
     } else {
