@@ -19,22 +19,16 @@ html {
 }
 
 #logoimage {
-    height: 15vh;
-    width: 8vw;
+    height: 10vh;
+    width: 8/3vw;
     top: 0;
     left: 0;
     padding-top: 2vh;
     padding-left: 1.3vw;
     position: absolute;
-    filter: invert(1);
     display: inline;
   
 }
-
-#logo:hover {
-    transform: scale(1.15);
-}
-
 
 #menu {
     width: 100vw;
