@@ -35,6 +35,8 @@ body {
     right: 0;
     
     position: absolute;
+    
+    pointer-events: none;
 }
 
 #dictionarytitle {
