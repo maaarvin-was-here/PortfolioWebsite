@@ -6,6 +6,7 @@ var titlePhrase = document.getElementById("titlePhrasee");
 var cellOne = document.getElementById("cellOne");
 var cellTwo = document.getElementById("cellTwo");
 var cellThree = document.getElementById("cellThree");
+var cellFour = document.getElementById("cellFour");
 
 var dimTarget = document.getElementById("dim-target");
 var hamburger = document.getElementById("hamburger");
@@ -63,6 +64,7 @@ function greenUp(){
             cellOne.style.borderColor = selectedColor;
             cellTwo.style.borderColor = selectedColor;
             cellThree.style.borderColor = selectedColor;
+            cellFour.style.borderColor = selectedColor;
             greenUp();
         }, 50);
     } else {
@@ -81,6 +83,7 @@ function redDown(){
             cellOne.style.borderColor = selectedColor;
             cellTwo.style.borderColor = selectedColor;
             cellThree.style.borderColor = selectedColor;
+            cellFour.style.borderColor = selectedColor;
             redDown();
         }, 50);
     } else {
@@ -99,6 +102,7 @@ function blueUp(){
             cellOne.style.borderColor = selectedColor;
             cellTwo.style.borderColor = selectedColor;
             cellThree.style.borderColor = selectedColor;
+            cellFour.style.borderColor = selectedColor;
             blueUp();
         }, 50);
     } else {
@@ -117,6 +121,7 @@ function greenDown(){
             cellOne.style.borderColor = selectedColor;
             cellTwo.style.borderColor = selectedColor;
             cellThree.style.borderColor = selectedColor;
+            cellFour.style.borderColor = selectedColor;
             greenDown();
         }, 50);
     } else {
@@ -135,6 +140,7 @@ function redUp(){
             cellOne.style.borderColor = selectedColor;
             cellTwo.style.borderColor = selectedColor;
             cellThree.style.borderColor = selectedColor;
+            cellFour.style.borderColor = selectedColor;
             redUp();
         }, 50);
     } else {
@@ -153,6 +159,7 @@ function blueDown(){
             cellOne.style.borderColor = selectedColor;
             cellTwo.style.borderColor = selectedColor;
             cellThree.style.borderColor = selectedColor;
+            cellFour.style.borderColor = selectedColor;
             blueDown();
         }, 50);
     } else {
