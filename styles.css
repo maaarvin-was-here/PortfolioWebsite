@@ -394,6 +394,33 @@ body {
 }
 
 
+#cellFour {
+    border: 4px solid #F8ACEA;
+}
+
+#cellFour:hover #pavdescription {
+    opacity: 1;
+    transition: 1s linear;
+}
+
+
+#cellFour:hover #pavlanguage {
+    opacity: 1;
+    transition: 1s linear;
+    transition-delay: 0.25s;
+}
+
+#pavdescription {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+#pavlanguage{
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+
 #cellOne {
     border: 4px solid #F8ACEA;
 }
@@ -408,6 +435,8 @@ body {
     transition: 1s linear;
     transition-delay: 0.25s;
 }
+
+
 
 #apltitle{
     
