@@ -87,7 +87,7 @@ function stepForward(){
                     openlist.unshift(c1);  //push first child to open list
                     newopennodes = c1.toString();
                     if (c2 != -1) {
-                        newopennodes = c2.toString();
+                        newopennodes += " and " c2.toString();
                     }
                 }
 
