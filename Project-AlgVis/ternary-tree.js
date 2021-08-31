@@ -46,11 +46,9 @@ function loadcanvas(){
             nodeArray[i] = null;
         }
         root = createNode(1, numberOfNodes);
-
-        drawTreeTest(ctx);
     
-        //connectNodes(ctx, root);
-        //drawTree(ctx, root);
+        connectNodes(ctx, root);
+        drawTree(ctx, root);
         
         statusText.innerHTML = "Root Node Initialized";
     }
