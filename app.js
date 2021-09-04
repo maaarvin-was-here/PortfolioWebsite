@@ -23,7 +23,7 @@ var prefixes = [
 window.unload = function () {
     setTimeout(() => {
         window.scrollTo(0, 0);
-    }, 1);
+    }, 0.1);
 }
 
 changeWord(0);
@@ -33,13 +33,13 @@ changeWord(0);
 function scrollToPortfolio(){
     setTimeout(() => {
         history.pushState("", document.title, "/");
-    }, 1);
+    }, 0.1);
 }
 
 function scrollToTop(){
     setTimeout(() => {
         history.pushState("", document.title, "/");
-    }, 1);
+    }, 0.1);
 }
 
 
