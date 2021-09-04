@@ -1,6 +1,6 @@
 
 function scrollToTop(){
     setTimeout(() => {
-        history.pushState("", document.title, "procrastiwork.html");
+        history.pushState("", document.title, "procrastiwork");
     }, 1);
 }
