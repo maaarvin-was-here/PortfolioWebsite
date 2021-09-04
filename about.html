@@ -5,27 +5,39 @@
     <meta charset="UTF-8">
     <title>About Me</title>
     <link rel="stylesheet" href="about.css">
-    <link rel="icon" href="images/logos/main site logo.png">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="icon" href="images/logos/main%20site%20logo.png">
 </head>
 
-<body onload="reset()">
-    <section id="logo">
-        <a href="index.html">
-            <img id="logoimage" src="images/logos/main site logo.png" />
-        </a>
-    </section>
-    <section id="menu">
-        <section id="menuoptions">
-            <p></p>
-            <a id="menuportfolio" href="index.html">Portfolio</a>
-            <p  id="menuabout">About</p>
+<body>
+    <section>
+        <section id="logo">
+            <a href="index.html">
+                <img id="logoimage" src="images/logos/main site logo.png" />
+            </a>
+        </section>
+        <section id="navbar">
+            <!-- Displays from right to left on page -->
+            
+            <a class="navbar-link" href="#page" onclick="scrollToTop()">
+                <p class="navbar-text">About Me</p>
+            </a>
+
+            <a class="navbar-link" href="procrastiwork.html" onclick="scrollToTop()">
+                <p class="navbar-text">Side Hustles</p>
+            </a>
+
+            <a class="navbar-link" href="index.html#projectTitle">
+                <p class="navbar-text">Portfolio</p>
+            </a>
+
+            <a class="navbar-link" href="index.html"> 
+                <p class="navbar-text">Home</p>
+            </a>
         </section>
     </section>
-    <section id="dim-target">
-        <a id="hamburgerwrapper" onclick="showMenu()">
-            <img id="hamburger" src="images/logos/hamburger.png"/>
-        </a>
-        
+    
+    <section>
         <section id="page">
             <h1 id="pagetitle"></h1>
             <section id="intro-content">
@@ -46,38 +58,34 @@
                     <p class="experienceline">Robotics Program Intern&nbsp;—&nbsp;Maker Nexus / Amazon Lab 126 &nbsp;—&nbsp; Jun 2019 to Aug 2019</p>
                 </section>
             </section>
-            
-            <section id="contactshell">
-                <p id="contacttitle">Find Me</p>
-                <table id="contacttable">
-                    <td class="contactcell">
-                        <a href="mailto:marvinlin2@gmail.com" target="_blank">
-                            <img src="images/logos/email3.png" id="emaillogo" alt="email-logo"/>      
-                        </a>
-                    </td>
-                    <td class="contactcell">
-                        <a href="https://www.linkedin.com/in/marvin--lin/">
-                            <img src="images/logos/linkedin.png" id="linkedinlogo" alt="linkedin-logo"/>      
-                        </a>
-                    </td>
-                    <td class="contactcell">
-                        <a href="https://github.com/maaarvin-was-here">
-                            <img src="images/logos/github.png" id="githublogo" alt="github-logo"/>      
-                        </a>
-                          
-                    </td>
-                </table>
-            </section>
-            
-        </section>
-        <section>
-            <div id="invisibleDivision">
-                <p id="copyright">Copyright &#169; Marvin Lin. All Rights Reserved.</p>
+
+            <div id="contactbar">
+
+                <div class="contactcell">
+                    <a href="mailto:marvinlin2@gmail.com" target="_blank">
+                        <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo"/>      
+                    </a>
+                </div>
+                <div class="contactcell">
+                    <a href="https://www.linkedin.com/in/marvin--lin/">
+                        <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo"/>      
+                    </a>
+                </div>
+                <div class="contactcell">
+                    <a href="https://github.com/maaarvin-was-here">
+                        <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo"/>      
+                    </a>
+                </div>
+
             </div>
+
+            <section>
+                <div id="invisibleDivision">
+                    <p id="copyright">Copyright &#169; 2021 Marvin Lin. All Rights Reserved.</p>
+                </div>
+            </section>
         </section>
     </section>
-    
-    
     <script rel="type/javascript" src="about.js"></script>
 </body>
     
