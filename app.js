@@ -3,20 +3,15 @@ var titlePrefix = document.getElementById("titleChangingPrefix");
 var titleLineOne = document.getElementById("titleLineOne");
 var titlePhrase = document.getElementById("titlePhrasee");
 
-var cellOne = document.getElementById("cellOne");
-var cellTwo = document.getElementById("cellTwo");
-var cellThree = document.getElementById("cellThree");
-var cellFour = document.getElementById("cellFour");
+var cell = document.getElementsByClassName("projectsCell");
 
-var dimTarget = document.getElementById("dim-target");
-var hamburger = document.getElementById("hamburger");
-var menu = document.getElementById("menu");
+var aboutToPortfolio = false;
 
 
 var adjectives = [
     "Engineer",
-    "Designer",
-    "Creator    "
+    "Developer",
+    "Visionary"
 ];
 
 var prefixes = [
@@ -25,10 +20,28 @@ var prefixes = [
     "a&nbsp;&nbsp;"
 ];
 
+window.unload = function () {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 1);
+}
 
 changeWord(0);
 
-    
+
+
+function scrollToPortfolio(){
+    setTimeout(() => {
+        history.pushState("", document.title, "index.html");
+    }, 1);
+}
+
+function scrollToTop(){
+    setTimeout(() => {
+        history.pushState("", document.title, "index.html");
+    }, 1);
+}
+
 
 function changeWord(x) {
     if (x < adjectives.length){
@@ -61,10 +74,9 @@ function greenUp(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
-            cellOne.style.borderColor = selectedColor;
-            cellTwo.style.borderColor = selectedColor;
-            cellThree.style.borderColor = selectedColor;
-            cellFour.style.borderColor = selectedColor;
+            for(i = 0; i < cell.length; i++){
+                cell[i].style.borderColor = selectedColor;
+            }
             greenUp();
         }, 50);
     } else {
@@ -80,10 +92,12 @@ function redDown(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
-            cellOne.style.borderColor = selectedColor;
-            cellTwo.style.borderColor = selectedColor;
-            cellThree.style.borderColor = selectedColor;
-            cellFour.style.borderColor = selectedColor;
+            for(i = 0; i < cell.length; i++){
+                cell[i].style.borderColor = selectedColor;
+            }
+            //cellTwo.style.borderColor = selectedColor;
+            //cellThree.style.borderColor = selectedColor;
+            //cellFour.style.borderColor = selectedColor;
             redDown();
         }, 50);
     } else {
@@ -99,10 +113,9 @@ function blueUp(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
-            cellOne.style.borderColor = selectedColor;
-            cellTwo.style.borderColor = selectedColor;
-            cellThree.style.borderColor = selectedColor;
-            cellFour.style.borderColor = selectedColor;
+            for(i = 0; i < cell.length; i++){
+                cell[i].style.borderColor = selectedColor;
+            }
             blueUp();
         }, 50);
     } else {
@@ -118,10 +131,9 @@ function greenDown(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
-            cellOne.style.borderColor = selectedColor;
-            cellTwo.style.borderColor = selectedColor;
-            cellThree.style.borderColor = selectedColor;
-            cellFour.style.borderColor = selectedColor;
+            for(i = 0; i < cell.length; i++){
+                cell[i].style.borderColor = selectedColor;
+            }
             greenDown();
         }, 50);
     } else {
@@ -137,10 +149,9 @@ function redUp(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
-            cellOne.style.borderColor = selectedColor;
-            cellTwo.style.borderColor = selectedColor;
-            cellThree.style.borderColor = selectedColor;
-            cellFour.style.borderColor = selectedColor;
+            for(i = 0; i < cell.length; i++){
+                cell[i].style.borderColor = selectedColor;
+            }
             redUp();
         }, 50);
     } else {
@@ -156,43 +167,12 @@ function blueDown(){
             titleAdjective.style.color = selectedColor;
             titleLineOne.style.color = selectedColor;
             titlePhrase.style.color = selectedColor;
-            cellOne.style.borderColor = selectedColor;
-            cellTwo.style.borderColor = selectedColor;
-            cellThree.style.borderColor = selectedColor;
-            cellFour.style.borderColor = selectedColor;
+            for(i = 0; i < cell.length; i++){
+                cell[i].style.borderColor = selectedColor;
+            }
             blueDown();
         }, 50);
     } else {
         greenUp();
     }
-}
-
-
-
-
-
-/*var textBar = document.getElementById("titleExtra");
-window.onmousewheel = function () {
-    if (textBar.style.width < 100) {
-        textBar.style.width += 2;
-    }
-    console.log("scrolled");
-} */
-
-var menuToggle = false;
-
-function showMenu(){
-    console.log(menu.style.zIndex);
-    if(menuToggle){
-        //dimTarget.style.opacity = "1";
-        menuToggle = false;
-        menu.style.zIndex = "-1";
-        menu.style.opacity = "1";
-    } else {
-        //dimTarget.style.opacity = "0.1"; 
-        menu.style.opacity = "0.8"
-        menuToggle = true;
-        menu.style.zIndex = "10";
-    }
-    
 }
