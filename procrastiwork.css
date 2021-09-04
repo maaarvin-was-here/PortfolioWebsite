@@ -19,6 +19,8 @@ body {
     /*#FBF8F3*/
     user-select: none;
     position: relative;
+    
+    z-index: 999;
 }
 
 #entrytitle {
