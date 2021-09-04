@@ -5,134 +5,186 @@
     <meta charset="UTF-8">
     <title>Marvin Lin</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="icon" href="images/logos/main%20site%20logo.png">
 </head>
 
 <body>
-    <section id="logo">
-        <a href="index.html">
-            <img id="logoimage" src="images/logos/main site logo.png" />
-        </a>
-    </section>
-    <section id="menu">
-        <section id="menuoptions">
-            <p id="menuportfolio">Portfolio</p>
-            <a  id="menuabout" href="about.html">About</a>
+    <section>
+        <section>
+            <a href="index.html">
+                <img id="logoimage" src="images/logos/main site logo.png" />
+            </a>
+        </section>
+        <section id="navbar">
+            <!-- Displays from right to left on page -->
+            
+            <a class="navbar-link" href="about.html">
+                <p class="navbar-text">About Me</p>
+            </a>
+
+            <a class="navbar-link" href="procrastiwork.html">
+                <p class="navbar-text">Side Hustles</p>
+            </a>
+
+            <a class="navbar-link" href="#projects" onclick="scrollToPortfolio()">
+                <p class="navbar-text">Portfolio</p>
+            </a>
+            
+            <a class="navbar-link" href="#landingPage" onclick="scrollToTop()"> 
+                <p class="navbar-text">Home</p>
+            </a>
         </section>
     </section>
     
-    <section id="dim-target">
-        <section id="landingPage">
-            <a id="hamburgerwrapper" onclick="showMenu()">
-                <img id="hamburger" src="images/logos/hamburger.png"/>
+    <section id="landingPage">
+        <div id="mainTitle">
+            <div id ="titlePhrase">
+                <div>
+                    <h1 id="titleLineOne">Hi, I'm Marvin Lin</h1>
+                </div>
+                <div id="titleLineTwo">
+                    <h1 id="titleName">I&nbsp; am&nbsp;&nbsp;</h1>
+                    <h1 id="titleChangingPrefix">an&nbsp;&nbsp;</h1>
+                    <h1 id ="titleChangingDescriptor">Engineer</h1>
+                </div>
+            </div>        
+        </div>
+        <section id="titleGradient">
+            <h1 id="titleExtra">designing solutions with tech and code</h1>
+        </section>
+        <section id="downarrow">
+            <p id="portfolio-arrow-label">Portfolio</p>
+            <div class="center-con">
+                <a href="#projects">
+                    <div class="round" onclick="scrollToPortfolio()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </section>
+    
+    
+
+
+    <section id="actualContent">
+        <div id="invisibleDivision">
+        </div>
+
+        <div id="projects">
+            <div id="projectTitle">
+                <h1 class="titlePhrase" id="titlePhrasee">Portfolio</h1>
+            </div>
+        
+            <div id="sectionBody">
+                <div id="project-grid">
+                    
+                    <div class="projectsCell">
+                        <a class="projectLink" href="apl.html" target="_blank">
+                            <div class="projectTextDiv">
+                                <p class="projectName">Submersible Triangulation</p>
+                                <p class="projectDescription">Intern project conducted over summer 2021 at the University of Washington's Applied Physics Lab</p>
+                                <p class="projectLanguage">Python, Socket.io, OpenCV, Raspberry Pi</p>
+                            </div>
+                            
+                            <div class="projectImage" id="aplimage">
+                                <div class="trapezoidBlob">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="projectsCell">
+                        <a class="projectLink" href="project-algvis.html" target="_blank">
+                            <div class="projectTextDiv">
+                                <p class="projectName">Project AlgVis</p>
+                                <p class="projectDescription">A visual collection of various algorithms, data structures, and other computer science concepts that I've learned
+                                </p>
+                                <p class="projectLanguage">Javascript, HTML/CSS</p>
+                            </div>
+
+                        <!--<div class="projectImage" id="">
+                            <div class="trapezoidBlob">
+                            </div>
+                        </div> -->
+                        </a>
+                    </div>
+                    
+                    <div class="projectsCell">
+                        <a class="projectLink" href="spelling-bee.html" target="_blank">
+                            <div class="projectTextDiv">
+                                <p class="projectName">New York Times Spelling Bee</p>
+                                <p class="projectDescription">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription</p>
+                                <p class="projectLanguage">Javascript, HTML/CSS</p>
+                            </div>
+                            
+                            <div class="projectImage" id="beeimage">
+                                <div class="trapezoidBlob">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+  
+            <!--
+                <table id="projectsTable">
+
+                    <tr class="projectRow">
+                        <td class="projectsCell" id="cellThree">
+                            <a class="projectLink" href="photography.html" target="_blank">
+                                <div class="projectTextDiv">
+                                    <p class="projectName" id="phototitle">Photography</p>
+                                    <p class="projectDescription" id="photodescription">I like taking photos</p>
+                                    <p class="projectLanguage" id="photoinfo">Adobe Lightroom</p>
+                                </div>
+                                <div class="projectImage" id="photocoverimage">
+                                    <div class="trapezoidBlob">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table> -->
+                <a id="side-project-link" href="procrastiwork.html">
+                    <p id="side-project-button">
+                        More (Side) Projects &#8594;
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <div id="contactbar">
+
+        <div class="contactcell">
+            <a href="mailto:marvinlin2@gmail.com" target="_blank">
+                <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo"/>      
             </a>
-            <div id="mainTitle">
+        </div>
+        <div class="contactcell">
+            <a href="https://www.linkedin.com/in/marvin--lin/">
+                <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo"/>      
+            </a>
+        </div>
+        <div class="contactcell">
+            <a href="https://github.com/maaarvin-was-here">
+                <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo"/>      
+            </a>
+        </div>
 
-                <div id ="titlePhrase">
-                    <div>
-                        <h1 id="titleLineOne">Hi, I'm Marvin Lin</h1>
-                    </div>
-                    <div id="titleLineTwo">
-                        <h1 id="titleName">I&nbsp; am&nbsp;&nbsp;</h1>
-                        <h1 id="titleChangingPrefix">an&nbsp;&nbsp;</h1>
-                        <h1 id ="titleChangingDescriptor">Engineer</h1>
-                    </div>
-                </div>        
-            </div>
-            <section id="titleGradient">
-                <h1 id="titleExtra">I also enjoy software dev, writing, and spam musubi</h1>
-            </section>
-        </section>
-
-        <section id="actualContent">
-            <div id="invisibleDivision">
-            </div>
-
-            <div id="projects">
-                <div id="projectTitle">
-                    <h1 class="titlePhrase" id="titlePhrasee">What I've Done</h1>
-                </div>
-                <div class="sectionBody">
-                    
-                    
-                    <table id="projectsTable">
-                        
-                        <tr class="projectRow">
-                            <td class="projectsCell" id="cellFour">
-                                <a class="projectLink" href="project-algvis.html" target="_blank">
-                                    <div class="projectTextDiv">
-                                        <p class="projectName" id="pavtitle">Project AlgVis</p>
-                                        <p class="projectDescription" id="pavdescription">A visual collection of various algorithms, data structures, and other computer science concepts that I've learned
-                                        </p>
-                                        <p class="projectLanguage" id="pavlanguage">Javascript, HTML/CSS</p>
-                                    </div>
-                                    
-                                    <!--<div class="projectImage" id="">
-                                        <div class="trapezoidBlob">
-                                        </div>
-                                    </div> -->
-                                </a>
-                            </td>
-                        </tr>
-                        
-                        <tr class="projectRow">
-                            <td class="projectsCell" id="cellOne">
-                                <a class="projectLink" href="apl.html" target="_blank">
-                                    <div class="projectTextDiv">
-                                        <p class="projectName" id="apltitle">Submersible Triangulation</p>
-                                        <p class="projectDescription" id="apldescription">Intern project conducted over summer 2021 at the University of Washington's Applied Physics Lab</p>
-                                        <p class="projectLanguage" id="apllanguage">Python, OpenCV, Raspberry Pi</p>
-                                    </div>
-                                    <div class="projectImage" id="aplimage">
-                                        <div class="trapezoidBlob">
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                        
-                        <tr class="projectRow">
-                            <td class="projectsCell" id="cellTwo">
-                                <a class="projectLink" href="https://spellingbee.marvin-lin.ml" target="_blank">
-                                    <div class="projectTextDiv">
-                                        <p class="projectName" id="nyttitle">New York Times Spelling Bee</p>
-                                        <p class="projectDescription" id="nytdescription">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription. </p>
-                                        <p class="projectLanguage" id="nytlanguage">HTML, CSS, Javascript</p>
-                                    </div>
-                                    <div class="projectImage" id="beeimage">
-                                        <div class="trapezoidBlob">
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="projectRow">
-                            <td class="projectsCell" id="cellThree">
-                                <a class="projectLink" href="photography.html" target="_blank">
-                                    <div class="projectTextDiv">
-                                        <p class="projectName" id="phototitle">Photography</p>
-                                        <p class="projectDescription" id="photodescription">I like taking photos</p>
-                                        <p class="projectLanguage" id="photoinfo">Adobe Lightroom</p>
-                                    </div>
-                                    <div class="projectImage" id="photocoverimage">
-                                        <div class="trapezoidBlob">
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <div id="invisibleDivision">
-                <p id="copyright">Copyright &#169; Marvin Lin. All Rights Reserved.</p>
-            </div>
-        </section>
+    </div>
+    
+    <section>
+        <div id="invisibleDivision">
+            <p id="copyright">Copyright &#169; 2021 Marvin Lin. All Rights Reserved.</p>
+        </div>
     </section>
     <script rel="type/javascript" src="app.js"></script>
 </body>
