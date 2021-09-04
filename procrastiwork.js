@@ -2,5 +2,5 @@
 function scrollToTop(){
     setTimeout(() => {
         history.pushState("", document.title, "procrastiwork");
-    }, 1);
+    }, 0.1);
 }
