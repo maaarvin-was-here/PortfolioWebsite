@@ -33,13 +33,13 @@ changeWord(0);
 function scrollToPortfolio(){
     setTimeout(() => {
         history.pushState("", document.title, " ");
-    }, 2);
+    }, 1);
 }
 
 function scrollToTop(){
     setTimeout(() => {
         history.pushState("", document.title, " ");
-    }, 2);
+    }, 1);
 }
 
 
