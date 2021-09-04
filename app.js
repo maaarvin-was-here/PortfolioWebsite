@@ -38,7 +38,7 @@ function scrollToPortfolio(){
 
 function scrollToTop(){
     setTimeout(() => {
-        history.pushState("", document.title, "index.html");
+        history.pushState("", document.title, "");
     }, 1);
 }
 
