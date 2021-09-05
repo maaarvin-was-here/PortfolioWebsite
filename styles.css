@@ -269,6 +269,11 @@ body {
     background-image: url("images/logos/apl_logo_6.png");
 }
 
+#algvis-image {
+    background-image: url("/images/logos/algvis-logo-5.png");
+    
+    background-position: top 10px;
+}
 
 .trapezoidBlob {
     width: 0;
