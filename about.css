@@ -16,7 +16,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 100vh;
     background-color: #181818;
 }
 
@@ -33,20 +32,15 @@ body {
 
 #intro-content{
     color: white;
-    padding-left: 20%;
+    padding-left: 15%;
     padding-top: 1vh;
     font-size: 3vh;
-    width: 40vw;
+    width: 45vw;
     font-family: trebuchet ms;
     text-align: justify;
     
     user-select: text;
     z-index: 4;
-}
-
-
-#dim-target{
-    background-color: #181818;
 }
 
 #myname{
@@ -70,7 +64,10 @@ body {
 #experiencecontent{
     color: white;
     padding-left: 15%;
-    padding-top: 12%;
+    padding-top: 8%;
+    
+    width: 70vw;
+    
     font-size: 3vh;
     font-family: trebuchet ms;
     
@@ -79,8 +76,9 @@ body {
 
 #experiencetitle{
     font-size: 4vh;
-    text-decoration: underline;
     font-weight: bold;
+    
+    margin-bottom: 1vh;
 }
 
 #experiencenontitle{
@@ -88,7 +86,9 @@ body {
 }
 
 .experienceline{
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
+    
+    line-height: 5vh;
 }
 
 #contactshell{
@@ -147,16 +147,6 @@ body {
 
 #githublogo:hover{
     transform:scale(1.1);
-}
-
-#copyright{
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    font-family: trebuchet ms;
-    position: absolute;
-    width: 100vw;
-    bottom: 1vh;
 }
 
 #invisibleDivision{
