@@ -17,17 +17,17 @@ body {
 
 }
 
+
 /*      Landing Page        */
 
-#landingPage {
+
+#landing-page {
     width: 100vw;
     height: 95vh;   
     background-color: #181818;
 }
 
-#mainTitle {
-    color: white;
-    
+#main-title {    
     height: 70%;
     align-items: center;
     justify-content: center;
@@ -35,84 +35,103 @@ body {
     position: relative;
 }
 
-#titlePhrase {
+#title-phrase {
     width: 100vw;
     text-align: left;
-    padding-left: 20%;
-    padding-top: 8%;
+    padding-left: 12%;
+    padding-top: 5%;
     user-select: none;
-
+    
 }
 
-#titleLineOne {
-    color: rgb(188, 170, 222);
-
-    font-size: 4.166666666666667vw;
-    margin-bottom: 20px;
+#title-one-greeting {
+    color: white;
+    
+    font-size: 2.9296875vw; /* 60px */
+    
+    margin-bottom: 1.9083969465648856vh; /* 20px*/
     word-spacing: 0.1em;
     
     font-family: trebuchet ms;
+    
+    display: inline-block;
 }
 
-#titleLineTwo {
+#title-one-name{
+    color: rgb(188, 170, 222);
+    display: inline-block;
+    
+    font-family: trebuchet ms;
+    
+    font-size: 4.8828125vw; /* 100px */
+    margin-bottom: 1.9083969465648856vh; /* 20px*/
+    word-spacing: 0.1em;
+}
+
+#title-line-two {
     height: 9.114583333333334vw;
     letter-spacing: 0.2em;
     word-spacing: -0.5em;
     font-family: trebuchet ms;
 }
 
-#titleName {
+#title-pronoun {
+    color: rgb(188, 170, 222);
+    
     display: inline-block;
-    font-size: 5.859375vw;
+    font-size: 5.37109375vw; /* 110px */
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#titleChangingPrefix {
-    align-items: left;
-    text-align: left;
+#typewriter-target{
     display: inline-block;
-    font-size: 5.859375vw;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
-#titleChangingDescriptor {
+#underscore-cursor{
+    display: inline-block;
+    
+    color: rgb(188, 170, 222);
+    
+    font-size: 4vw;
+    margin-left: 0.5vw;
+}
+
+#title-changing-text {
     color: rgb(188, 170, 222);
     
     align-items: left;
     text-align: left;
     display: inline-block;
-    font-size: 7.8125vw;
+    font-size: 5.37109375vw; /* 110px */
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
-
 }
 
-#titleExtra {
+#title-gap-space {
+    height: 23%;
+    width: 100vw;
+    background-color: #181818;
+    position: relative;
+}
+
+#title-third-line {
     color: white;
     
-    padding-left: 20%;
+    padding-left: 12%;
     word-spacing: 0.2em;
     font-size:  2.083vw;
     margin: 0;
     display: block;
     overflow: hidden;
     width: 100vw;
-    height: 40px;
+    height: 4.770992366412214vh;
     user-select: none;
     font-family: trebuchet ms;
 }
 
-#titleGradient {
-    height: 23%;
-    width: 100vw;
-    background-color: #181818;
-    position: relative;
-}
 
 #downarrow{
     height: 12%;
@@ -122,29 +141,32 @@ body {
 /*      Next Section        */
 
 
-#actualContent {
+#page-content {
     position: relative;
     display: inline-block;
 
 }
 
-.titlePhrase {
+#project-title-text {
     padding-top: 7%;
     margin: 0;
     color: white;
     text-align: center;
-    font-size: 64px;
+    font-size: 3.125vw; /* 64px */
     user-select: none;
-    color: #bcaade
+    color: #bcaade;
+    
+    width: 100vw;
+    user-select: none;
 }
 
-#invisibleDivision{
+#invisible-division{
     background-color: #181818;
-    height: 50px;
+    height: 2.8625954198473282vh; /* 30px */
     position: relative;
 }
 
-#sectionBody{
+#section-body{
     margin-top: 3vh;
 }
 
@@ -156,7 +178,7 @@ body {
     display: inline-block;
 }
 
-#projectTitle {
+#projects-title {
     margin-bottom: 10vh;
     font-family: trebuchet ms;
 }
@@ -174,14 +196,14 @@ body {
     
 }
 
-.projectLink{
+.projects-link{
     display: block;
     width: 100%;
     height: 100%;
     color: white;
 }
 
-.projectsCell {
+.projects-cell {
     height: 20vh;
     width: 100%;
     vertical-align: top;
@@ -194,14 +216,14 @@ body {
 
 
 
-.projectTextDiv {
+.projects-text-div {
     display: inline-block;
     height: 100%;
     width: 60%;
     top: 0;
 }
 
-.projectName {
+.projects-name {
     font-size: 2.7vh;
     margin-left: 3vw;
     margin-top: 3vh;
@@ -210,7 +232,7 @@ body {
     color: floralwhite;
 }
 
-.projectDescription {
+.projects-description {
     margin-left: 3vw;
     font-size: 1.9vh;
     color: floralwhite;
@@ -219,7 +241,7 @@ body {
     transition: 0.5s linear;
 }
 
-.projectLanguage {
+.projects-language {
     margin-left: 3vw;
     color: deeppink;
     font-weight: bold;
@@ -231,12 +253,12 @@ body {
 
 
 
-.projectsCell:hover .projectDescription{
+.projects-cell:hover .projects-description{
     opacity: 1;
     transition: 1s linear;
 }
 
-.projectsCell:hover .projectLanguage{
+.projects-cell:hover .projects-language{
     opacity: 1;
     transition: 1s linear;
     transition-delay: 0.25s;
@@ -246,13 +268,12 @@ body {
 /*      specific cell stuff     */
 
 
-.projectImage{
+.projects-image{
     width: 33%;
     height: 100%;
     margin: 0;
     margin-left: auto;
     margin-right: 0px;
-    margin-top: 0px;
     margin-bottom: -1px;
     top: 0;
     background-color: white;
@@ -263,19 +284,25 @@ body {
 
 #beeimage {
     background-image: url("images/logos/bee_logo_9.jpg");
+    
+    background-position: 130%;
 }
 
 #aplimage {
     background-image: url("images/logos/apl_logo_6.png");
+    
+    background-repeat: no-repeat;
+    background-position: -10%;
 }
 
 #algvis-image {
     background-image: url("/images/logos/algvis-logo-5.png");
     
-    background-position: top 10px;
+    background-repeat: no-repeat;
+    background-position: -30%;
 }
 
-.trapezoidBlob {
+.trapezoid-blob {
     width: 0;
     height: 0;
     border-right: 20vh solid transparent;
@@ -283,7 +310,8 @@ body {
 }
 
 
-#photocoverimage{
+
+/* #photocoverimage{
     width: 33%;
     height: 101%;
     margin: 0;
@@ -297,7 +325,7 @@ body {
     background-position: left center;
     float: right;
     display: inline-block;
-}
+} */
 
 
 /*      More Stuff Button       */
