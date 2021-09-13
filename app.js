@@ -15,7 +15,7 @@ var currentlyLine = "";
 
 
 var textCarousel = [
-    "am^an^engineer^of^many^areas",
+    "am^an^engineer^of^all^kinds",
     "am^a^software^developer",
     "love^solving^problems",
     "love^building^and^creating",
