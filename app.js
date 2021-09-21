@@ -20,7 +20,7 @@ var textCarousel = [
     "love^solving^problems",
     "love^building^and^creating",
     "study^in^rainy^Seattle,^WA",
-    "enjoy^a^good^game^of^chess"
+    "enjoy^a^good^game^of^chess",
 ];
 
 

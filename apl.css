@@ -16,12 +16,12 @@ body {
     background-image: url(/images/apl-background-temp.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 
 #background-image {
     height: 100vh;
-    
 }
 
 #title-block {
@@ -79,7 +79,7 @@ body {
 }
 
 #intro-panel{
-    height: 175vh;
+    height: 155vh;
     width: 80vw;
     
     margin: 0 auto;
@@ -133,6 +133,8 @@ body {
     font-family: trebuchet ms;
     
     line-height: 27px;
+    
+    margin-bottom: 8vh;
 }
 
 #firsttwoparagraphs {            
@@ -143,8 +145,8 @@ body {
 #intro-image{
     width: 30vw;
     height: 30vh;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     
     background-color: pink;
     
@@ -254,7 +256,7 @@ body {
     
     grid-template-columns: auto auto;
     
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
 }
