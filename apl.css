@@ -69,7 +69,20 @@ body {
     font-size: 18px;
     font-family: trebuchet ms;
     
-    position: static;
+}
+
+/*      circle div      */
+#circle-div{
+    margin: 0 auto;
+    width: 5vw;
+    
+    text-align: center;
+    
+    position: relative;
+    
+    padding-top: 90vh;
+    
+    text-align: center;
 }
 
 
@@ -79,7 +92,6 @@ body {
 }
 
 #intro-panel{
-    height: 155vh;
     width: 80vw;
     
     margin: 0 auto;
@@ -94,9 +106,6 @@ body {
     overflow: auto;
 }
 
-.gen-logo-section:hover {
-    background-color: lightskyblue;
-}
 
 #intro-grid{
     display: grid;
@@ -172,6 +181,13 @@ body {
 
 /*      links       */
 
+
+.gen-logo-section:hover {
+    background-color: darkgrey;
+    transform: scale(1.01);
+    
+}
+
 #link-logos{
     width: 50vw;
     margin: 0 auto;
@@ -195,6 +211,28 @@ body {
 }
 
 #gitlab-info {
+    margin: 0;
+    margin-left: 3vw;
+    width: 31vw;
+}
+
+#rtd-logo-section{
+    display: grid;
+    
+    grid-template-columns: 10vw auto;
+    
+    margin-bottom: 5vh;
+    
+    border: 1px solid black;
+    border-radius: 2vw;
+}
+
+#rtd-logo{
+    width: 7vw;
+    margin: 1vw;
+}
+
+#rdt-info {
     margin: 0;
     margin-left: 3vw;
     width: 31vw;
@@ -248,8 +286,8 @@ body {
 
 #logo-grid{
     margin-left: 20vw;
-    margin-top: 3vh;
-    margin-bottom: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
 
     
     width: 60vw;
