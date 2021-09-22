@@ -98,7 +98,7 @@ function cursor_show(x, current){
             cursor_show(x, current + 0.05);
         }, 15);
     } else {
-        deleteWord(x, currentlyLine.length - 1);
+        deleteWord(x, currentlyLine.length);
     }
 }
 
