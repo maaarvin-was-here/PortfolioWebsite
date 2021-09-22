@@ -140,7 +140,7 @@ function deleteWord(x, index){
 window.unload = function () {
     setTimeout(() => {
         window.scrollTo(0, 0);
-    }, 0.1);
+    }, 0.5);
 }
 
 
