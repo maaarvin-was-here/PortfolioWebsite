@@ -285,21 +285,21 @@ body {
 #beeimage {
     background-image: url("images/logos/bee_logo_9.jpg");
     
-    background-position: 130%;
+    background-position: 70%;
 }
 
 #aplimage {
     background-image: url("images/logos/apl_logo_6.png");
     
     background-repeat: no-repeat;
-    background-position: -10%;
+    background-position: -2%;
 }
 
 #algvis-image {
     background-image: url("/images/logos/algvis-logo-5.png");
     
     background-repeat: no-repeat;
-    background-position: -30%;
+    background-position: 0%;
 }
 
 .trapezoid-blob {
