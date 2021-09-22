@@ -46,11 +46,11 @@ body {
     margin-top: 5%;
     margin-left: 6%;
     
-    line-height: 50px;
+    line-height: 6.561679790026247vh;
     
     width: 90%;
     
-    font-size: 42px;
+    font-size: 2.734375vw;
     font-family: trebuchet ms;
     font-weight: bold;
 
@@ -62,11 +62,11 @@ body {
     margin-top: 5%;
     margin-left: 6%;
     
-    line-height: 30px;
+    line-height: 3.937007874015748vh;
     
     width: 90%;
     
-    font-size: 18px;
+    font-size: 1.171875vw;
     font-family: trebuchet ms;
     
 }
@@ -128,7 +128,7 @@ body {
     margin-bottom: 4%;
     margin-top: 8%;
     
-    font-size: 40px; /*     change to vw        */
+    font-size: 2.6041666666666665vw; /*     change to vw        */
     font-family: trebuchet ms;
     
     font-weight: bolder;
@@ -138,10 +138,10 @@ body {
     text-align: justify;    
     margin: 0;
     
-    font-size: 16px;
+    font-size: 1.0416666666666667vw;
     font-family: trebuchet ms;
     
-    line-height: 27px;
+    line-height: 3.543307086614173vh;
     
     margin-bottom: 8vh;
 }
@@ -169,9 +169,9 @@ body {
     margin: 0;
     margin-left: 10%;
     
-    font-size: 16px;
+    font-size: 1.0416666666666667vw;
     font-family: trebuchet ms;
-    line-height: 27px;
+    line-height: 3.543307086614173vh;
     
     
     clear: both;
@@ -274,7 +274,7 @@ body {
     align-items: center;
     
     font-family: trebuchet ms;
-    font-size: 24px;
+    font-size: 1.5625vw;
     font-weight: bold;
     
     letter-spacing: 1.5px;
