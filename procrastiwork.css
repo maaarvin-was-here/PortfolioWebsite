@@ -4,8 +4,8 @@ html {
 
 body {
     background-color: #181818;
-    width: 100vw;
-    height: 200vh;
+    width: 100%;
+    height: 200%;
     
     margin: 0;
     overflow-x: hidden;
@@ -20,6 +20,7 @@ body {
     user-select: none;
     position: relative;
     
+    border-bottom: 2px solid white;
 }
 
 #entrytitle {
@@ -57,12 +58,117 @@ body {
 
 
 #pagecontent{
-    margin-top: 10vh;
-    height: 70vh;
+    margin-top: 0vh;
+    height: 90vh;
 }
 
 #status {
     color: white;
     text-align: center;
     padding-top: 40vh;
+}
+
+
+
+
+
+/*          arrow           */
+
+#downarrow{
+    width: 6vw;
+    height: 10vh;
+    margin-left: 47vw;
+    margin-right: auto;
+    
+    margin-bottom: auto;
+    margin-top: 90vh;
+    
+    position: absolute;
+}
+
+#down-arrow-label{
+    margin: 0;
+    margin: auto;
+    text-align: center;
+    width: 6vw;
+    color: white;
+    
+    font-family: trebuchet ms;
+    letter-spacing: 0.05em;
+    font-size: 1.1277777777777777vw;
+    
+    user-select: none;
+}
+
+.center-con {
+    display: flex;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    z-index: 1000;
+    position: relative;
+    width: 9.422110552763819vh;
+    height: 9.422110552763819vh;
+    transform: scale(0.9);
+}
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 2.8266331658291457vh; /* 2.8 */
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
 }
