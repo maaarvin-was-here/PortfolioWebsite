@@ -121,8 +121,9 @@
     color: white;
     text-align: center;
     margin-bottom: 0;
+    margin-top: 4.770992366412214vh; /* 50px */
     font-family: trebuchet ms;
     position: relative;
     width: 100vw;
-    bottom: 1vh;
+    bottom: 0.9541984732824428vh; /* 10 px */
 }

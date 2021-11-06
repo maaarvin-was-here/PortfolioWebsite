@@ -6,7 +6,7 @@ var cell = document.getElementsByClassName("projects-cell");
 
 var titleName = document.getElementById("title-one-name");
 var titlePronoun = document.getElementById("title-pronoun");
-var projectTitle = document.getElementById("project-title-text");
+var projectTitle = document.getElementsByClassName("project-title-text");
 
 
 var aboutToPortfolio = false;
@@ -174,7 +174,9 @@ function greenUp(){
             underscoreCursor.style.color = selectedColor;
             titleName.style.color = selectedColor;
             titlePronoun.style.color = selectedColor;
-            projectTitle.style.color = selectedColor;
+            for(i = 0; i < projectTitle.length; i++){
+                projectTitle[i].style.color = selectedColor;
+            }
             for(i = 0; i < cell.length; i++){
                 cell[i].style.borderColor = selectedColor;
             }
@@ -194,7 +196,9 @@ function redDown(){
             underscoreCursor.style.color = selectedColor;
             titleName.style.color = selectedColor;
             titlePronoun.style.color = selectedColor;
-            projectTitle.style.color = selectedColor;
+            for(i = 0; i < projectTitle.length; i++){
+                projectTitle[i].style.color = selectedColor;
+            }
             for(i = 0; i < cell.length; i++){
                 cell[i].style.borderColor = selectedColor;
             }
@@ -217,7 +221,9 @@ function blueUp(){
             underscoreCursor.style.color = selectedColor;
             titleName.style.color = selectedColor;
             titlePronoun.style.color = selectedColor;
-            projectTitle.style.color = selectedColor;
+            for(i = 0; i < projectTitle.length; i++){
+                projectTitle[i].style.color = selectedColor;
+            }
             for(i = 0; i < cell.length; i++){
                 cell[i].style.borderColor = selectedColor;
             }
@@ -237,7 +243,9 @@ function greenDown(){
             underscoreCursor.style.color = selectedColor;
             titleName.style.color = selectedColor;
             titlePronoun.style.color = selectedColor;
-            projectTitle.style.color = selectedColor;
+            for(i = 0; i < projectTitle.length; i++){
+                projectTitle[i].style.color = selectedColor;
+            }
             for(i = 0; i < cell.length; i++){
                 cell[i].style.borderColor = selectedColor;
             }
@@ -257,7 +265,9 @@ function redUp(){
             underscoreCursor.style.color = selectedColor;
             titleName.style.color = selectedColor;
             titlePronoun.style.color = selectedColor;
-            projectTitle.style.color = selectedColor;
+            for(i = 0; i < projectTitle.length; i++){
+                projectTitle[i].style.color = selectedColor;
+            }
             for(i = 0; i < cell.length; i++){
                 cell[i].style.borderColor = selectedColor;
             }
@@ -277,7 +287,9 @@ function blueDown(){
             underscoreCursor.style.color = selectedColor;
             titleName.style.color = selectedColor;
             titlePronoun.style.color = selectedColor;
-            projectTitle.style.color = selectedColor;
+            for(i = 0; i < projectTitle.length; i++){
+                projectTitle[i].style.color = selectedColor;
+            }
             for(i = 0; i < cell.length; i++){
                 cell[i].style.borderColor = selectedColor;
             }

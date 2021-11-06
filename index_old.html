@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="image"
           property="og:image"
           content="https://live.staticflickr.com/65535/51468965178_4082676c1c_k.jpg" />
-
+    
     <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     <meta name="description"
           property="og:description"
@@ -32,7 +32,7 @@
         </section>
         <section id="navbar">
             <!-- Displays from right to left on page -->
-
+            
             <a class="navbar-link" href="about.html">
                 <p class="navbar-text">About Me</p>
             </a>
@@ -44,16 +44,16 @@
             <a class="navbar-link" href="#projects" onclick="scrollToPortfolio()">
                 <p class="navbar-text">Portfolio</p>
             </a>
-
-            <a class="navbar-link" href="#landing-page" onclick="scrollToTop()">
+            
+            <a class="navbar-link" href="#landing-page" onclick="scrollToTop()"> 
                 <p class="navbar-text">Home</p>
             </a>
         </section>
     </section>
-
+    
     <section id="landing-page">
         <div id="main-title">
-            <div id="title-phrase">
+            <div id ="title-phrase">
                 <div>
                     <h1 id="title-one-greeting">Hi, I'm&nbsp;&nbsp;</h1>
                     <h1 id="title-one-name">Marvin Lin</h1>
@@ -61,17 +61,17 @@
                 <div id="title-line-two">
                     <h1 id="title-pronoun">I&nbsp;&nbsp;</h1>
                     <div id="typewriter-target">
-                        <h1 id="title-changing-text"></h1>
+                        <h1 id ="title-changing-text"></h1>
                     </div>
                     <h1 id="underscore-cursor">_</h1>
                 </div>
-            </div>
+            </div>        
         </div>
         <section id="title-gap-space">
             <h1 id="title-third-line">constantly seeking opportunities to change the world</h1>
         </section>
         <section id="downarrow">
-            <p id="portfolio-arrow-label">Engineering Portfolio</p>
+            <p id="portfolio-arrow-label">Portfolio</p>
             <div class="center-con">
                 <a href="#projects">
                     <div class="round" onclick="scrollToPortfolio()">
@@ -84,8 +84,8 @@
             </div>
         </section>
     </section>
-
-
+    
+    
 
 
     <section id="page-content">
@@ -93,52 +93,21 @@
         </div>
 
         <div id="projects">
-            <div id="invisible-division2">
+            <div id="projects-title">
+                <h1 id="project-title-text">Portfolio</h1>
             </div>
-            
-            <div class="projects-title">
-                <h1 class="project-title-text">Portfolio</h1>
-            </div>
-
+        
             <div id="section-body">
-                <div id="dates-grid">
-                    <div class="dates-cell">
-                        Sep 2021
-                    </div>
-                    <div class="dates-cell">
-                        July 2021
-                    </div>
-                    <div class="dates-cell">
-                        June 2021
-                    </div>
-                </div>
                 <div id="project-grid">
-
-                    <div class="projects-cell">
-                        <a class="projects-link" href="sarp.html" target="_blank">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Avionics and Mechanical Engineer</p>
-                                <p class="projects-name">Society for Advanced Rocket Propulsion (SARP)</p>
-                                <p class="projects-description">Wrote avionics software in Python and performed structural analysis using ANSYS</p>
-                                <p class="project-skills">Python, SolidWorks, ANSYS</p>
-                            </div>
-
-                            <div class="projects-image" id="aplimage">
-                                <div class="trapezoid-blob">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
+                    
                     <div class="projects-cell">
                         <a class="projects-link" href="apl.html" target="_blank">
                             <div class="projects-text-div">
-                                <p class="projects-position">Mechanical and Software Engineering Intern</p>
-                                <p class="projects-name">UW Applied Physics Lab</p>
-                                <p class="projects-description">Designed and built a submersible tracking system using Python and OpenCV computer vision scripts</p>
-                                <p class="project-skills">SolidWorks, DFM, Python, OpenCV</p>
+                                <p class="projects-name">Submersible Tracking System</p>
+                                <p class="projects-description">Intern project conducted over summer 2021 at the University of Washington's Applied Physics Lab</p>
+                                <p class="projects-language">Python, Socket.io, OpenCV, Raspberry Pi</p>
                             </div>
-
+                            
                             <div class="projects-image" id="aplimage">
                                 <div class="trapezoid-blob">
                                 </div>
@@ -146,31 +115,13 @@
                         </a>
                     </div>
                     
-                    <div class="projects-cell">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Mechanical Engineering Research Intern</p>
-                                <p class="projects-name">UW Transformative Robotics Laboratory</p>
-                                <p class="projects-description">Implemented rapid prototyping to manufacture and test multiple iterations of a novel movement mechanism</p>
-                                <p class="project-skills">SolidWorks, Rapid Prototyping, DFM, Python</p>
-                            </div>
-
-                            <div class="projects-image" id="aplimage">
-                                <div class="trapezoid-blob">
-                                </div>
-                            </div>
-                    </div>
-
-                    
-                    
-                    <!--
                     <div class="projects-cell">
                         <a class="projects-link" href="project-algvis.html" target="_blank">
                             <div class="projects-text-div">
                                 <p class="projects-name">Algorithm Visualizer</p>
-                                <p class="projects-description">
-                                    A visual collection of various algorithms, data structures, and other computer science concepts that I've learned
+                                <p class="projects-description">A visual collection of various algorithms, data structures, and other computer science concepts that I've learned
                                 </p>
-                                <p class="project-skills">Javascript, HTML/CSS</p>
+                                <p class="projects-language">Javascript, HTML/CSS</p>
                             </div>
 
                             <div class="projects-image" id="algvis-image">
@@ -179,63 +130,74 @@
                             </div>
                         </a>
                     </div>
-
+                    
                     <div class="projects-cell">
                         <a class="projects-link" href="https://spellingbee.marvinlin.ml" target="_blank">
                             <div class="projects-text-div">
                                 <p class="projects-name">New York Times Spelling Bee</p>
                                 <p class="projects-description">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription</p>
-                                <p class="project-skills">Javascript, HTML/CSS</p>
+                                <p class="projects-language">Javascript, HTML/CSS</p>
                             </div>
-
+                            
                             <div class="projects-image" id="beeimage">
                                 <div class="trapezoid-blob">
                                 </div>
                             </div>
                         </a>
                     </div>
-                -->
                 </div>
+  
+            <!--
+                <table id="projectsTable">
 
+                    <tr class="projectRow">
+                        <td class="projectsCell" id="cellThree">
+                            <a class="projectLink" href="photography.html" target="_blank">
+                                <div class="projectTextDiv">
+                                    <p class="projectName" id="phototitle">Photography</p>
+                                    <p class="projectDescription" id="photodescription">I like taking photos</p>
+                                    <p class="projectLanguage" id="photoinfo">Adobe Lightroom</p>
+                                </div>
+                                <div class="projectImage" id="photocoverimage">
+                                    <div class="trapezoidBlob">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table> -->
+                <a id="side-project-link" href="passionprojects.html">
+                    <p id="side-project-button">
+                        More (Side) Projects &#8594;
+                    </p>
+                </a>
             </div>
-            
-            
-            
+
         </div>
-        <div>
-            <div class="projects-title">
-                <h1 class="project-title-text">Projects</h1>
-            </div>
-            
-            <div id="side-projects-grid">
-                <div class="side-project-cell">in progress :)</div>
-                <div class="side-project-cell">in progress :)</div>
-            </div>
-        </div>
-        
     </section>
 
-
+    
     <div id="contactbar">
 
         <div class="contactcell">
             <a href="mailto:marvinlin2@gmail.com" target="_blank">
-                <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo" />
+                <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo"/>      
             </a>
         </div>
         <div class="contactcell">
             <a href="https://www.linkedin.com/in/marvin--lin/">
-                <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo" />
+                <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo"/>      
             </a>
         </div>
         <div class="contactcell">
             <a href="https://github.com/maaarvin-was-here">
-                <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
+                <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo"/>      
             </a>
         </div>
 
     </div>
-
+    
     <section>
         <div id="invisibleDivision">
             <p id="copyright">Copyright &#169; 2021 Marvin Lin. All Rights Reserved.</p>

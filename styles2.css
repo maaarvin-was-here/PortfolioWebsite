@@ -14,7 +14,6 @@ body {
     overflow-y: scroll;
     height: 100vh;
     background-color: #181818;
-
 }
 
 
@@ -23,11 +22,11 @@ body {
 
 #landing-page {
     width: 100vw;
-    height: 95vh;   
+    height: 95vh;
     background-color: #181818;
 }
 
-#main-title {    
+#main-title {
     height: 70%;
     align-items: center;
     justify-content: center;
@@ -41,28 +40,22 @@ body {
     padding-left: 12%;
     padding-top: 5%;
     user-select: none;
-    
 }
 
 #title-one-greeting {
     color: white;
-    
     font-size: 2.9296875vw; /* 60px */
-    
+
     margin-bottom: 1.9083969465648856vh; /* 20px*/
     word-spacing: 0.1em;
-    
     font-family: trebuchet ms;
-    
     display: inline-block;
 }
 
-#title-one-name{
+#title-one-name {
     color: rgb(188, 170, 222);
     display: inline-block;
-    
     font-family: trebuchet ms;
-    
     font-size: 4.8828125vw; /* 100px */
     margin-bottom: 1.9083969465648856vh; /* 20px*/
     word-spacing: 0.1em;
@@ -77,7 +70,6 @@ body {
 
 #title-pronoun {
     color: rgb(188, 170, 222);
-    
     display: inline-block;
     font-size: 5.37109375vw; /* 110px */
     padding-top: 0;
@@ -85,22 +77,19 @@ body {
     margin-bottom: 0;
 }
 
-#typewriter-target{
+#typewriter-target {
     display: inline-block;
 }
 
-#underscore-cursor{
+#underscore-cursor {
     display: inline-block;
-    
     color: rgb(188, 170, 222);
-    
     font-size: 4vw;
     margin-left: 0.5vw;
 }
 
 #title-changing-text {
     color: rgb(188, 170, 222);
-    
     align-items: left;
     text-align: left;
     display: inline-block;
@@ -119,10 +108,9 @@ body {
 
 #title-third-line {
     color: white;
-    
     padding-left: 12%;
     word-spacing: 0.2em;
-    font-size:  2.083vw;
+    font-size: 2.083vw;
     margin: 0;
     display: block;
     overflow: hidden;
@@ -133,7 +121,7 @@ body {
 }
 
 
-#downarrow{
+#downarrow {
     height: 12%;
 }
 
@@ -144,33 +132,27 @@ body {
 #page-content {
     position: relative;
     display: inline-block;
-
 }
 
-.project-title-text {
+#project-title-text {
+    padding-top: 7%;
     margin: 0;
     color: white;
     text-align: center;
     font-size: 3.125vw; /* 64px */
     user-select: none;
     color: #bcaade;
-    
     width: 100vw;
     user-select: none;
 }
 
-#invisible-division{
+#invisible-division {
     background-color: #181818;
     height: 2.8625954198473282vh; /* 30px */
-    padding-top: 5vh;
     position: relative;
 }
 
-#invisible-division2{
-    padding-top: 7%;
-}
-
-#section-body{
+#section-body {
     margin-top: 3vh;
 }
 
@@ -182,55 +164,22 @@ body {
     display: inline-block;
 }
 
-.projects-title {
+#projects-title {
     margin-bottom: 10vh;
     font-family: trebuchet ms;
 }
 
-#dates-grid {
-    width: 13vw;
-    margin-left: 7vw;
-    margin-right: 0;
-    margin-top: 18vh;
-    
-    float: left;
-    
-    grid-template-columns: 10vw;
-    
-    grid-template-rows: auto;
-    grid-row-gap: 5vw;
-}
-
-.dates-cell {
-    font-size: 2vh;
-    font-family: trebuchet ms;
-    
-    color: floralwhite;
-    
-    text-align: center;
-    margin-bottom: 37vh;
-    
-    border-bottom: 3px solid white;
-}
-
 #project-grid {
-    width: 75vw;
+    width: 60vw;
     margin: auto;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    margin-left: 0;
-    
+    margin-left: 25vw;
     display: grid;
-    
     grid-template-columns: 60vw;
-    
     grid-template-rows: auto;
     grid-row-gap: 5vw;
-    
-    border-left: 4px solid white;
 }
 
-.projects-link{
+.projects-link {
     display: block;
     width: 100%;
     height: 100%;
@@ -238,18 +187,16 @@ body {
 }
 
 .projects-cell {
-    height: 30vh;
+    height: 25vh;
     width: 100%;
-    margin-left: 7vw;
     vertical-align: top;
     color: white;
     font-family: verdana;
     user-select: none;
-    
     border: 4px solid #F8ACEA;
 }
 
- 
+
 
 .projects-text-div {
     display: inline-block;
@@ -270,7 +217,6 @@ body {
     margin-left: 3vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    
     color: floralwhite;
 }
 
@@ -278,8 +224,6 @@ body {
     margin-left: 3vw;
     font-size: 1.9vh;
     color: floralwhite;
-    margin-top: 4vh;
-    
     opacity: 0;
     transition: 0.5s linear;
 }
@@ -289,20 +233,18 @@ body {
     color: deeppink;
     font-weight: bold;
     font-size: 1.9vh;
-    margin-top: 4vh;
-    
     opacity: 0;
     transition: 0.5s linear;
 }
 
 
 
-.projects-cell:hover .projects-description{
+.projects-cell:hover .projects-description {
     opacity: 1;
     transition: 1s linear;
 }
 
-.projects-cell:hover .project-skills{
+.projects-cell:hover .project-skills {
     opacity: 1;
     transition: 1s linear;
     transition-delay: 0.25s;
@@ -312,34 +254,33 @@ body {
 /*      specific cell stuff     */
 
 
-.projects-image{
+.projects-image {
     width: 33%;
-    height: 29vh;
+    height: 100%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: -1px;
     top: 0;
     background-color: white;
     background-position: left center;
     float: right;
     display: inline-block;
-    
-    margin: 0.5vh;
 }
 
 #beeimage {
     background-image: url("images/logos/bee_logo_9.jpg");
-    
     background-position: 70%;
 }
 
 #aplimage {
     background-image: url("images/logos/apl_logo_6.png");
-    
     background-repeat: no-repeat;
     background-position: -2%;
 }
 
 #algvis-image {
     background-image: url("/images/logos/algvis-logo-5.png");
-    
     background-repeat: no-repeat;
     background-position: 0%;
 }
@@ -347,53 +288,64 @@ body {
 .trapezoid-blob {
     width: 0;
     height: 0;
-    border-right: 25vh solid transparent;
-    border-top: 29vh solid #191819;
+    border-right: 20vh solid transparent;
+    border-top: 20vh solid #191819;
 }
 
 
-/*      side projects       */
 
-#side-projects-grid {
-    width: 51vw;
-    margin: auto;
-    
-    display: grid;
-
-    margin-top: 18vh;
-        
-    grid-template-columns: 25vw 25vw;
-    grid-column-gap: 1vw;
-    
-    grid-template-rows: auto;
-    grid-row-gap: 5vh;
-}
-
-.side-project-cell {
-    width: 25vw;
-    height: 30vh;
-    
+/* #photocoverimage{
+    width: 33%;
+    height: 101%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: -1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    top: 0;
+    background-image: url("images/photos/sakura_cover_6.jpg");
     background-color: white;
-        
-    align-items: center;
-    justify-content: center;
-    
-    display: flex;
+    background-position: left center;
+    float: right;
+    display: inline-block;
+} */
+
+
+/*      More Stuff Button       */
+
+#side-project-button {
+    color: white;
+    width: 40vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    font-family: trebuchet ms;
+    font-size: 1.6666666666666667vw;
+    font-weight: bold;
+    user-select: none;
 }
+
+    #side-project-button:hover {
+        color: deeppink;
+    }
+
+#side-project-link {
+    text-decoration: none;
+}
+
 
 /*          arrows          */
 
-#portfolio-arrow-label{
+#portfolio-arrow-label {
     margin: 0;
     margin: auto;
     text-align: center;
     width: 16vw;
     color: white;
-    
     font-family: trebuchet ms;
     letter-spacing: 0.05em;
     font-size: 1.5277777777777777vw;
-    
     user-select: none;
 }
 
@@ -414,43 +366,43 @@ body {
 span {
     z-index: 999;
     height: 3px;
-    margin:1px;
+    margin: 1px;
     width: 2.8266331658291457vh;
     background: #fff;
     transition: 0.4s ease;
 }
 
-span:first-child {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 35%;
-}
+    span:first-child {
+        display: block;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 25%;
+        bottom: 35%;
+    }
 
-span:nth-child(2) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 35%;
-}
+    span:nth-child(2) {
+        display: block;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 45%;
+        bottom: 35%;
+    }
 
-span:nth-child(3) {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 54%;
-}
+    span:nth-child(3) {
+        display: block;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 25%;
+        bottom: 54%;
+    }
 
-span:nth-child(4) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 54%;
-}
+    span:nth-child(4) {
+        display: block;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 45%;
+        bottom: 54%;
+    }
 
 
 .round:hover span:nth-child(1) {
@@ -468,4 +420,3 @@ span:nth-child(4) {
 .round:hover span:nth-child(4) {
     transform: rotate(-225deg);
 }
-
