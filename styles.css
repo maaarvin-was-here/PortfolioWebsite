@@ -360,7 +360,7 @@ body {
     
     display: grid;
 
-    margin-top: 18vh;
+    margin-top: 5h;
         
     grid-template-columns: 25vw 25vw;
     grid-column-gap: 1vw;
@@ -373,13 +373,75 @@ body {
     width: 25vw;
     height: 30vh;
     
-    background-color: white;
+    background-color: black;
+    opacity: 1;
+    z-index: 2;
+
+}
+
+.side-project-image {
+    background-image: url(images/covers/airfoil1.jpg);
+    background-size: cover;
+    
+    width: 25vw;
+    height: 30vh;
+    
+    font-family: trebuchet ms;
         
     align-items: center;
     justify-content: center;
     
     display: flex;
+    flex-direction: column;
 }
+
+.side-project-title {
+    font-size: 1vw;
+    margin-bottom: 0.8vh;
+    opacity: 0;
+    color: white;
+    
+    transition: 0.5s linear;
+    
+    z-index: 3;
+}
+
+.side-project-info {
+    margin: 0;
+    font-size: 0.6vw;
+    opacity: 0;
+    color: floralwhite;
+    
+    transition: 0.5s linear;
+    
+    z-index: 3;
+}
+
+.side-project-image:hover .dimmer{
+    opacity: 0.4;
+    transition: 0.5s linear;
+}
+
+.side-project-image:hover .side-project-title {
+    opacity: 1;
+}
+
+.side-project-image:hover .side-project-info{
+    opacity: 1;
+}
+
+.dimmer {
+    width: 25vw;
+    height: 30vh;
+    position: absolute;
+    z-index: 2;
+    
+    background-color: black;
+    opacity: 0;
+    
+    transition: 0.5s linear;
+}
+
 
 /*          arrows          */
 
