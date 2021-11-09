@@ -14,7 +14,6 @@ body {
     overflow-y: scroll;
     height: 100vh;
     background-color: #181818;
-
 }
 
 
@@ -376,11 +375,16 @@ body {
     background-color: black;
     opacity: 1;
     z-index: 2;
+    
 
 }
 
+.side-project-link {
+    text-decoration: none;
+}
+
 .side-project-image {
-    background-image: url(images/covers/airfoil1.jpg);
+    background-image: url(images/covers/naca0012.jpg);
     background-size: cover;
     
     width: 25vw;
@@ -393,24 +397,27 @@ body {
     
     display: flex;
     flex-direction: column;
+    
 }
 
 .side-project-title {
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-bottom: 0.8vh;
     opacity: 0;
-    color: white;
+    color: floralwhite;
+    font-weight: bold;
     
     transition: 0.5s linear;
-    
+        
     z-index: 3;
 }
 
 .side-project-info {
     margin: 0;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
     opacity: 0;
     color: floralwhite;
+    font-weight: bold;
     
     transition: 0.5s linear;
     
@@ -418,7 +425,7 @@ body {
 }
 
 .side-project-image:hover .dimmer{
-    opacity: 0.4;
+    opacity: 0.6;
     transition: 0.5s linear;
 }
 
