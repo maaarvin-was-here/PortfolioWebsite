@@ -336,11 +336,11 @@ body {
     background-position: -2%;
 }
 
-#algvis-image {
-    background-image: url("/images/logos/algvis-logo-5.png");
+#trlimage {
+    background-image: url("/images/covers/TRL.jpg");
     
-    background-repeat: no-repeat;
-    background-position: 0%;
+    background-position: right;
+    background-size: cover;
 }
 
 .trapezoid-blob {
@@ -372,11 +372,12 @@ body {
     width: 25vw;
     height: 30vh;
     
+    
     background-color: black;
     opacity: 1;
     z-index: 2;
     
-
+    border-radius: 2vw;
 }
 
 .side-project-link {
@@ -384,8 +385,9 @@ body {
 }
 
 .side-project-image {
-    background-image: url(images/covers/naca0012.jpg);
+    border-radius: 2vw;
     background-size: cover;
+    background-position: center;
     
     width: 25vw;
     height: 30vh;
@@ -447,6 +449,8 @@ body {
     opacity: 0;
     
     transition: 0.5s linear;
+    
+    border-radius: 2vw;
 }
 
 
