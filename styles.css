@@ -339,8 +339,8 @@ body {
 #aplimage {
     background-image: url("images/logos/apl_logo_6.png");
     
-    background-repeat: no-repeat;
-    background-position: -2%;
+    background-position: right;
+    background-size: cover;
 }
 
 #trlimage {
