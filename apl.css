@@ -19,8 +19,7 @@
     flex-direction: column;
     
     position: relative;
-    
-    height: 20
+
 }
 
 .link-cell-image{
@@ -33,7 +32,7 @@
     bottom: 0;
     
     font-family: trebuchet ms;
-    font-size: 20px;
+    font-size: 0.9765625vw;
     opacity: 0;
 
 }
@@ -51,7 +50,7 @@
 #p4{
     font-family: trebuchet ms;
     
-    font-size: 24px;
+    font-size: 1.171875vw;
     
     line-height:180%;
     
