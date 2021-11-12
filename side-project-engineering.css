@@ -142,3 +142,24 @@ body {
     border: 5px solid black;
 }
 
+#button-div{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5vh;
+    
+    height: 5vh;
+}
+
+#back-button{
+    width: 20vw;
+    
+    font-family: trebuchet ms;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#back-button:hover{
+    border: 5px solid #B070F4;
+    transform: scale(1.1);
+}
+
