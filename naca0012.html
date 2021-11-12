@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="side-project-engineering.css">
     <link rel="stylesheet" href="naca0012.css">
     <link rel="stylesheet" href="header-footer.css">
+    <script rel="type/javascript" src="app.js"></script>
     <link rel="icon" href="images/logos/main%20site%20logo.png"> <!-- change this -->
 </head>
 
@@ -28,21 +29,84 @@
                 <p class="navbar-text">Passion Projects</p>
             </a>
 
-            <a class="navbar-link" href="#projects" onclick="scrollToPortfolio()">
+            <a class="navbar-link" href="index.html/#projects" onclick="scrollToPortfolio()">
                 <p class="navbar-text">Portfolio</p>
             </a>
 
-            <a class="navbar-link" href="#landing-page" onclick="scrollToTop()">
+            <a class="navbar-link" href="index.html" onclick="scrollToTop()">
                 <p class="navbar-text">Home</p>
             </a>
         </section>
     </section>
     
+
     <section id="title-background">
+        <section id="fixed-top-background"></section>
         <h1 id="title">NACA 0012 Airfoil Demonstration in ANSYS Fluent</h1>
         <!-- <section id="title-gradient"></section> -->
     </section>
     
+    <section id="body-content">
+        
+        
+        <p><i>A more detailed write-up of this project is in progress, as well as a follow-up in which I demonstrate the effects of winglets on airflow, testing both blended and split-scimitar winglets.</i></p>
+        
+        <div id="first-row">
+            <p id="p1">This was just a quick little project to practice using ANSYS Fluent. I tested an NACA 0012 airfoil placed at a 6 degree angle of attack in a wind tunnel. I used a medium-fine mesh under standard conditions and collected data on pressure and velocity at different points on and around the airfoil surface.</p>
+
+            <img id="assembly-image" src="images/covers/naca0012.jpg"/> 
+        </div>
+
+        
+        <div id="image-grid">
+            <div class="image-cell" style="background-image: url('images/naca0012/geometry%20zoomed.png')">
+            </div>
+            <div class="image-cell" style="background-image: url('images/naca0012/mesh%20full.png')">
+            </div>
+            
+            <div class="image-cell" style="background-image: url('images/naca0012/mesh%20zoomed.png')">
+            </div>
+            <div class="image-cell" style="background-image: url('images/naca0012/mesh%20trail-edge.png')">
+            </div>
+            
+            <div class="image-cell" style="background-image: url('images/naca0012/velocity%20stream.png')">
+            </div>
+            <div class="image-cell" style="background-image: url('images/naca0012/pressure%20contours.png')">
+            </div>
+                
+        </div>
+        <div id="button-div">
+            <button id="back-button" onclick="goBack()">Back to Projects</button>
+        </div>
+    </section>
+    
+    <section id="contact-bar-background">
+        <div id="contactbar">
+
+            <div class="contactcell">
+                <a href="mailto:marvinlin2@gmail.com" target="_blank">
+                    <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo" style="-webkit-filter: invert(100%)"/>
+                </a>
+            </div>
+            <div class="contactcell">
+                <a href="https://www.linkedin.com/in/marvin--lin/">
+                    <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo" />
+                </a>
+            </div>
+            <div class="contactcell">
+                <a href="https://github.com/maaarvin-was-here">
+                    <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
+                </a>
+            </div>
+
+        </div>
+
+        <section>
+            <div id="invisibleDivision">
+                <p id="copyright">Copyright &#169; 2021 Marvin Lin. All Rights Reserved.</p>
+            </div>
+        </section>
+    </section>
 </body>
 
 
