@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="side-project-engineering.css">
     <link rel="stylesheet" href="trl.css">
     <link rel="stylesheet" href="header-footer.css">
+    <script rel="type/javascript" src="app.js"></script>
     <link rel="icon" href="images/logos/main%20site%20logo.png"> <!-- change this -->
 </head>
 
@@ -46,9 +47,42 @@
     </section>
     
     <section id="body-content">
+        
+        
+        <p><i>Note: A lot of what I did for this project is confidential and the proprietary knowledge of the lab, and hence not shared publicly here</i></p>
+        
+        <div id="first-row">
+            <p id="p1">I spent the summer as a robotics research intern at the University of Washington's Transformative Robotics Laboratory designing, building, and testing prototypes for a novel robotic joint mechanism. I created a number of CAD designs (drawings and models) with design for manufacturability in mind using <b>SolidWorks</b>. I also utilized <b>rapid prototyping</b> methods to quickly make and test different iterations of various components against a set of test criteria.</p>
+
+            <img id="assembly-image" src="images/trl/Middle%20Joint%20Assemb.%20Cover%203.jpg"/> 
+        </div>
+        <p id="p2">I especially enjoyed working with the lab's Carbon M1 3D <b>Digital Light Processing (DLP)</b> printer, for which I learned printing, handling, and curing methods for a variety of different resin materials including UMA90 and RPU70. Thanks to a combination of accurate CAD modeling and the Carbon's extreme precision, the parts came out of the printer fairly well. However, I would always perform more precision machining using <b>machine shop</b> tools and small hand tools in order to account for small variances and get the part to be sized just right, contributing to more effective and valid testing.</p>
+        
+        <p id="p3">I also wrote scripts in <b>Python</b> to actuate the motion of the joint using inverse kinematics equations, which control one of three brushless DC motors acting in a dimension, which allows the mechanism's end effector to be moved to any point on a 2D plane.</p>
+        
+        <div id="image-grid">
+            <div class="image-cell" style="background-image: url('images/trl/middle joint front cover image.jpg')">
+                <p>Front Component of Joint</p>
+            </div>
+            <div class="image-cell" style="background-image: url('images/trl/middle joint front drawing.jpg')">
+            </div>
+            
+            <div class="image-cell" style="background-image: url('images/trl/middle joint middle cover image.jpg')">
+                <p>Middle Component of Joint</p>
+            </div>
+            <div class="image-cell" style="background-image: url('images/trl/middle joint middle drawing.jpg')">
+            </div>
+            
+            <div class="image-cell" style="background-image: url('images/trl/middle joint back cover image.jpg')">
+                <p>Back Component of Joint</p>
+            </div>
+            <div class="image-cell" style="background-image: url('images/trl/middle joint back drawing.jpg')">
+            </div>
+        </div>
+        
+        <button id="back-button" onclick="goBack()">Back to Projects</button>
     
     </section>
-    
     
     <section id="contact-bar-background">
         <div id="contactbar">

@@ -1,0 +1,15 @@
+#body-content{
+    height: 50vh;
+    width: 70vw;
+    margin: auto;
+    
+    text-align: center;
+    
+    margin-top: 2vh;
+}
+
+
+#contact-bar-background{
+    padding-top: 1vh;
+    background-color: #181818;
+}

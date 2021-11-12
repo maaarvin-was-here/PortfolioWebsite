@@ -299,3 +299,8 @@ function blueDown(){
         greenUp();
     }
 }
+
+
+function goBack(){
+    window.history.back();
+}

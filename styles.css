@@ -329,6 +329,13 @@ body {
     background-position: 70%;
 }
 
+#sarpimage {
+    background-image: url("images/covers/SARP.jpg");
+    
+    background-size: cover;
+    background-position: left;
+}
+
 #aplimage {
     background-image: url("images/logos/apl_logo_6.png");
     

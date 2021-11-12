@@ -52,3 +52,93 @@ body {
     position: relative;
     
 }
+
+
+/*      body stuff      */
+
+
+#body-content{
+    width: 60vw;
+    margin: auto;
+}
+
+#contact-bar-background{
+    padding-top: 1vh;
+    background-color: #181818;
+}
+
+#first-row{
+    height: 40vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    align-items: center;
+    display: flex;
+}
+
+#p1{
+    font-family: trebuchet ms;
+    
+    font-size: 24px;
+    
+    width: 50%;
+    
+    line-height: 180%;
+    
+    margin-top: 5vh;
+    
+    float: left;
+}
+
+#assembly-image{
+    width: 48%;
+    margin-left: 2vw;
+    float: right;
+    border: 5px solid black;
+}
+
+#p2{
+    font-family: trebuchet ms;
+    
+    font-size: 24px;
+    
+    line-height:180%;
+    
+    margin-bottom: 5vh;
+}
+
+#p3{
+    font-family: trebuchet ms;
+    font-size: 24px;
+    line-height: 180%;
+}
+
+#image-grid{
+    width: 60vw;
+    margin: auto;
+    
+    display: grid;
+
+    margin-top: 5vh;
+        
+    grid-template-columns: 29vw 29vw;
+    grid-column-gap: 2vw;
+    
+    grid-template-rows: auto;
+    grid-row-gap: 5vh;
+    
+    margin-bottom: 5vh;
+}
+
+.image-cell {
+    width: 29vw;
+    height: 40vh;
+    
+    background-size: cover;
+    
+    background-color: black;
+    opacity: 1;
+    z-index: 2;
+    
+    border: 5px solid black;
+}
+
