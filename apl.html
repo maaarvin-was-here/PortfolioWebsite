@@ -1,79 +1,129 @@
 <!doctype html>
-<html lang="en" style>
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
     <title>Marvin Lin</title>
+    <link rel="stylesheet" href="side-project-engineering.css">
     <link rel="stylesheet" href="apl.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <script rel="type/javascript" src="app.js"></script>
+    <link rel="icon" href="images/logos/main%20site%20logo.png"> <!-- change this -->
 </head>
 
 <body>
-    <div id="background-image">
-        <div id="title-block">
-            <h1 id="title-block-text-1">Underwater Motion Capture for Submersibles</h1>
-            <p id="title-block-text-2">A 2021 Intern Project at the University of Washington Applied Physics Lab — by Marvin Lin</p>
-        </div>
-        <div id="circle-div">
-            *
-        </div>
-    </div>
+    <section>
+        <section>
+            <a href="index.html">
+                <img id="logoimage" src="images/logos/main site logo.png" />
+            </a>
+        </section>
+        <section id="navbar">
+            <!-- Displays from right to left on page -->
+
+            <a class="navbar-link" href="about.html">
+                <p class="navbar-text">About Me</p>
+            </a>
+
+            <a class="navbar-link" href="passionprojects.html">
+                <p class="navbar-text">Passion Projects</p>
+            </a>
+
+            <a class="navbar-link" href="index.html/#projects" onclick="scrollToPortfolio()">
+                <p class="navbar-text">Portfolio</p>
+            </a>
+
+            <a class="navbar-link" href="index.html" onclick="scrollToTop()">
+                <p class="navbar-text">Home</p>
+            </a>
+        </section>
+    </section>
     
-    <div id="actual-content">
-        <div id="intro-panel">
-            <h1 id="intro-title">Underwater Motion Capture System</h1>
-            <div id="intro-grid">
-                <div class="grid-item" id="firsttwoparagraphs">
-                    <p class="intro-paragraph-1">While it may seem simple and straightforward, accurately tracking the movement of robots is a difficult and complex task. Sensors or GPS trackers that are built into the robots themselves can never be relied upon due to the high risk of error, except when using extremely high-grade and expensive GPS systems.
-                    </p>
-                    <br>
-                    <p class="intro-paragraph-1">
-                    However, robots operating underwater are unable to even utilize high-grade GPS systems due to the fact that GPS does not work underwater, especially at the depths that require robots to operate at. As such, using an external motion capture system is not just more reliable than on-board sensors, it’s the only feasible way to get an accurate measure of the robot’s movements. Additionally, underwater robots are prone to gradual underwater drift or unpredictable movements from currents. 
-                    </p>
+
+    <section id="title-background">
+        <section id="fixed-top-background"></section>
+        <h1 id="title">Applied Physics Laboratory @ UW — Software / Mechanical Engineer Intern</h1>
+        <!-- <section id="title-gradient"></section> -->
+    </section>
+    
+    <section id="body-content">
+        
+        <div id="link-grid">
+                <div class="link-cell">
+                    <a class="link-hover" href="https://gitlab.com/apl-ocean-engineering/multi-camera-tracking/computer-vision-experiments" target="_blank">
+                        <img class="link-cell-image" src="/images/logos/gitlab.png">
+                    </a>
+                    <p class="link-description">Gitlab</p>
                 </div>
-                <div class="grid-item" id="intro-image">
-                    there will be an image here soon
-                </div>
-            </div>
-            <br>
-            <p id="intro-paragraph-3">
-            This project focused on the development of a motion tracking system which works underwater and is able to track the location and movements of a robot underwater. While underwater motion tracking systems already exist, they are very expensive, reaching prices of well over $100,000 (ahem Qualisys). To circumvent the cost issue, our system uses an array of Raspberry Pi cameras to monitor a location and triangulates the location of underwater robots using computer vision code. Ultimately, this system will serve as a more affordable yet functional version of a high-end underwater motion tracking system.
-            </p>
             
-            <div id="link-logos">
-                <a class="rectangle-link" href="https://gitlab.com/apl-ocean-engineering/multi-camera-tracking/computer-vision-experiments" target="_blank">
-                    <div class="gen-logo-section" id="gitlab-logo-section">
-                        <img id="gitlab-logo" src="/images/logos/gitlab.png">
-                        <p class="logo-grid-text" id="gitlab-info">
-                            See the Code on Gitlab
-                        </p>
-                    </div>
+                <div class="link-cell">
+                    <a href="https://underwater-motion-capture-system.readthedocs.io/en/latest/index.html" target="_blank">
+                        <img class="link-cell-image" src="/images/logos/rtd.png" style="height: 15vh">
+                    </a>
+                    <p class="link-description">Documentation</p>
+                </div>
+            
+                <div class="link-cell">
+                    <a href="https://www.overleaf.com/project/60fb19c56411d2d208d493e5" target="_blank">
+                        <img class="link-cell-image" src="/images/logos/overleaf.png" style="height: 17vh">
+                    </a>
+                    <p class="link-description">Write-up (still in progress!)</p>
+                </div>
+            
+        
+        </div>
+        
+        <div id="first-row">
+            <p id="p1">At the UW Applied Physics Laboratory, I've been working on a project to design and create an underwater camera capture system to track remote-operated vehicles in a test tank. I've worked on every facet of the project, from modeling physical parts in <b>SolidWorks</b> to writing over 2000 lines of code in <b>Python</b>, using <b>OpenCV</b> computer vision, a <b>Pytorch</b> convolutional neural network, and <b>multi-threading</b> over TCP and UDP networking protocols to bridge an entire system of <b>Raspberry Pi</b>'s.</p>
+            
+            <img id="assembly-image"/>
+        </div>
+        <p id="p2">I helped create different models for a Raspberry Pi wall mount which secures the Raspberry Pi and holds the camera towards a set location to make triangulation more accurate. Under the <b>rapid prototyping cycle</b>, I created CAD models of the mounts using <b>SolidWorks</b> and fabricated prototypes using a <b>laser cutter</b>. </p>
+            
+        <p id="p3">A part of the project that I'm especially proud of is a system that I designed to <b>automate</b> data collection and processing. In order to test the delay between various different Raspberry Pi's communicating with the main server, I pointed all the cameras at a phone screen running a stopwatch, and send a threaded request for an image to all the Pi's simultaneously. Using the images that the Pi's send back, I am able to precisely calculate the delay between each Pi.</p>
+        
+        <p id="p4">Instead of manually taking sending the image request and looking at the images that are sent back, I instead implemented two automatic systems: a <b>Pytorch</b> convolutional neural network trained to recognize digits, and an <b>OpenCV Feature Matching</b> method that also finds clusters of pixels that represent digits in an image. Paired with <b>PyAutoGUI</b>, both of these methods are able to convert digits in an image to integers variables, making it extremely easy to find the average delay between Pi's over a large number of trials, a statistic that is crucial to the accuracy and function of the camera system.</p>
+        
+        <div id="image-grid">
+            <div class="image-cell" style="background-image: url('images/logos/apl logo.png')">
+            </div>
+            <div class="image-cell" style="background-image: url('images/logos/uw logo.png')">
+            </div>
+
+
+        </div>
+        <div id="button-div">
+            <button id="back-button" onclick="goBack()">Back to Projects</button>
+        </div>
+    </section>
+    
+    <section id="contact-bar-background">
+        <div id="contactbar">
+
+            <div class="contactcell">
+                <a href="mailto:marvinlin2@gmail.com" target="_blank">
+                    <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo" style="-webkit-filter: invert(100%)"/>
                 </a>
-                <a class="rectangle-link" href="https://underwater-motion-capture-system.readthedocs.io/en/latest/index.html" target="_blank">
-                    <div class="gen-logo-section" id="rtd-logo-section">
-                        <img id="rtd-logo" src="/images/logos/rtd.png">
-                        <p class="logo-grid-text" id="rdt-info">
-                            Read the Documentation on ReadTheDocs
-                        </p>
-                    </div>
+            </div>
+            <div class="contactcell">
+                <a href="https://www.linkedin.com/in/marvin--lin/">
+                    <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo" />
                 </a>
-                <a class="rectangle-link" href="https://www.overleaf.com/project/60fb19c56411d2d208d493e5" target="_blank">
-                    <div class="gen-logo-section" id="overleaf-logo-section">
-                        <img id="overleaf-logo" src="/images/logos/overleaf.png">
-                        <p class="logo-grid-text" id="overleaf-info">
-                            Read the full write-up on Overleaf
-                        </p>
-                    </div>
+            </div>
+            <div class="contactcell">
+                <a href="https://github.com/maaarvin-was-here">
+                    <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
                 </a>
             </div>
 
-            <div id="logo-grid">
-                <img class="logo-img" src="/images/logos/apl%20logo.png">
-                <img class="logo-img" src="/images/logos/uw%20logo.png">
-            
-            </div>
         </div>
-    </div>
-    
+
+        <section>
+            <div id="invisibleDivision">
+                <p id="copyright">Copyright &#169; 2021 Marvin Lin. All Rights Reserved.</p>
+            </div>
+        </section>
+    </section>
 </body>
 
 

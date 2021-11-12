@@ -1,0 +1,305 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#top {
+    position: relative;
+    top: 0vh;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #fff;
+    
+    background-image: url(/images/apl-background-temp.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+#background-image {
+    height: 100vh;
+}
+
+#title-block {
+    background-color: lightgrey;
+    
+    width: 40vw;
+    height: 30vh;
+    
+    margin-left: 15vw;
+    margin-top: 20vh;
+    
+    opacity: 80%;
+    
+    border-radius: 3vw;
+    
+    position: absolute;
+    
+}
+
+#title-block-text-1 {
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 6%;
+    
+    line-height: 6.561679790026247vh;
+    
+    width: 90%;
+    
+    font-size: 2.734375vw;
+    font-family: trebuchet ms;
+    font-weight: bold;
+
+    position: relative;
+}
+
+#title-block-text-2 {
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 6%;
+    
+    line-height: 3.937007874015748vh;
+    
+    width: 90%;
+    
+    font-size: 1.171875vw;
+    font-family: trebuchet ms;
+    
+}
+
+/*      circle div      */
+#circle-div{
+    margin: 0 auto;
+    width: 5vw;
+    
+    text-align: center;
+    
+    position: relative;
+    
+    padding-top: 90vh;
+    
+    text-align: center;
+}
+
+
+/*          body            */
+
+#actual-content {
+}
+
+#intro-panel{
+    width: 80vw;
+    
+    margin: 0 auto;
+    
+    background-color: lightgrey;
+    border-radius: 3vw;
+    
+    opacity: 90%;
+    
+    position: relative;
+    
+    overflow: auto;
+}
+
+
+#intro-grid{
+    display: grid;
+    
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+        
+    margin-left: 10%;
+}
+
+.grid-item{
+    
+}
+
+#intro-title {
+    text-align: left;
+    
+    margin: 0;
+    margin-left: 15%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+    
+    font-size: 2.6041666666666665vw; /*     change to vw        */
+    font-family: trebuchet ms;
+    
+    font-weight: bolder;
+}
+
+.intro-paragraph-1 {
+    text-align: justify;    
+    margin: 0;
+    
+    font-size: 1.0416666666666667vw;
+    font-family: trebuchet ms;
+    
+    line-height: 3.543307086614173vh;
+    
+    margin-bottom: 8vh;
+}
+
+#firsttwoparagraphs {            
+    
+}
+
+
+#intro-image{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    
+    background-color: pink;
+    
+    float: right;
+}
+
+#intro-paragraph-3{
+    text-align: justify;
+    width: 60%;
+    
+    margin: 0;
+    margin-left: 10%;
+    
+    font-size: 1.0416666666666667vw;
+    font-family: trebuchet ms;
+    line-height: 3.543307086614173vh;
+    
+    
+    clear: both;
+    
+    position: relative;
+}
+
+/*      links       */
+
+
+.gen-logo-section:hover {
+    background-color: darkgrey;
+    transform: scale(1.01);
+    
+}
+
+#link-logos{
+    width: 50vw;
+    margin: 0 auto;
+    
+    margin-top: 7vh;
+}
+
+#gitlab-logo-section {
+    display: grid;
+    
+    grid-template-columns: 10vw auto;
+    
+    margin-bottom: 5vh;
+    
+    border: 1px solid black;
+    border-radius: 2vw;
+}
+
+#gitlab-logo {
+    width: 10vw;
+}
+
+#gitlab-info {
+    margin: 0;
+    margin-left: 3vw;
+    width: 31vw;
+}
+
+#rtd-logo-section{
+    display: grid;
+    
+    grid-template-columns: 10vw auto;
+    
+    margin-bottom: 5vh;
+    
+    border: 1px solid black;
+    border-radius: 2vw;
+}
+
+#rtd-logo{
+    width: 7vw;
+    margin: 1vw;
+}
+
+#rdt-info {
+    margin: 0;
+    margin-left: 3vw;
+    width: 31vw;
+}
+
+#overleaf-logo-section {
+    display: grid;
+    
+    grid-template-columns: 10vw auto;
+    
+    border: 1px solid black;
+    
+    height: 10vw;
+    
+    border-radius: 2vw;
+}
+
+#overleaf-logo {
+    width: 8vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+#overleaf-info{
+    margin: 0;
+    margin-left: 3vw;
+    width: 31vw;
+}
+
+.rectangle-link {
+    text-decoration: none;
+}
+
+.logo-grid-text {
+    color: black;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    font-family: trebuchet ms;
+    font-size: 1.5625vw;
+    font-weight: bold;
+    
+    letter-spacing: 1.5px;
+    
+}
+
+
+/*      logos       */
+
+#logo-grid{
+    margin-left: 20vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+
+    
+    width: 60vw;
+    
+    grid-template-columns: auto auto;
+    
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.logo-img{
+    height: 10vh;
+    margin-right: 10vw;
+}
