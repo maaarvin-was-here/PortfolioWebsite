@@ -42,7 +42,7 @@
 
     <section id="title-background">
         <section id="fixed-top-background"></section>
-        <h1 id="title">Applied Physics Laboratory @ UW — Software / Mechanical Engineer Intern</h1>
+        <h1 id="title">Applied Physics Laboratory — Software Engineering Intern</h1>
         <!-- <section id="title-gradient"></section> -->
     </section>
     
@@ -74,15 +74,19 @@
         </div>
         
         <div id="first-row">
-            <p id="p1">At the UW Applied Physics Laboratory, I've been working on a project to design and create an underwater camera capture system to track remote-operated vehicles in a test tank. I've worked on every facet of the project, from modeling physical parts in <b>SolidWorks</b> to writing over 2000 lines of code in <b>Python</b>, using <b>OpenCV</b> computer vision, a <b>Pytorch</b> convolutional neural network, and <b>multi-threading</b> over TCP and UDP networking protocols to bridge an entire system of <b>Raspberry Pi</b>'s.</p>
+            <p id="p1">At the UW Applied Physics Laboratory, I've been working on a project to design and create an underwater camera capture system to track remote-operated vehicles in a test tank. I've worked on every facet of the project, from modeling physical parts in <b>SolidWorks</b> to writing over 2000 lines of code in <b>Python</b>, using <b>OpenCV</b> computer vision.</p>
             
             <img id="assembly-image"/>
         </div>
-        <p id="p2">I helped create different models for a Raspberry Pi wall mount which secures the Raspberry Pi and holds the camera towards a set location to make triangulation more accurate. Under the <b>rapid prototyping cycle</b>, I created CAD models of the mounts using <b>SolidWorks</b> and fabricated prototypes using a <b>laser cutter</b>. </p>
-            
+        <p id="p2">The bulk of my work involved writing a number of <b>Python</b> scripts and classes to facilitate communication between a centralized server and the many Raspberry Pi's that served as remote clients. These scripts performed tasks such as calibrating the camera intrinsically and extrinsically using a ChArUco board, taking images simultaneously within two thousandths of a second of each other, and running calculations to trilaterate the location of an underwater ROV.</p>
+        
+        <p id="p3">I also helped create prototypes for a Raspberry Pi wall mount which secures the Raspberry Pi and holds the camera towards a set location to make triangulation more accurate. Under the <b>rapid prototyping cycle</b>, I designed the mounts using <b>SolidWorks</b> and fabricated prototypes using a <b>laser cutter</b>. </p>
+        
+        
+        <!--    
         <p id="p3">A part of the project that I'm especially proud of is a system that I designed to <b>automate</b> data collection and processing. In order to test the delay between various different Raspberry Pi's communicating with the main server, I pointed all the cameras at a phone screen running a stopwatch, and send a threaded request for an image to all the Pi's simultaneously. Using the images that the Pi's send back, I am able to precisely calculate the delay between each Pi.</p>
         
-        <p id="p4">Instead of manually taking sending the image request and looking at the images that are sent back, I instead implemented two automatic systems: a <b>Pytorch</b> convolutional neural network trained to recognize digits, and an <b>OpenCV Feature Matching</b> method that also finds clusters of pixels that represent digits in an image. Paired with <b>PyAutoGUI</b>, both of these methods are able to convert digits in an image to integers variables, making it extremely easy to find the average delay between Pi's over a large number of trials, a statistic that is crucial to the accuracy and function of the camera system.</p>
+        <p id="p4">Instead of manually taking sending the image request and looking at the images that are sent back, I instead implemented two automatic systems: a <b>Pytorch</b> convolutional neural network trained to recognize digits, and an <b>OpenCV Feature Matching</b> method that also finds clusters of pixels that represent digits in an image. Paired with <b>PyAutoGUI</b>, both of these methods are able to convert digits in an image to integers variables, making it extremely easy to find the average delay between Pi's over a large number of trials, a statistic that is crucial to the accuracy and function of the camera system.</p> -->
         
         <div id="image-grid">
             <div class="image-cell" style="background-image: url('images/logos/apl logo.png')">
