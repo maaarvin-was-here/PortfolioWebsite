@@ -336,6 +336,12 @@ body {
     background-position: left;
 }
 
+#fsaeimage {
+    background-image: url("images/covers/uwfm3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #aplimage {
     background-image: url("images/logos/apl_logo_6.png");
     
