@@ -336,6 +336,13 @@ body {
     background-position: left;
 }
 
+#boeingimage{
+    background-image: url("images/logos/boeing3.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
 #fsaeimage {
     background-image: url("images/covers/uwfm3.png");
     background-size: contain;
@@ -429,7 +436,7 @@ body {
 
 .side-project-info {
     margin: 0;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     opacity: 0;
     color: floralwhite;
     font-weight: bold;
