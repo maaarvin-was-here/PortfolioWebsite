@@ -7,7 +7,7 @@
     grid-template-columns: 20vw 20vw 20vw;
     
     margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-bottom: 6vh;
     
 }
 
@@ -23,7 +23,7 @@
 }
 
 .link-cell-image{
-    height: 20vh;
+    height: 17vh;
     z-index: 2;
 }
 
