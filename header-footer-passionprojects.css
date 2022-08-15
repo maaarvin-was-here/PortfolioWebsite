@@ -117,13 +117,42 @@
 /*      copyright       */
 
 
+/*      copyright       */
+
+#invisible-copyright-division {
+    background-color: #181818;
+    height: 2.8625954198473282vh; /* 30px */
+    padding-top: 5vh;
+    position: relative;
+    margin-bottom: 3vh;
+    
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
 #copyright {
     color: white;
-    text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
     margin-top: 4.770992366412214vh; /* 50px */
     font-family: trebuchet ms;
     position: relative;
-    width: 100vw;
-    bottom: 0.9541984732824428vh; /* 10 px */
+    width: 45vw;
+    bottom: 1.9541984732824428vh; /* 10 px */
+}
+
+#made-with-love {
+    color: white;
+    margin-bottom: 3vh;
+    text-align: right;
+    margin-right: 5vw;
+    margin-top: 4.770992366412214vh; /* 50px */
+    font-family: trebuchet ms;
+    position: relative;
+    width: 45vw;
+    bottom: 1.9541984732824428vh; /* 10 px */
+}
+
+#bot-space{
+    height: 1vh;
 }

@@ -18,8 +18,8 @@ var textCarousel = [
     "am^an^engineer^and^designer",
     "am^a^software^developer",
     "love^solving^problems",
-    "love^building^and^creating",
-    "study^in^rainy^Seattle,^WA",
+    "am^a^builder^and^creator",
+    "am^addicted^to^crosswords",
     "enjoy^a^good^game^of^chess",
 ];
 

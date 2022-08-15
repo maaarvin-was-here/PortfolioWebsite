@@ -71,7 +71,7 @@
             <h1 id="title-third-line">constantly seeking opportunities to change the world</h1>
         </section>
         <section id="downarrow">
-            <p id="portfolio-arrow-label">Engineering Portfolio</p>
+            <p id="portfolio-arrow-label">Things I've Done</p>
             <div class="center-con">
                 <a href="#projects">
                     <div class="round" onclick="scrollToPortfolio()">
@@ -97,44 +97,31 @@
             </div>
             
             <div class="projects-title">
-                <h1 class="project-title-text">Portfolio</h1>
+                <h1 class="project-title-text">Things I've Done</h1>
             </div>
 
             <div id="section-body">
-                <div id="dates-grid">
-                    <!--<div class="dates-cell">
-                        June 2022
-                    </div>-->
-                    <div class="dates-cell">
-                        January 2022
-                    </div>
-                    <div class="dates-cell">
-                        July 2021
-                    </div>
-                    <div class="dates-cell">
-                        June 2021
-                    </div>
-                </div>
                 
                 <div id="project-grid">
                     
-                    <div class="projects-cell">
+                    <div class="projects-cell" id="boeing-project-div">
                         <a class="projects-link" href="boeing.html">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Structures Engineering Intern</p>
+                            <div class="projects-text-div" >
+                                <p class="projects-position">Flight Data Software Engineering Intern</p>
                                 <p class="projects-name">The Boeing Company</p>
-                                <p class="projects-description">Analyzed test data and compared FEM simulations to validate static loads, dynamic loads, and flutter on the P8-A Poseidon aircraft.</p>
-                                <p class="project-skills">Matlab, Simulink, Nastran, CATIA</p>
+                                <p class="projects-description">Analyzed test data and wrote software to validate static loads, dynamic loads, and flutter on the P-8 Poseidon aircraft.</p>
+                                <p class="project-skills">Matlab, Python</p>
                             </div>
-
+                            
                             <div class="projects-image" id="boeingimage">
-                                <div class="trapezoid-blob">
-                                </div>
+                                <div id="image-disclaimer">* Publicly Released Image</div>        
                             </div>
+                                
                         </a>
                     </div>
+
                     
-                    <div class="projects-cell">
+                    <div class="projects-cell" id="fsae-project-div">
                         <a class="projects-link" href="fsae.html">
                             <div class="projects-text-div">
                                 <p class="projects-position">Aerodynamics Engineer</p>
@@ -144,8 +131,7 @@
                             </div>
 
                             <div class="projects-image" id="fsaeimage">
-                                <div class="trapezoid-blob">
-                                </div>
+
                             </div>
                         </a>
                     </div>
@@ -183,34 +169,31 @@
                     </div>
                     -->
 
-                    <div class="projects-cell">
+                    <div class="projects-cell" id="apl-project-div">
                         <a class="projects-link" href="apl.html">
                             <div class="projects-text-div">
                                 <p class="projects-position">Software Engineering Intern</p>
                                 <p class="projects-name">UW Applied Physics Laboratory</p>
                                 <p class="projects-description">Designed and built a submersible tracking system using Python and OpenCV computer vision scripts</p>
-                                <p class="project-skills">SolidWorks, DFA, Python, OpenCV</p>
+                                <p class="project-skills">SolidWorks, Python, OpenCV</p>
                             </div>
 
                             <div class="projects-image" id="aplimage">
-                                <div class="trapezoid-blob">
-                                </div>
+
                             </div>
                         </a>
                     </div>
                     
-                    <div class="projects-cell">
+                    <div class="projects-cell" id="trl-project-div">
                         <a class="projects-link" href="trl.html">
                             <div class="projects-text-div">
-                                <p class="projects-position">Mechanical Engineering Research Intern</p>
+                                <p class="projects-position">Mechanical Engineering Researcher</p>
                                 <p class="projects-name">UW Transformative Robotics Laboratory</p>
                                 <p class="projects-description">Implemented rapid prototyping to manufacture and test multiple iterations of a novel movement mechanism</p>
-                                <p class="project-skills">SolidWorks, Rapid Prototyping, DFA, Python</p>
+                                <p class="project-skills">SolidWorks, Fusion360, Rapid Prototyping, Machining</p>
                             </div>
 
                             <div class="projects-image" id="trlimage">
-                                <div class="trapezoid-blob">
-                                </div>
                             </div>
                         </a>
                     </div>
@@ -302,12 +285,14 @@
                 <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
             </a>
         </div>
-
     </div>
 
     <section>
-        <div id="invisibleDivision">
-            <p id="copyright">Copyright &#169; 2021 Marvin Lin. All Rights Reserved.</p>
+        <div id="invisible-copyright-division">
+            <p id="copyright">Copyright &#169; 2022 Marvin Lin. All Rights Reserved.</p>
+            <p id="made-with-love">Made with love, passion, and lots of caffeine &#129395;</p>
+        </div>
+        <div id="bot-space">
         </div>
     </section>
     <script rel="type/javascript" src="app.js"></script>

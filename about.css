@@ -30,6 +30,7 @@ body {
     padding-top: 30vh;
 }
 
+/*
 #intro-content{
     color: white;
     padding-left: 15%;
@@ -42,6 +43,7 @@ body {
     user-select: text;
     z-index: 4;
 }
+*/
 
 #myname{
     font-size: 5vh;
@@ -58,6 +60,35 @@ body {
 #introparagraph{
     line-height: 150%;
     user-select: text;
+}
+
+#top-grid{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+
+#intro-content{
+    color: white;
+    padding-left: 20%;
+    padding-top: 1vh;
+    font-size: 3vh;
+    width: 45vw;
+    font-family: trebuchet ms;
+    text-align: justify;
+    
+    user-select: text;
+    z-index: 4;
+}
+
+#id-photo-div{
+    width: 40vw;
+}
+
+#id-photo{
+    margin-left: 8vw;
+    margin-top: 12vh;
+    
+    width: 25vw;
 }
 
 
