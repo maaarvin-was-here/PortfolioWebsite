@@ -85,10 +85,12 @@ body {
 }
 
 #id-photo{
-    margin-left: 8vw;
+    margin-left: 3vw;
     margin-top: 12vh;
     
     width: 25vw;
+    
+    border-radius: 14vh
 }
 
 
