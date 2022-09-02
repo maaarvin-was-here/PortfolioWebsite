@@ -15,12 +15,11 @@ var currentlyLine = "";
 
 
 var textCarousel = [
-    "am^an^engineer^and^designer",
+    "am^an^engineer^and^inventor",
     "am^a^software^developer",
     "love^solving^problems",
-    "am^a^builder^and^creator",
-    "am^addicted^to^crosswords",
-    "enjoy^a^good^game^of^chess",
+    "am^learning^to^fly^airplanes",
+    "enjoy^a^good^game^of^chess"
 ];
 
 
