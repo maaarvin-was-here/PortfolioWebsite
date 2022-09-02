@@ -24,8 +24,6 @@ body {
     width: 100vw;
     height: 95vh;   
     background-color: #181818;
-    
-    pointer-events: none;
 }
 
 #main-title {    
@@ -465,20 +463,6 @@ body {
     
     display: grid;
     grid-template-columns: 50vw 50vw;
-}
-
-
-/*      particle JS         */
-
-#particles-js {
-    width: 100vw;
-    height: 100vh;
-    background-color: #181818;
-    /*#FBF8F3*/
-    user-select: none;
-    position: fixed;
-    
-    border-bottom: 2px solid white;
 }
 
 
