@@ -24,277 +24,279 @@
 </head>
 
 <body>
-    <section>
+    <section id="particlejs">
         <section>
-            <a href="index.html">
-                <img id="logoimage" src="images/logos/main site logo.png" />
-            </a>
+            <section>
+                <a href="index.html">
+                    <img id="logoimage" src="images/logos/main site logo.png" />
+                </a>
+            </section>
+            <section id="navbar">
+                <!-- Displays from right to left on page -->
+
+                <a class="navbar-link" href="about.html">
+                    <p class="navbar-text">About Me</p>
+                </a>
+
+                <a class="navbar-link" href="passionprojects.html">
+                    <p class="navbar-text">Passion Projects</p>
+                </a>
+
+                <a class="navbar-link" href="#projects" onclick="scrollToPortfolio()">
+                    <p class="navbar-text">Portfolio</p>
+                </a>
+
+                <a class="navbar-link" href="#landing-page" onclick="scrollToTop()">
+                    <p class="navbar-text">Home</p>
+                </a>
+            </section>
         </section>
-        <section id="navbar">
-            <!-- Displays from right to left on page -->
 
-            <a class="navbar-link" href="about.html">
-                <p class="navbar-text">About Me</p>
-            </a>
-
-            <a class="navbar-link" href="passionprojects.html">
-                <p class="navbar-text">Passion Projects</p>
-            </a>
-
-            <a class="navbar-link" href="#projects" onclick="scrollToPortfolio()">
-                <p class="navbar-text">Portfolio</p>
-            </a>
-
-            <a class="navbar-link" href="#landing-page" onclick="scrollToTop()">
-                <p class="navbar-text">Home</p>
-            </a>
-        </section>
-    </section>
-
-    <section id="landing-page">
-        <div id="main-title">
-            <div id="title-phrase">
-                <div>
-                    <h1 id="title-one-greeting">Hi, I'm&nbsp;&nbsp;</h1>
-                    <h1 id="title-one-name">Marvin Lin</h1>
-                </div>
-                <div id="title-line-two">
-                    <h1 id="title-pronoun">I&nbsp;&nbsp;</h1>
-                    <div id="typewriter-target">
-                        <h1 id="title-changing-text"></h1>
+        <section id="landing-page">
+            <div id="main-title">
+                <div id="title-phrase">
+                    <div>
+                        <h1 id="title-one-greeting">Hi, I'm&nbsp;&nbsp;</h1>
+                        <h1 id="title-one-name">Marvin Lin</h1>
                     </div>
-                    <h1 id="underscore-cursor">_</h1>
+                    <div id="title-line-two">
+                        <h1 id="title-pronoun">I&nbsp;&nbsp;</h1>
+                        <div id="typewriter-target">
+                            <h1 id="title-changing-text"></h1>
+                        </div>
+                        <h1 id="underscore-cursor">_</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section id="title-gap-space">
-            <h1 id="title-third-line">constantly seeking opportunities to change the world</h1>
+            <section id="title-gap-space">
+                <h1 id="title-third-line">constantly seeking opportunities to change the world</h1>
+            </section>
+            <section id="downarrow">
+                <p id="portfolio-arrow-label">Things I've Done</p>
+                <div class="center-con">
+                    <a href="#projects">
+                        <div class="round" onclick="scrollToPortfolio()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </section>
         </section>
-        <section id="downarrow">
-            <p id="portfolio-arrow-label">Things I've Done</p>
-            <div class="center-con">
-                <a href="#projects">
-                    <div class="round" onclick="scrollToPortfolio()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+
+
+
+
+        <section id="page-content">
+            <div id="invisible-division">
+            </div>
+
+            <div id="projects">
+                <div id="invisible-division2">
+                </div>
+
+                <div class="projects-title">
+                    <h1 class="project-title-text">Things I've Done</h1>
+                </div>
+
+                <div id="section-body">
+
+                    <div id="project-grid">
+
+                        <div class="projects-cell" id="boeing-project-div">
+                            <a class="projects-link" href="boeing.html">
+                                <div class="projects-text-div" >
+                                    <p class="projects-position">Flight Data Software Engineering Intern</p>
+                                    <p class="projects-name">The Boeing Company</p>
+                                    <p class="projects-description">Analyzed test data and wrote software to validate static loads, dynamic loads, and flutter on the P-8 Poseidon aircraft.</p>
+                                    <p class="project-skills">Matlab, Python, Data Analysis & Validation</p>
+                                </div>
+
+                                <div class="projects-image" id="boeingimage">
+                                    <div id="image-disclaimer">* Publicly Released Image</div>        
+                                </div>
+
+                            </a>
+                        </div>
+
+
+                        <div class="projects-cell" id="fsae-project-div">
+                            <a class="projects-link" href="fsae.html">
+                                <div class="projects-text-div">
+                                    <p class="projects-position">Aerodynamics Engineer</p>
+                                    <p class="projects-name">UW Formula Motorsports</p>
+                                    <p class="projects-description">Designed and manufactured various project features for the aerodynamics package of the team's F1 car.</p>
+                                    <p class="project-skills">SolidWorks, FEA, CFD, Composites</p>
+                                </div>
+
+                                <div class="projects-image" id="fsaeimage">
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--<div class="projects-cell">
+                            <a class="projects-link" href="disha.html">
+                                <div class="projects-text-div">
+                                    <p class="projects-position">Project Lead - Coding</p>
+                                    <p class="projects-name">UW DUBvelopers</p>
+                                    <p class="projects-description">Led a team of students in programming a website under Agile project management for a local affordable healthcare organization.</p>
+                                    <p class="project-skills">HTML/CSS, Javascript, Figma</p>
+                                </div>
+
+                                <div class="projects-image" id="">
+                                    <div class="trapezoid-blob">
+                                    </div>
+                                </div>
+                            </a>
+                        </div> -->
+                        <!--
+                        <div class="projects-cell">
+                            <a class="projects-link" href="sarp.html">
+                                <div class="projects-text-div">
+                                    <p class="projects-position">Avionics Systems Engineer</p>
+                                    <p class="projects-name">Society for Advanced Rocket Propulsion (SARP)</p>
+                                    <p class="projects-description">Wrote avionics software in Python and optimized code using Pylint</p>
+                                    <p class="project-skills">Python, SolidWorks, ANSYS</p>
+                                </div>
+
+                                <div class="projects-image" id="sarpimage">
+                                    <div class="trapezoid-blob">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        -->
+
+                        <div class="projects-cell" id="apl-project-div">
+                            <a class="projects-link" href="apl.html">
+                                <div class="projects-text-div">
+                                    <p class="projects-position">Software Engineering Intern</p>
+                                    <p class="projects-name">UW Applied Physics Laboratory</p>
+                                    <p class="projects-description">Designed and built a submersible tracking system using Python and OpenCV computer vision scripts</p>
+                                    <p class="project-skills">SolidWorks, Python, OpenCV</p>
+                                </div>
+
+                                <div class="projects-image" id="aplimage">
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="projects-cell" id="trl-project-div">
+                            <a class="projects-link" href="trl.html">
+                                <div class="projects-text-div">
+                                    <p class="projects-position">Mechanical Engineering Researcher</p>
+                                    <p class="projects-name">UW Transformative Robotics Laboratory</p>
+                                    <p class="projects-description">Implemented rapid prototyping to manufacture and test multiple iterations of a novel movement mechanism</p>
+                                    <p class="project-skills">SolidWorks, Fusion360, Rapid Prototyping, Machining</p>
+                                </div>
+
+                                <div class="projects-image" id="trlimage">
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <!--
+                        <div class="projects-cell">
+                            <a class="projects-link" href="project-algvis.html" target="_blank">
+                                <div class="projects-text-div">
+                                    <p class="projects-name">Algorithm Visualizer</p>
+                                    <p class="projects-description">
+                                        A visual collection of various algorithms, data structures, and other computer science concepts that I've learned
+                                    </p>
+                                    <p class="project-skills">Javascript, HTML/CSS</p>
+                                </div>
+
+                                <div class="projects-image" id="algvis-image">
+                                    <div class="trapezoid-blob">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="projects-cell">
+                            <a class="projects-link" href="https://spellingbee.marvinlin.ml" target="_blank">
+                                <div class="projects-text-div">
+                                    <p class="projects-name">New York Times Spelling Bee</p>
+                                    <p class="projects-description">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription</p>
+                                    <p class="project-skills">Javascript, HTML/CSS</p>
+                                </div>
+
+                                <div class="projects-image" id="beeimage">
+                                    <div class="trapezoid-blob">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    -->
                     </div>
+
+                </div>
+            </div>
+            <div id="invisible-division">
+            </div>
+            <div>
+                <div class="projects-title">
+                    <h1 class="project-title-text">Projects</h1>
+                </div>
+
+                <div id="side-projects-grid">
+                    <div class="side-project-cell">
+                        <a class="side-project-link" href="naca0012.html">
+                            <div class="side-project-image" style="background-image: url(images/covers/naca0012.jpg)">
+                                <p class="side-project-title">NACA 0012 Airfoil (Quick ANSYS Demo)</p>
+                                <p class="side-project-info">Personal Engineering Project</p>
+                                <div class="dimmer"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-project-cell">
+                        <a class="side-project-link" href="https://devpost.com/software/meetmoment" target="_blank">
+                            <div class="side-project-image" style="background-image:url(images/covers/hi5.jpg)">
+                                <p class="side-project-title">Hi 5</p>
+                                <p class="side-project-info">Hackathon Project</p>
+                                <div class="dimmer"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div id="contactbar">
+
+            <div class="contactcell">
+                <a href="mailto:marvinlin2@gmail.com" target="_blank">
+                    <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo" />
                 </a>
             </div>
+            <div class="contactcell">
+                <a href="https://www.linkedin.com/in/marvin--lin/" target="_blank">
+                    <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo" />
+                </a>
+            </div>
+            <div class="contactcell">
+                <a href="https://github.com/maaarvin-was-here" target="_blank">
+                    <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
+                </a>
+            </div>
+        </div>
+
+        <section>
+            <div id="invisible-copyright-division">
+                <p id="copyright">Copyright &#169; 2022 Marvin Lin. All Rights Reserved.</p>
+                <p id="made-with-love">Made with love, passion, and lots of caffeine &#129395;</p>
+            </div>
+            <div id="bot-space">
+            </div>
         </section>
-    </section>
-
-
-
-
-    <section id="page-content">
-        <div id="invisible-division">
-        </div>
-
-        <div id="projects">
-            <div id="invisible-division2">
-            </div>
-            
-            <div class="projects-title">
-                <h1 class="project-title-text">Things I've Done</h1>
-            </div>
-
-            <div id="section-body">
-                
-                <div id="project-grid">
-                    
-                    <div class="projects-cell" id="boeing-project-div">
-                        <a class="projects-link" href="boeing.html">
-                            <div class="projects-text-div" >
-                                <p class="projects-position">Flight Data Software Engineering Intern</p>
-                                <p class="projects-name">The Boeing Company</p>
-                                <p class="projects-description">Analyzed test data and wrote software to validate static loads, dynamic loads, and flutter on the P-8 Poseidon aircraft.</p>
-                                <p class="project-skills">Matlab, Python, Data Analysis & Validation</p>
-                            </div>
-                            
-                            <div class="projects-image" id="boeingimage">
-                                <div id="image-disclaimer">* Publicly Released Image</div>        
-                            </div>
-                                
-                        </a>
-                    </div>
-
-                    
-                    <div class="projects-cell" id="fsae-project-div">
-                        <a class="projects-link" href="fsae.html">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Aerodynamics Engineer</p>
-                                <p class="projects-name">UW Formula Motorsports</p>
-                                <p class="projects-description">Designed and manufactured various project features for the aerodynamics package of the team's F1 car.</p>
-                                <p class="project-skills">SolidWorks, FEA, CFD, Composites</p>
-                            </div>
-
-                            <div class="projects-image" id="fsaeimage">
-
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!--<div class="projects-cell">
-                        <a class="projects-link" href="disha.html">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Project Lead - Coding</p>
-                                <p class="projects-name">UW DUBvelopers</p>
-                                <p class="projects-description">Led a team of students in programming a website under Agile project management for a local affordable healthcare organization.</p>
-                                <p class="project-skills">HTML/CSS, Javascript, Figma</p>
-                            </div>
-
-                            <div class="projects-image" id="">
-                                <div class="trapezoid-blob">
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
-                    <!--
-                    <div class="projects-cell">
-                        <a class="projects-link" href="sarp.html">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Avionics Systems Engineer</p>
-                                <p class="projects-name">Society for Advanced Rocket Propulsion (SARP)</p>
-                                <p class="projects-description">Wrote avionics software in Python and optimized code using Pylint</p>
-                                <p class="project-skills">Python, SolidWorks, ANSYS</p>
-                            </div>
-
-                            <div class="projects-image" id="sarpimage">
-                                <div class="trapezoid-blob">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    -->
-
-                    <div class="projects-cell" id="apl-project-div">
-                        <a class="projects-link" href="apl.html">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Software Engineering Intern</p>
-                                <p class="projects-name">UW Applied Physics Laboratory</p>
-                                <p class="projects-description">Designed and built a submersible tracking system using Python and OpenCV computer vision scripts</p>
-                                <p class="project-skills">SolidWorks, Python, OpenCV</p>
-                            </div>
-
-                            <div class="projects-image" id="aplimage">
-
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="projects-cell" id="trl-project-div">
-                        <a class="projects-link" href="trl.html">
-                            <div class="projects-text-div">
-                                <p class="projects-position">Mechanical Engineering Researcher</p>
-                                <p class="projects-name">UW Transformative Robotics Laboratory</p>
-                                <p class="projects-description">Implemented rapid prototyping to manufacture and test multiple iterations of a novel movement mechanism</p>
-                                <p class="project-skills">SolidWorks, Fusion360, Rapid Prototyping, Machining</p>
-                            </div>
-
-                            <div class="projects-image" id="trlimage">
-                            </div>
-                        </a>
-                    </div>
-
-                    
-                    
-                    <!--
-                    <div class="projects-cell">
-                        <a class="projects-link" href="project-algvis.html" target="_blank">
-                            <div class="projects-text-div">
-                                <p class="projects-name">Algorithm Visualizer</p>
-                                <p class="projects-description">
-                                    A visual collection of various algorithms, data structures, and other computer science concepts that I've learned
-                                </p>
-                                <p class="project-skills">Javascript, HTML/CSS</p>
-                            </div>
-
-                            <div class="projects-image" id="algvis-image">
-                                <div class="trapezoid-blob">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="projects-cell">
-                        <a class="projects-link" href="https://spellingbee.marvinlin.ml" target="_blank">
-                            <div class="projects-text-div">
-                                <p class="projects-name">New York Times Spelling Bee</p>
-                                <p class="projects-description">Word game that allows me to play the daily New York Times Spelling Bee without having to pay for a subscription</p>
-                                <p class="project-skills">Javascript, HTML/CSS</p>
-                            </div>
-
-                            <div class="projects-image" id="beeimage">
-                                <div class="trapezoid-blob">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                -->
-                </div>
-
-            </div>
-        </div>
-        <div id="invisible-division">
-        </div>
-        <div>
-            <div class="projects-title">
-                <h1 class="project-title-text">Projects</h1>
-            </div>
-            
-            <div id="side-projects-grid">
-                <div class="side-project-cell">
-                    <a class="side-project-link" href="naca0012.html">
-                        <div class="side-project-image" style="background-image: url(images/covers/naca0012.jpg)">
-                            <p class="side-project-title">NACA 0012 Airfoil (Quick ANSYS Demo)</p>
-                            <p class="side-project-info">Personal Engineering Project</p>
-                            <div class="dimmer"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="side-project-cell">
-                    <a class="side-project-link" href="https://devpost.com/software/meetmoment" target="_blank">
-                        <div class="side-project-image" style="background-image:url(images/covers/hi5.jpg)">
-                            <p class="side-project-title">Hi 5</p>
-                            <p class="side-project-info">Hackathon Project</p>
-                            <div class="dimmer"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-
-    <div id="contactbar">
-
-        <div class="contactcell">
-            <a href="mailto:marvinlin2@gmail.com" target="_blank">
-                <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo" />
-            </a>
-        </div>
-        <div class="contactcell">
-            <a href="https://www.linkedin.com/in/marvin--lin/" target="_blank">
-                <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo" />
-            </a>
-        </div>
-        <div class="contactcell">
-            <a href="https://github.com/maaarvin-was-here" target="_blank">
-                <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
-            </a>
-        </div>
-    </div>
-
-    <section>
-        <div id="invisible-copyright-division">
-            <p id="copyright">Copyright &#169; 2022 Marvin Lin. All Rights Reserved.</p>
-            <p id="made-with-love">Made with love, passion, and lots of caffeine &#129395;</p>
-        </div>
-        <div id="bot-space">
-        </div>
     </section>
     <script rel="type/javascript" src="app.js"></script>
     
