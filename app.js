@@ -74,7 +74,7 @@ function printWord(x, index){
             index += 1;      
             titleChangeLine.innerHTML = currentlyLine;
             printWord(x, index);
-        }, 70);
+        }, 90);
     } else {
         cursor_hide(x, 1);
     }
@@ -116,7 +116,7 @@ function deleteWord(x, index){
             
             titleChangeLine.innerHTML = currentlyLine;
             deleteWord(x, index);
-        }, 70);
+        }, 30);
     } else {
         changeWord(x + 1);
     }
