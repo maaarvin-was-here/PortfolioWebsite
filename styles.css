@@ -474,7 +474,7 @@ body {
     background-color: #181818;
     /*#FBF8F3*/
     user-select: none;
-    position: relative;
+    position: fixed;
     
     border-bottom: 2px solid white;
 }
