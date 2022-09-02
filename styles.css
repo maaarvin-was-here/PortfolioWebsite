@@ -114,6 +114,7 @@ body {
 #title-gap-space {
     height: 23%;
     width: 100vw;
+    background-color: #181818;
     position: relative;
 }
 
