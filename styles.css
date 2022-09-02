@@ -469,7 +469,7 @@ body {
 /*      side projects       */
 
 #side-projects-grid {
-    width: 51vw;
+    width: 52.75vw;
     margin: auto;
     
     display: grid;
@@ -477,7 +477,7 @@ body {
     margin-top: 5h;
         
     grid-template-columns: 25vw 25vw;
-    grid-column-gap: 1vw;
+    grid-column-gap: 2.75vw;
     
     grid-template-rows: auto;
     grid-row-gap: 5vh;
