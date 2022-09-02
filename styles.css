@@ -349,7 +349,7 @@ body {
 
 #image-disclaimer{
     margin-top: 71%;
-    margin-left: 65%;
+    margin-left: 40%;
     
     font-size: 8pt;
 }
@@ -465,6 +465,19 @@ body {
     grid-template-columns: 50vw 50vw;
 }
 
+
+/*      particle JS         */
+
+#particles-js {
+    width: 100vw;
+    height: 100vh;
+    background-color: #181818;
+    /*#FBF8F3*/
+    user-select: none;
+    position: relative;
+    
+    border-bottom: 2px solid white;
+}
 
 
 /*      side projects       */
