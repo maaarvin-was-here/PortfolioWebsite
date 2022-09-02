@@ -24,6 +24,8 @@ body {
     width: 100vw;
     height: 95vh;   
     background-color: #181818;
+    
+    pointer-events: none;
 }
 
 #main-title {    
@@ -112,7 +114,6 @@ body {
 #title-gap-space {
     height: 23%;
     width: 100vw;
-    background-color: #181818;
     position: relative;
 }
 
