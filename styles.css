@@ -224,7 +224,7 @@ body {
     
     display: grid;
     
-    grid-template-columns: 60vw;
+    grid-template-columns: 65vw;
     
     grid-template-rows: auto;
     grid-row-gap: 5vw;
@@ -270,6 +270,8 @@ body {
     margin-left: 3vw;
     margin-bottom: 0;
     color: floralwhite;
+    
+    margin-top: 6vh;
     
     opacity: 0;
     transition: 0.5s linear;
@@ -336,7 +338,7 @@ body {
 
 .projects-cell:hover{
     transition: 0.75s;
-    box-shadow: inset 60vw 0 0 0 #181818;
+    box-shadow: inset 65vw 0 0 0 #181818;
 }
 
 .projects-cell:hover .projects-image{
@@ -348,7 +350,14 @@ body {
 /*      specific cell stuff     */
 
 #image-disclaimer{
-    margin-top: 71%;
+    margin-top: 64%;
+    margin-left: 40%;
+    
+    font-size: 8pt;
+}
+
+#blue-image-disclaimer{
+    margin-top: 55%;
     margin-left: 40%;
     
     font-size: 8pt;
@@ -367,6 +376,18 @@ body {
     
     opacity: 0;
     transition: 0.5s linear;
+}
+
+#blue-or-project-div {
+    z-index: 1;
+    background-image: url("images/backgrounds/orbitalreef-background4.jpeg");
+    background-size: cover;
+}
+
+#blue-project-div {
+    z-index: 1;
+    background-image: url("images/backgrounds/blueorigin-background4.jpg");
+    background-size: cover;
 }
 
 #boeing-project-div {
@@ -444,6 +465,16 @@ body {
     
     height: 50%;
     width: 20%;
+}
+
+#blueoriginimage{
+    background-image: url("images/logos2/blueorigin-logo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    height: 63%;
+    margin-top: 4vh;
+    margin-bottom: -4vh;
 }
 
 .trapezoid-blob {
