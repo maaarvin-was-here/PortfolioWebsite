@@ -380,56 +380,56 @@ body {
 
 #blue-or-project-div {
     z-index: 1;
-    background-image: url("images/backgrounds/orbitalreef-background4.jpeg");
+    background-image: url("../../images/backgrounds/orbitalreef-background4.jpeg");
     background-size: cover;
 }
 
 #blue-project-div {
     z-index: 1;
-    background-image: url("images/backgrounds/blueorigin-background4.jpg");
+    background-image: url("../../images/backgrounds/blueorigin-background4.jpg");
     background-size: cover;
 }
 
 #boeing-project-div {
     z-index: 1;
-    background-image: url("images/backgrounds/boeing-background.jpg");
+    background-image: url("../../images/backgrounds/boeing-background.jpg");
     background-size: cover;
 }
 
 #fsae-project-div {
     z-index: 1;
-    background-image: url("images/backgrounds/formula-background.jpg");
+    background-image: url("../../images/backgrounds/formula-background.jpg");
     background-size: cover;
 }
 
 #apl-project-div {
     z-index: 1;
-    background-image: url("images/backgrounds/apl-background.jpg");
+    background-image: url("../../images/backgrounds/apl-background.jpg");
     background-size: cover;
 }
 
 #trl-project-div {
     z-index: 1;
-    background-image: url("images/backgrounds/trl-background.jpg");
+    background-image: url("../../images/backgrounds/trl-background.jpg");
     background-size: cover;
 }
 
 
 #beeimage {
-    background-image: url("images/logos/bee_logo_9.jpg");
+    background-image: url("../../images/logos/bee_logo_9.jpg");
     
     background-position: 70%;
 }
 
 #sarpimage {
-    background-image: url("images/covers/SARP.jpg");
+    background-image: url("../../images/covers/SARP.jpg");
     
     background-size: cover;
     background-position: left;
 }
 
 #boeingimage{
-    background-image: url("images/logos2/boeing-logo.png");
+    background-image: url("../../images/logos2/boeing-logo.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -437,7 +437,7 @@ body {
 }
 
 #fsaeimage {
-    background-image: url("images/logos2/uwfm-logo.png");
+    background-image: url("../../images/logos2/uwfm-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 3vw;
@@ -448,7 +448,7 @@ body {
 }
 
 #aplimage {
-    background-image: url("images/logos2/apl-logo2.png");
+    background-image: url("../../images/logos2/apl-logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -456,7 +456,7 @@ body {
 }
 
 #trlimage {
-    background-image: url("/images/logos2/uw-logo.png");
+    background-image: url("../../images/logos2/uw-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -468,7 +468,7 @@ body {
 }
 
 #blueoriginimage{
-    background-image: url("images/logos2/blueorigin-logo2.png");
+    background-image: url("../../images/logos2/blueorigin-logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
     

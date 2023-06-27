@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Marvin Lin</title>
-    <link rel="stylesheet" href="side-project-engineering.css">
+    <link rel="stylesheet" href="../side-project-engineering.css">
     <link rel="stylesheet" href="apl.css">
-    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="../header-footer.css">
     <script rel="type/javascript" src="app.js"></script>
-    <link rel="icon" href="images/logos/main%20site%20logo.png"> <!-- change this -->
+    <link rel="icon" href="../../images/logos/main%20site%20logo.png"> <!-- change this -->
 </head>
 
 <body>
     <section>
         <section>
             <a href="index.html">
-                <img id="logoimage" src="images/logos/main site logo.png" />
+                <img id="logoimage" src="../../images/logos/main site logo.png" />
             </a>
         </section>
         <section id="navbar">
             <!-- Displays from right to left on page -->
 
-            <a class="navbar-link" href="about.html">
+            <a class="navbar-link" href="../about/about.html">
                 <p class="navbar-text">About Me</p>
             </a>
 
@@ -35,11 +35,11 @@
             </a>
             
 
-            <a class="navbar-link" href="index.html/#projects" onclick="scrollToPortfolio()">
+            <a class="navbar-link" href="../home-page/index.html/#projects" onclick="scrollToPortfolio()">
                 <p class="navbar-text">Portfolio</p>
             </a>
 
-            <a class="navbar-link" href="index.html" onclick="scrollToTop()">
+            <a class="navbar-link" href="../home-page/index.html" onclick="scrollToTop()">
                 <p class="navbar-text">Home</p>
             </a>
         </section>
@@ -50,7 +50,7 @@
         <section id="fixed-top-background"></section>
         <h1 id="title">Applied Physics Laboratory — Software Engineering Intern</h1>
         <!-- <section id="title-gradient"></section> -->
-        <h1 id="date-range">July 2021 - Present</h1>
+        <h1 id="date-range">July 2021 - June 2022</h1>
     </section>
     
     <section id="body-content">
@@ -60,7 +60,7 @@
         <div id="first-row">
             <p id="p1">At the UW Applied Physics Laboratory, I've been working on a project to design and program an underwater camera capture system to track remote-operated vehicles. I've worked on every facet of the project, from modeling physical parts in <b>SolidWorks</b> to writing over 2000 lines of code in <b>Python</b>, using <b>OpenCV</b> computer vision.</p>
             
-            <img id="board-image" src="images/apl/marked-charuco.PNG"/>
+            <img id="board-image" src="../../images/apl/marked-charuco.PNG"/>
         </div>
         <p id="p2">The majority of my work involved writing <b>Python</b> code to facilitate communication between a centralized server and the many Raspberry Pi's that served as remote clients. These scripts performed tasks such as intrinsically and extrinsically calibrating a camera using a ChArUco board, taking images simultaneously within two thousandths of a second of each other, and running calculations to trilaterate the location of an underwater ROV using structure from motion.</p>
         
@@ -73,9 +73,9 @@
         <p id="p4">Instead of manually taking sending the image request and looking at the images that are sent back, I instead implemented two automatic systems: a <b>Pytorch</b> convolutional neural network trained to recognize digits, and an <b>OpenCV Feature Matching</b> method that also finds clusters of pixels that represent digits in an image. Paired with <b>PyAutoGUI</b>, both of these methods are able to convert digits in an image to integers variables, making it extremely easy to find the average delay between Pi's over a large number of trials, a statistic that is crucial to the accuracy and function of the camera system.</p> -->
         
         <div id="image-grid">
-            <div class="image-cell" style="background-image: url('images/logos/apl logo.png')">
+            <div class="image-cell" style="background-image: url('../../images/logos/apl logo.png')">
             </div>
-            <div class="image-cell" style="background-image: url('images/logos/uw logo.png')">
+            <div class="image-cell" style="background-image: url('../../images/logos/uw logo.png')">
             </div>
 
 
@@ -84,21 +84,21 @@
         <div id="link-grid">
                 <div class="link-cell">
                     <a class="link-hover" href="https://gitlab.com/apl-ocean-engineering/multi-camera-tracking/computer-vision-experiments" target="_blank">
-                        <img class="link-cell-image" src="/images/logos/gitlab.png">
+                        <img class="link-cell-image" src="../../images/logos/gitlab.png">
                     </a>
                     <p class="link-description">Gitlab</p>
                 </div>
             
                 <div class="link-cell">
                     <a href="https://underwater-motion-capture-system.readthedocs.io/en/latest/index.html" target="_blank">
-                        <img class="link-cell-image" src="/images/logos/rtd.png" style="height: 12vh">
+                        <img class="link-cell-image" src="../../images/logos/rtd.png" style="height: 12vh">
                     </a>
                     <p class="link-description">Documentation</p>
                 </div>
             
                 <div class="link-cell">
                     <a href="https://www.overleaf.com/project/60fb19c56411d2d208d493e5" target="_blank">
-                        <img class="link-cell-image" src="/images/logos/overleaf.png" style="height: 15vh">
+                        <img class="link-cell-image" src="../../images/logos/overleaf.png" style="height: 15vh">
                     </a>
                     <p class="link-description">Write-up (still in progress!)</p>
                 </div>
@@ -116,17 +116,17 @@
 
             <div class="contactcell">
                 <a href="mailto:marvinlin2@gmail.com" target="_blank">
-                    <img src="images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo" style="-webkit-filter: invert(100%)"/>
+                    <img src="../../images/logos/email3.png" class="logoimage" id="emaillogo" alt="email-logo" style="-webkit-filter: invert(100%)"/>
                 </a>
             </div>
             <div class="contactcell">
                 <a href="https://www.linkedin.com/in/marvin--lin/" target="_blank">
-                    <img src="images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo" />
+                    <img src="../../images/logos/linkedin.png" class="logoimage" id="linkedinlogo" alt="linkedin-logo" />
                 </a>
             </div>
             <div class="contactcell">
                 <a href="https://github.com/maaarvin-was-here" target="_blank">
-                    <img src="images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
+                    <img src="../../images/logos/github.png" class="logoimage" id="githublogo" alt="github-logo" />
                 </a>
             </div>
 
@@ -134,7 +134,7 @@
 
         <section>
             <div id="invisible-copyright-division">
-                <p id="copyright">Copyright &#169; 2022 Marvin Lin. All Rights Reserved.</p>
+                <p id="copyright">Copyright &#169; 2023 Marvin Lin. All Rights Reserved.</p>
                 <p id="made-with-love">Made with love, passion, and lots of caffeine &#129395;</p>
             </div>
             <div id="bot-space">
