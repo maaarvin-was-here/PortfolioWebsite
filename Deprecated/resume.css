@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#resume {
+    width: 100vw;
+    background-color: #181818;
+    position: absolute;
+    color: #F2EDE3;
+    transition-duration: 2s;
+}
+
+#buttonDiv {
+    width: 100vw;
+    height: 4vh;
+    margin-top: 8vh;
+}
+
+#invertButton {
+    margin: 0;
+    
+    text-align: center;
+    margin-right: 10vw;    
+    font-size: 24px;
+    width: 10vw;
+    height: 4vh;
+    float: right;
+    display: block;
+            
+    border: none;
+    outline: 0;
+    
+    color: #F2EDE3;
+    background-color: #181818;
+    
+    transition-duration: 2s;
+
+}
+
+#header {
+    text-align: left;
+    padding-left: 10vw;
+    width: 50vw;
+}
+
+
+#name {
+    margin: 0;
+    font-size: 64px;
+}
+
+.smallHeader {
+    margin: 1vh;
+    font-size: 24px;
+}
+
+
+.sectionTitle {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.sectionSubtitle{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 5vh;
+}
+
+.indentedSectionSubtitle {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 1.5vh;
+    padding-left: 3vw;
+}
+
+.sectionContent {
+    font-size: 20px;
+    margin-bottom: 5vh;
+}
+
+#education {
+    margin-top: 10vh;
+    padding-left: 10vw;
+    width: 50vw;
+}
+
+.sectionName {
+    margin: 0;
+    margin-bottom: 1.5vh;
+}
+
+.sectionDescription {
+    padding-left: 3vw;
+}
+
+.experienceIndentedSectionSubtitle {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 3vh;
+    padding-left: 3vw;
+}
+
+#experience {
+    margin-top: 10vh;
+    padding-left: 10vw;
+    width: 50vw;
+}
+
+#researchProjects {
+    margin-top: 10vh;
+    padding-left: 10vw;
+    width: 50vw;
+}
+
+#skills {
+    margin-top: 10vh;
+    padding-left: 10vw;
+    width: 50vw;
+    margin-bottom: 10vh;
+}
+
+.skillsContent {
+    font-size: 20px;
+}
