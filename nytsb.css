@@ -54,3 +54,10 @@
     
     border: 5px solid black;
 }
+
+.gif-descriptor{
+    margin-bottom: 4vh;
+    font-size: 24px;
+    font-family: verdana;
+    text-align: center;
+}
