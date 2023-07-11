@@ -1,7 +1,14 @@
 #vert-image{
-    width: 30%;
+    width: 28%;
     margin-left: 7vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     float: right;
     border: 5px solid black;
+    margin-bottom: 4vh;
+}
+
+#link{
+    text-decoration: none;
+    color: indianred;
+    font-weight: bold;
 }

@@ -1,9 +1,14 @@
-#body-content{
-    height: 50vh;
-    width: 70vw;
-    margin: auto;
-    
-    text-align: center;
-    
-    margin-top: 2vh;
+#link{
+    text-decoration: none;
+    color: indianred;
+    font-weight: bold;
+}
+
+#vert-image{
+    width: 45%;
+    margin-left: 7vw;
+    margin-top: 5vh;
+    float: right;
+    border: 5px solid black;
+    margin-bottom: 4vh;
 }
