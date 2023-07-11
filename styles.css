@@ -350,32 +350,38 @@ body {
 /*      specific cell stuff     */
 
 #image-disclaimer{
-    margin-top: 64%;
-    margin-left: 40%;
+    float: right;
+    font-size: 0.8vw;
     
-    font-size: 8pt;
+    margin-right: 2vw;
+    margin-top: 1vh;
 }
 
-#blue-image-disclaimer{
-    margin-top: 55%;
-    margin-left: 40%;
+.blue-image-disclaimer{
+    float: right;
+    font-size: 0.8vw;
     
-    font-size: 8pt;
+    margin-right: 2vw;
+    margin-top: 3vh;
 }
 
 .projects-image{
     width: 33%;
-    height: 29vh;
-    top: 0;
+    height: 100%;
     background-color: none;
     background-position: left center;
     float: right;
-    display: inline-block;
-    
-    margin: 0.5vh;
-    
+    position: relative;
+        
     opacity: 0;
     transition: 0.5s linear;
+}
+
+#earnest-project-div {
+    z-index: 1;
+    background-image: url("images/backgrounds/earnest-background.jpg");
+    background-size: cover;
+    
 }
 
 #blue-or-project-div {
@@ -421,30 +427,27 @@ body {
     background-position: 70%;
 }
 
-#sarpimage {
-    background-image: url("images/covers/SARP.jpg");
-    
-    background-size: cover;
-    background-position: left;
-}
-
 #boeingimage{
     background-image: url("images/logos2/boeing-logo.png");
     background-size: contain;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
-    margin-right: 3vw;
+    transform: scale(1.3);
+    
+    margin-top: 2vh;
+    width: 20.5vw;
+    height: 80%;
 }
 
 #fsaeimage {
     background-image: url("images/logos2/uwfm-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 3vw;
+    margin-left: 2vw;
     margin-top: 3vh;
+    margin-right: 2vw;
     
-    height: 80%;
-
+    height: 24vh;
 }
 
 #aplimage {
@@ -453,28 +456,28 @@ body {
     background-repeat: no-repeat;
     
     margin-right: 2vw;
+    
+    width: 21.5vw;
 }
 
-#trlimage {
-    background-image: url("/images/logos2/uw-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    margin-top: 7vh;
-    margin-right: 3.9vw;
-    
-    height: 50%;
-    width: 20%;
-}
 
 #blueoriginimage{
     background-image: url("images/logos2/blueorigin-logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
     
-    height: 63%;
     margin-top: 4vh;
-    margin-bottom: -4vh;
+    height: 20vh;
+}
+
+#earnestimage {
+    background-image: url("images/logos2/earnest-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 18vw;
+    
+    margin-right: 3vw;
 }
 
 .trapezoid-blob {
