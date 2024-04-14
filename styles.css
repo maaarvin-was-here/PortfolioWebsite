@@ -377,6 +377,13 @@ body {
     transition: 0.5s linear;
 }
 
+#zipline-project-div {
+    z-index: 1;
+    background-image: url("images/backgrounds/zipline-background.jpg");
+    background-size: cover;
+    
+}
+
 #earnest-project-div {
     z-index: 1;
     background-image: url("images/backgrounds/earnest-background.jpg");
@@ -472,6 +479,16 @@ body {
 
 #earnestimage {
     background-image: url("images/logos2/earnest-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 18vw;
+    
+    margin-right: 3vw;
+}
+
+#ziplineimage {
+    background-image: url("images/logos2/zipline-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     

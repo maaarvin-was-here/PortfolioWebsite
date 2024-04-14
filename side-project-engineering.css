@@ -71,6 +71,7 @@ body {
 #body-content{
     width: 60vw;
     margin: auto;
+    padding-bottom: 5vh;
 }
 
 #contact-bar-background{
