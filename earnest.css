@@ -7,3 +7,17 @@
     
     margin-top: 2vh;
 }
+
+#link{
+    text-decoration: none;
+    color: #20b47c;
+    font-weight: bold;
+}
+
+
+#square-image{
+    margin-left: 14vw;
+    margin-top: 5vh;
+    float: right;
+    margin-bottom: 4vh;
+}
